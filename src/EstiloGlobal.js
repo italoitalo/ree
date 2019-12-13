@@ -31,7 +31,7 @@ input{
 
 }
 
-#Button{
+button{
     box-shadow:0;
     border:0;
     border-radius:50px;

@@ -1,10 +1,13 @@
 import React from 'react';
+import Login from "./components/Login"
+
+
 
 export default function App() {
 
   return (
-    <div>
-      <h1>ree</h1>
-    </div>
+    <>
+      <Login />
+    </>
   );
 }

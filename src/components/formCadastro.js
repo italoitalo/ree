@@ -85,7 +85,7 @@ const SectionForm = styled.section`
     align-items:center;
     justify-content:space-between;
     
-    margin:67px;
+    margin:60px;
     border-radius:18px; 
     min-width:733.11px;
     
@@ -142,11 +142,12 @@ const Input = styled.input`
 
 const Button = styled.button`
     display:block;
-    min-width:32.64350797266515vw;
-    min-height:4.682232346241458vh;
-    background: #F2C94C;
+    min-width:21.875rem;
+    min-height:2.0625rem;
+    background:linear-gradient(to right, #F2C94C, #F58B0E);
     margin-left:190px;
-    margin-top:5.1181rem;
+    margin-bottom:45.7px;
+    margin-top:81.89px;
 
 `;
 const DivImg = styled.div`

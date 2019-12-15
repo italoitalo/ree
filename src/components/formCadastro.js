@@ -105,8 +105,8 @@ const Form = styled.form`
 
 
 const Img = styled.img`
-    
 `;
+
 const ImgF = styled.img`
     max-height:590px;
     max-width:500px;

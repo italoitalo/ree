@@ -1,15 +1,16 @@
 import React from 'react';
-import FormCadastro from "./components/formCadastro";
 import GlobalStyles from './EstiloGlobal';
-
+// import FormCadastro from "./components/formCadastro";
+// import NavPerfil from './components/NavPerfil';
 
 
 export default function App() {
 
   return (
-    <>
-      <FormCadastro />
+    <div>
+      {/* <FormCadastro /> */}
+      {/* <NavPerfil/> */}
       <GlobalStyles />
-    </>
+    </div>
   );
 }

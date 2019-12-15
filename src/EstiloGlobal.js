@@ -8,6 +8,7 @@ export default createGlobalStyle`
     padding:0;
     outline:0;
     box-sizing:border-box;
+    font-family:'Catamaran', sans-serif;
 }
 
 html, border-style, #root{
@@ -22,13 +23,11 @@ body{
 
 ul{
     list-style:none;
-
 }
 
 input{
     box-shadow:0;
     border:0
-
 }
 
 button{

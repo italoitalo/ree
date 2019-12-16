@@ -1,14 +1,14 @@
 import React from 'react';
 import styled from  'styled-components';
-import {avatar11} from '../img/formCadastroImg/avatar11.png'
+import Avatar1 from './../img/formCadastroImg/avatar1.png'
 
-export default function Teste() {
+export default function NavPerfil() {
     return ( 
         <div>
             <Container>
             <Nav>
                 <Div>
-                    <Img src={avatar11} alt="" height="100" width="100"/>
+                    <Avatar/>
                     <H1>João</H1>
                     <H3>Silva</H3>
                 </Div>
@@ -38,7 +38,22 @@ const Container = styled.section`
 display:flex;
 flex-wrap:wrap;
 `
+const Botao = styled.div`
+    background-color: #51B981;
 
+    padding: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+
+   border-top-left-radius:15px;
+   border-bottom-left-radius:15px;
+
+   &:hover {
+    transition: 0.3s;
+    background-color: white;
+  }
+`
 const Nav = styled.div`
     height: 100%;
     width: 300px;
@@ -66,26 +81,14 @@ const A = styled.a`
     font-size: 25px;
     color: black;
 `
-
-const Botao = styled.div`
-    background-color: #51B981;
-
-    padding: 5px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 40px;
-
-   border-top-left-radius:15px;
-   border-bottom-left-radius:15px;
-`
 const Div = styled.div`
-`
 
-const Img = styled.img`
+`
+const Avatar = styled.div`
     height:100px;
     width:100px;
-
-    background-color: yellow;
-    border-radius:100px;
+    background-image: url(${Avatar1});
+    background-size: 100%;
+    background-repeat:no-repeat;
 `
 

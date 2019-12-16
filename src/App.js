@@ -2,7 +2,7 @@ import React from 'react';
 import GlobalStyles from './EstiloGlobal';
 // import FormCadastro from "./components/formCadastro";
 // import NavPerfil from './components/NavPerfil';
-// import Teste from './components/PadraoPerfil';
+// import PadraoPerfil from './components/PadraoPerfil';
 
 
 export default function App() {
@@ -11,7 +11,7 @@ export default function App() {
     <div>
       {/* <FormCadastro /> */}
       {/* <NavPerfil/> */}
-      {/* <Teste/> */}
+      {/* <PadraoPerfil/> */}
       <GlobalStyles />
     </div>
   );

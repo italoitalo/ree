@@ -35,6 +35,7 @@ button{
     border:0;
     border-radius:50px;
     min-height:2.0625rem
+    
 }
 
 `;

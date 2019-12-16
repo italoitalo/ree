@@ -35,9 +35,10 @@ export default function NavPerfil() {
 }
 
 const Container = styled.section`
-display:flex;
-flex-wrap:wrap;
+    margin-right:310px;
 `
+
+// BOTAO VERDE ESCURO (HOVER)
 const Botao = styled.div`
     background-color: #51B981;
 
@@ -54,41 +55,48 @@ const Botao = styled.div`
     background-color: white;
   }
 `
+
+//FUNDO VERDE CLARO
 const Nav = styled.div`
     height: 100%;
     width: 300px;
     position: fixed; 
-    z-index: 1; 
     background-image: linear-gradient(#6CD79D, #6CD79D); 
-
 `
-
+//TITULO DOS BOTOES
 const H1 = styled.h1`
     text-align: center;
     font-size: 35px;
     margin-bottom:-20px;
 `
+//NOME
 const H3 = styled.h3`
     text-align: center;
     font-size:18px;
 `
+//SOBRENOME
 const H4 = styled.h4`
-text-align: center;
+    text-align: center;
 `
-
+//LINK (texto dos botoes)
 const A = styled.a`
     text-decoration: none;
     font-size: 25px;
     color: black;
 `
+//PERFIL (FOTO NOME SOBRENOME)
 const Div = styled.div`
-
+    padding-top: 50px;
 `
+
 const Avatar = styled.div`
     height:100px;
     width:100px;
+
     background-image: url(${Avatar1});
     background-size: 100%;
     background-repeat:no-repeat;
+
+    margin-left: 100px;
 `
 

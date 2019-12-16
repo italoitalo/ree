@@ -1,34 +1,38 @@
 import React from 'react';
 import styled from  'styled-components';
 
-// USE ESSE TEMPLATE COM ESSA CONFIGURÇÃO DO "<Main>" 
+import NavPerfil from './NavPerfil'
+// USE ESSE TEMPLATE COM ESSA CONFIGURÇÃO DO "<Container> <div> <Section> <NavPerfil>" 
 // ASSIM O CODIGO FICARÁ DE ACORDO COM O MENU DE NAVEGAÇÃO
-// COLOQUE O CONTEÚDO DO SEU COMPONENTE DENTRO DA TAG "<Main>"
+// COLOQUE O CONTEÚDO DO SEU COMPONENTE DENTRO DA TAG "<Section>"
 // TODO O RESTO PODE SER EXCLUIDO E ALTERADO
-// USE SOMENTE PARA COPIAR E COLAR, NAO APAGUE ESSE ARQUIVO
 
 export default function PadraoPerfil() {
     return ( 
-        <div>
-            <Main>
-                <H1>EXEMPLO EXEMPLO</H1>
-                <H1>EXEMPLO EXEMPLO</H1>
-                <H1>EXEMPLO EXEMPLO</H1>
-                <H1>EXEMPLO EXEMPLO</H1>
-                <H1>EXEMPLO EXEMPLO</H1>
-                <H1>EXEMPLO EXEMPLO</H1>
-                <H1>EXEMPLO EXEMPLO</H1>
-            </Main>
-        </div>
+        <>  
+            <Container>
+                <div>
+                    <NavPerfil/>
+                </div>
+                <Section>
+                    <H1>INSIRA SUA TELA AQUI</H1>
+                    <H1>INSIRA SUA TELA AQUI</H1>
+                    <H1>INSIRA SUA TELA AQUI</H1>
+                    <H1>INSIRA SUA TELA AQUI</H1>
+                </Section>
+            </Container>
+        </>
         )
     }
 
 //Const H1 é somente um exemplo e pode ser excluida
 const H1 = styled.h1`
-font-size: 100px;
+font-size: 80px;
 color: black;
 `
-//Const Main deve ser mantida
-const Main = styled.section`
-margin-left:300px;
+//Const Section pode ser alterada e estilizada, mas não excluida
+const Section = styled.section`
 `
+//Const Container deve ser mantida
+const Container = styled.section`
+display: flex;`

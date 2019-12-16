@@ -1,17 +1,17 @@
 import React from 'react';
-import GlobalStyles from './EstiloGlobal';
-// import FormCadastro from "./components/formCadastro";
-// import NavPerfil from './components/NavPerfil';
-// import PadraoPerfil from './components/PadraoPerfil';
+import styled from 'styled-components'
 
+import GlobalStyles from './EstiloGlobal';
+
+// import FormCadastro from "./components/formCadastro";
+import PadraoPerfil from './components/PadraoPerfil';
 
 export default function App() {
 
   return (
     <div>
-      {/* <FormCadastro /> */}
-      {/* <NavPerfil/> */}
-      {/* <PadraoPerfil/> */}
+        {/* <FormCadastro /> */}
+        <PadraoPerfil/>
       <GlobalStyles />
     </div>
   );

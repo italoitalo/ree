@@ -51,7 +51,7 @@ export default function form() {
                         </DivInput>   
                         <Button type="submit">Cadastre-se</Button>
                 </Form>
-                <ImgPerfil src={FtPerfil} weight="189" height="221" alt=""/>
+                <ImgPerfil src={FtPerfil} weight="189" height="189" alt=""/>
               </SectionForm>
             <ImgF src={ImgFundo} weight="501" height="680" alt=""/>
         </View>
@@ -72,8 +72,8 @@ const View = styled.section`
      display:flex;
     align-items:center;
     justify-content:center;
-   max-width:1366px;
-   border: 5px solid #000;
+   width:100%;
+   /* border: 5px solid #000; */
 
 `;
 
@@ -84,12 +84,11 @@ const SectionForm = styled.section`
     flex-grow:1;
     align-items:center;
     justify-content:space-between;
-    
     margin:60px;
     border-radius:18px; 
     min-width:733.11px;
     
-
+    
 `;
 
 const Form = styled.form`
@@ -100,6 +99,12 @@ const Form = styled.form`
     justify-content:center;
     max-width: 453px;  
     padding-top:70px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17.3411px;
+    line-height: 20px;
+    color: #828282;
    
 `;
 
@@ -108,8 +113,9 @@ const Img = styled.img`
 `;
 
 const ImgF = styled.img`
-    max-height:590px;
+    max-height:654px;
     max-width:500px;
+    margin-right:0px;
 `;
 const DivInput = styled.div`
 display:flex;
@@ -119,7 +125,7 @@ margin-left:42px;
 `;
 
 const Pform =styled.p`
-    font-family: Roboto;
+    
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
@@ -144,10 +150,17 @@ const Button = styled.button`
     display:block;
     min-width:21.875rem;
     min-height:2.0625rem;
-    background:linear-gradient(to right, #F2C94C, #F58B0E);
+    background: #F2C94C;
     margin-left:190px;
     margin-bottom:45.7px;
     margin-top:81.89px;
+
+
+    &:hover {
+    transition-duration:0.8s;
+    background:#F58B0E;
+    /* background: #F2C94C; */ 
+  }
 
 `;
 const DivImg = styled.div`
@@ -163,7 +176,7 @@ const DivImg = styled.div`
 
 const ImgPerfil = styled.img`
     margin-right:1.8194rem;
-    margin-left:500px;
+    margin-left:
     
 
 

@@ -51,7 +51,7 @@ const Botao = styled.div`
    border-bottom-left-radius:15px;
 
    &:hover {
-    transition: 0.3s;
+    transition: 0.5s;
     background-color: white;
   }
 `

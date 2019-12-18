@@ -1,7 +1,7 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 
-import Home from './Home'
+import Home from './../Home'
 import formCadastro from './../formCadastro'
 import PadraoPerfil from './../PadraoPerfil'
 import Contato from './../Contato'

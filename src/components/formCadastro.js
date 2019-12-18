@@ -176,10 +176,4 @@ const DivImg = styled.div`
 
 const ImgPerfil = styled.img`
     margin-right:1.8194rem;
-    margin-left:
-    
-
-
-
-
 `;

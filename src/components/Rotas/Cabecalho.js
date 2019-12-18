@@ -26,7 +26,7 @@ text-decoration:none;
 const Div= styled.div`
     display:flex;
     background-color: whitesmoke;
-    box-shadow: 0px 0px 20px #484848;
+    box-shadow: 0px 0px 20px #696969;
     position:relative;
 `
 

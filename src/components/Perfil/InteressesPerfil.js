@@ -11,11 +11,19 @@ export default function Interesses(){
                 <NavPerfil/> 
                 <Container>
                     <SectionInt>
-                        <h1>No que você pode ajudar?</h1>
+                        <Title>No que você pode ajudar?</Title>
+                        <Form>
+                            <H1>teste</H1> 
+                            <Input name='' id='' type='checkbox' value="teste"/>
+                        </Form>
+                        <Form>
+                            <H1>teste</H1> 
+                            <Input name='' id='' type='checkbox' value="teste"/>
+                        </Form>
                     </SectionInt>
 
                     <SectionInt>
-                        <h1>O que você precisa?</h1>
+                        <Title>O que você precisa?</Title>
                     </SectionInt>
                 </Container>
             </Main>
@@ -29,16 +37,37 @@ const Main = styled.section`
 const Container = styled.section `
     width:100%;
     max-width:1360px;
-    background-color:tomato;
     display:flex;
     padding:20px;
     justify-content:space-evenly;
 `
-
+const Input = styled.input`
+margin-left:20px;
+`
 
 const SectionInt = styled.section`
     display:flex;
+    flex-direction:column;
     background-color:whitesmoke;
     padding:30px;
     border-radius:20px;
-    `
+`
+
+const Form = styled.form`
+display:flex;
+
+background-color:white;
+border-radius:50px;
+padding:5px;
+margin:10px;
+`
+
+const Title = styled.h1`
+color: #F2C94C;
+font-weight: bold;
+font-size:30px;
+`
+
+const H1 = styled.h1`
+margin-left:20px;
+`

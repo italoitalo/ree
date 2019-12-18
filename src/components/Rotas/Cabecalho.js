@@ -27,7 +27,7 @@ text-decoration:none;
 const Div= styled.div`
     display:flex;
     background-color: whitesmoke;
-    box-shadow: 0px 0px 20px #696969;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
     position:relative;
 `
 
@@ -41,9 +41,8 @@ const Logo = styled.div`
 const Li = styled.li`
     padding:5px;
     margin-top:10px;
-    
+    margin-right:20px;
     color: black;
-    font-weight:bold;
 
     &:hover{
         color: #51B981;

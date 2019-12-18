@@ -1,6 +1,10 @@
 import React from 'react';
-import styled from  'styled-components';
-import Avatar1 from './../img/formCadastroImg/avatar1.png'
+import styled from 'styled-components';
+
+import { Link } from 'react-router-dom';
+
+import Avatar1 from '../../img/formCadastroImg/avatar1.png'
+
 
 export default function NavPerfil() {
     return ( 
@@ -13,19 +17,19 @@ export default function NavPerfil() {
                     <H3>Silva</H3>
                 </Div>
                 <Botao>
-                    <A href="/"><H4>Biografia</H4></A>
+                    <Navigation to="/perfil"><H4>Biografia</H4></Navigation>
                 </Botao>
 
                 <Botao>
-                <A href="/"><H4>Doações</H4></A>
+                <Navigation to="/perfil/doacoes"><H4>Doações</H4></Navigation>
                 </Botao>
 
                 <Botao>
-                <A href="/"><H4>interesses</H4></A>
+                <Navigation to="/perfil/interesses"><H4>interesses</H4></Navigation>
                 </Botao>
 
                 <Botao>
-                   <A href="/"><H4>Configurações</H4></A> 
+                   <Navigation to="/perfil/config"><H4>Configurações</H4></Navigation> 
                 </Botao>
                 
             </Nav>
@@ -33,6 +37,8 @@ export default function NavPerfil() {
         </div>
     )
 }
+
+
 
 const Container = styled.section`
     margin-right:310px;
@@ -60,7 +66,7 @@ const Botao = styled.div`
 const Nav = styled.div`
     height: 100%;
     width: 300px;
-    position: fixed; 
+    position: absolute; 
     background-image: linear-gradient(#6CD79D, #6CD79D); 
 `
 //TITULO DOS BOTOES
@@ -79,7 +85,7 @@ const H4 = styled.h4`
     text-align: center;
 `
 //LINK (texto dos botoes)
-const A = styled.a`
+const Navigation = styled(Link)`
     text-decoration: none;
     font-size: 25px;
     color: black;

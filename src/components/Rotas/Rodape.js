@@ -16,6 +16,7 @@ const Container = styled.section`
     min-height: 100px;
     justify-content: center;
     align-content:center;  
+
     `
 const P = styled.p`
     text-align:center;

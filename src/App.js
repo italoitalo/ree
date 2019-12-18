@@ -14,7 +14,7 @@ export default function App() {
         <Cabecalho/>
         <Rotas/>
         <Rodape/> 
-        
+
         <GlobalStyles />
       </Router>
     </>

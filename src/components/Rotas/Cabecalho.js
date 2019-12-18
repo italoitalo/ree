@@ -12,6 +12,7 @@ export default function Cabecalho(){
                 <Ul>     
                     <Navigation to="/"><Li>Home</Li></Navigation>
                     <Navigation to="/cadastro"><Li>Cadastro</Li></Navigation>
+                    <Navigation to="/login"><Li>Login</Li></Navigation>
                     <Navigation to="/perfil"><Li>Perfil</Li></Navigation>
                     <Navigation to="/contato"><Li>Contato</Li></Navigation>
                 </Ul>
@@ -33,12 +34,13 @@ const Div= styled.div`
 const Logo = styled.div`
     font-size: 2rem;
     font-weight: bolder;
-    padding-left: 20px;
+    padding-left:20px;
     color: #51B981;
 `
 
 const Li = styled.li`
-    padding:20px;
+    padding:5px;
+    margin-top:10px;
     
     color: black;
     font-weight:bold;
@@ -52,5 +54,5 @@ const Li = styled.li`
 const Ul = styled.ul`
 display:flex;
 width:100% ;
-justify-content: space-evenly;
+justify-content: flex-end;
 `

@@ -41,8 +41,9 @@ const Container = styled.section `
     padding:20px;
     justify-content:space-evenly;
 `
+
 const Input = styled.input`
-margin-left:20px;
+
 `
 
 const SectionInt = styled.section`
@@ -55,7 +56,6 @@ const SectionInt = styled.section`
 
 const Form = styled.form`
 display:flex;
-
 background-color:white;
 border-radius:50px;
 padding:5px;

@@ -167,8 +167,9 @@ const Button = styled.button`
 
 
     &:hover {
-    transition-duration:0.8s;
+    transition-duration:1s;
     background:#FFB23E;
+    cursor: pointer
     /* background: #F2C94C; */ 
   }
 

@@ -17,9 +17,23 @@ html, border-style, #root{
 
 body{
     font:16px 'catamaran', times;
-    -webkit-font-smoothing:antialiased !important;
+        /*BARRA DE SCROLL CUSTOMIZADA*/
+        ::-webkit-scrollbar {
+        width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+        background: whitesmoke;
+        }
+        ::-webkit-scrollbar-thumb {
+        background: lightgray;
+        border-radius:20px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+        background: darkgray;
+        }
 
-}
+ -webkit-font-smoothing:antialiased !important;
+        }
 
 ul{
     list-style:none;

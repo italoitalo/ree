@@ -2,12 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { Link } from 'react-router-dom';
+import ree from './../../img/ree.svg'
 
 export default function Cabecalho(){
     return(
         <>
             <Div>
-                <Navigation to="/"><Logo>ree</Logo></Navigation>
+                <Navigation to="/"><Logo src={ree} height='40' /></Navigation>
             
                 <Ul>     
                     <Navigation to="/"><Li>Home</Li></Navigation>
@@ -31,11 +32,10 @@ const Div= styled.div`
     position:relative;
 `
 
-const Logo = styled.div`
-    font-size: 2rem;
-    font-weight: bolder;
+const Logo = styled.img`
+    
     padding-left:20px;
-    color: #51B981;
+    padding-top:10px;
 `
 
 const Li = styled.li`
@@ -43,6 +43,8 @@ const Li = styled.li`
     margin-top:10px;
     margin-right:20px;
     color: black;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 14px;
 
     &:hover{
         color: #51B981;

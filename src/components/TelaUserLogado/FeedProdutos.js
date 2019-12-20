@@ -2,12 +2,15 @@
 
 
 import React from 'react';
-import styled from 'styled-components'
+import Publicidade from './Publicidade';
+import AbasNav from './AbasNavegacão';
+
 
 export default function FeedProdutos() {
-  return (
-    <>
-        
-    </>
-  );
+    return ( 
+      <>
+        <AbasNav />
+        <Publicidade />
+      </>
+    );
 }

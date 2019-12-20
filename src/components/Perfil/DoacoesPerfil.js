@@ -2,18 +2,29 @@ import React from 'react'
 import styled from  'styled-components';
 
 import NavPerfil from '../Rotas/NavPerfil';
+import FeedProdutos from './../TelaUserLogado/FeedProdutos';
 
 export default function Doacoes(){
     return(
         <>
             <Main>  
                 <NavPerfil/>
-                <h1>Ree, Pagina DOAÇÕES</h1>
+                <ConteudoDireita>
+                    <FeedProdutos />
+                </ConteudoDireita>
+               
             </Main>
         </>
     )
 }
 
 const Main = styled.section`
-display:flex
-`
+display:flex;
+
+`;
+const ConteudoDireita = styled.section`
+display:flex;
+flex-direction:column;
+align-items:flex-start;
+`;
+

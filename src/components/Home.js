@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import FeedProdutos from './TelaUserLogado/DoacoesPublicas';
+import DoacoesPublicas from './TelaUserLogado/DoacoesPublicas';
+import SuasDoacoes from './TelaUserLogado/SuasDoacoes'
 
 
 
@@ -8,7 +9,8 @@ export default function Home(){
     return(
         <>
             <Container>
-                <FeedProdutos />
+                <DoacoesPublicas />
+               
             </Container>
         </>
     )

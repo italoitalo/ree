@@ -25,9 +25,6 @@ padding-bottom:30px;
 padding-top:30px;
 justify-content:space-around;
 align-items:center;
-
-
-
 background:#FFFFFF;
   
   

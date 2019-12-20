@@ -1,59 +1,54 @@
 import React from 'react';
 import styled from 'styled-components';
+import {Link} from "react-router-dom";
 
 
 export default function AbasNavegacao() {
   return (
     <>
-      <ContainerBG>
+      
           <Container>
-            <DivDoacoes>
-              <H1>Doações Públicas</H1>
-            </DivDoacoes>
+            <A to='/'>Doações Públicas</A>
             <Traco />
-            <DivDoacoes>
-              <H1>Suas Doações</H1>
-            </DivDoacoes>
+            <A to='/home/suasdoacoes'>Suas Doações</A>
           </Container>
-      </ContainerBG>
+      
     </>
   );
 }
 
-const ContainerBG=styled.div`
-   display:flex;
-width:1366px;
-   justify-content:center;
 
-`;
-const Container=styled.div`
-   display:flex;
-   width:100%;
-   justify-content:center;
-   background:khaki;
+const Container=styled.section`
+display:flex;
+max-width:1366px; 
+padding-bottom:30px;
+padding-top:30px;
+justify-content:space-around;
+align-items:center;
 
-`;
-const DivDoacoes=styled.div`
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    background:red;
+
+
+background:#FFFFFF;
+  
+  
+
 `;
 const Traco=styled.div`
-    display:flex;
-    border-radius:3.125rem;
-    width: 0.1875rem;
-    height: 3.25rem;
+    width:3px;
+    height:52.02px;
+    border-radius:30px;
     background:#C4C4C4;
  
 `;
-const H1=styled.h1`
+const A=styled(Link)`
     font-family: Catamaran;
     font-style: normal;
     font-weight: bold;
-    font-size: 2.1875rem;
-    line-height: 3.5625rem;
+    font-size: 35px;
+    line-height: 57px;
     text-align: center;
+    color: #999999;
+    text-decoration:none;
 `;
 
 

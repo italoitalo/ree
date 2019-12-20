@@ -6,6 +6,7 @@ import FormCadastro from '../formCadastro'
 import BioPerfil from '../Perfil/BioPerfil'
 import Contato from './../Contato'
 import Login from './../Login'
+import SuasDoacoes from './../TelaUserLogado/SuasDoacoes'
 
 import DoacoesPerfil from '../Perfil/DoacoesPerfil'
 import InteressesPerfil from '../Perfil/InteressesPerfil'
@@ -24,7 +25,8 @@ export default function Rotas(){
 
                     <Route exact path="/perfil/doacoes" component={DoacoesPerfil}/>   
                     <Route exact path="/perfil/interesses" component={InteressesPerfil}/>   
-                    <Route exact path="/perfil/config" component={ConfigPerfil}/>   
+                    <Route exact path="/perfil/config" component={ConfigPerfil}/> 
+                    <Route exact path="/home/suasdoacoes" component={SuasDoacoes}/> 
                 </Switch>        
         </>
     )

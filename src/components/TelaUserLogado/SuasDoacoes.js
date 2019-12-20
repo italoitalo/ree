@@ -1,16 +1,24 @@
 // !    ARQUIVO criado para confeccionar a pagina de produtos disponiveis para os usuários logados
 
+import styled from 'styled-components'
 
 import React from 'react';
 import Publicidade from './Publicidade';
 import AbasNav from './AbasNavegacão';
 
 
-export default function FeedProdutos() {
+export default function SuasDoacoes() {
     return ( 
       <>
-        <AbasNav />
-        <Publicidade />
+      <Container>
+          <AbasNav />
+          <Publicidade />
+          <h1>Suas Doações</h1>
+        </Container>    
       </>
     );
 }
+const Container=styled.section`
+
+`;
+

@@ -1,7 +1,25 @@
-import React from 'react'
+import React from 'react';
+import styled from 'styled-components';
+import FeedProdutos from './TelaUserLogado/DoacoesPublicas';
+
+
 
 export default function Home(){
     return(
-        <h1>Ree, Pagina Inicial</h1>
+        <>
+            <Container>
+                <FeedProdutos />
+            </Container>
+        </>
     )
 }
+
+
+
+const Container = styled.section`
+        display:flex;
+        
+        justify-content:center;
+        align-items:center;
+`;
+

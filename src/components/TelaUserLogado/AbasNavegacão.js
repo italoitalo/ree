@@ -5,36 +5,39 @@ import styled from 'styled-components';
 export default function AbasNavegacao() {
   return (
     <>
-      <Container>
-        <DivDoacoes>
-          <H1>Doações Públicas</H1>
-        </DivDoacoes>
-        <Traco />
-        <DivDoacoes>
-        <H1>Suas Doações</H1>
-        </DivDoacoes>
-      </Container>
+      <ContainerBG>
+          <Container>
+            <DivDoacoes>
+              <H1>Doações Públicas</H1>
+            </DivDoacoes>
+            <Traco />
+            <DivDoacoes>
+              <H1>Suas Doações</H1>
+            </DivDoacoes>
+          </Container>
+      </ContainerBG>
     </>
   );
 }
 
+const ContainerBG=styled.div`
+   display:flex;
+width:1366px;
+   justify-content:center;
+
+`;
 const Container=styled.div`
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    align-items:center;
-    width:100%;
-    margin-top:0.3125rem;
-  
+   display:flex;
+   width:100%;
+   justify-content:center;
+   background:khaki;
+
 `;
 const DivDoacoes=styled.div`
     display:flex;
-    justify-content:center;
     align-items:center;
-    padding: 1.8281rem 10.7813rem; 
- 
- 
-  
+    justify-content:center;
+    background:red;
 `;
 const Traco=styled.div`
     display:flex;

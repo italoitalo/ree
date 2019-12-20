@@ -2,7 +2,7 @@
 
 
 import React from 'react';
-
+import Publicidade from './Publicidade';
 import AbasNav from './AbasNavegacão';
 
 
@@ -10,6 +10,7 @@ export default function FeedProdutos() {
     return ( 
       <>
         <AbasNav />
+        <Publicidade />
       </>
     );
 }

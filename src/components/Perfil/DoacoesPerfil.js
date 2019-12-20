@@ -9,13 +9,22 @@ export default function Doacoes(){
         <>
             <Main>  
                 <NavPerfil/>
-                
-                <FeedProdutos />
+                <ConteudoDireita>
+                    <FeedProdutos />
+                </ConteudoDireita>
+               
             </Main>
         </>
     )
 }
 
 const Main = styled.section`
-display:flex
-`
+display:flex;
+
+`;
+const ConteudoDireita = styled.section`
+display:flex;
+flex-direction:column;
+align-items:flex-start;
+`;
+

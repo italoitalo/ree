@@ -41,7 +41,7 @@ export default function NavPerfil() {
 
 
 const Container = styled.section`
-    margin-right:310px;
+    
 `
 
 // BOTAO VERDE ESCURO (HOVER)
@@ -64,9 +64,9 @@ const Botao = styled.div`
 
 //FUNDO VERDE CLARO
 const Nav = styled.div`
-    height: 100%;
+    height:700px;;
     width: 300px;
-    position: absolute; 
+    position: relative; 
     background-image: linear-gradient(#6CD79D, #6CD79D); 
 `
 //TITULO DOS BOTOES

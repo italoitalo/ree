@@ -2,13 +2,15 @@ import React from 'react'
 import styled from  'styled-components';
 
 import NavPerfil from '../Rotas/NavPerfil';
+import FeedProdutos from './../TelaUserLogado/FeedProdutos';
 
 export default function Doacoes(){
     return(
         <>
             <Main>  
                 <NavPerfil/>
-                <h1>Ree, Pagina DOAÇÕES</h1>
+                
+                <FeedProdutos />
             </Main>
         </>
     )

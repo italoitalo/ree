@@ -2,7 +2,7 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
 import Home from './../Home'
-import FormCadastro from '../FormCadastro'
+import FormCadastro from '../formCadastro'
 import BioPerfil from '../Perfil/BioPerfil'
 import Contato from './../Contato'
 import Login from './../Login'

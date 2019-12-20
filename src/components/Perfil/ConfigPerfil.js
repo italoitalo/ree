@@ -15,17 +15,18 @@ export default function ConfigPerfil(){
                 <NavPerfil/> 
                 <Container>
                     <SectionInt>
-                        <Title>Configurações  Pessoais</Title>
-                        <DivRetangulo> <H1T>Alterar foto </H1T> </DivRetangulo>
+                    <SectionFlex><Title>Configurações  Pessoais</Title></SectionFlex>
+                        <SectionFlex>
+                        <DivRetangulo> <H1T>Alterar foto </H1T> </DivRetangulo></SectionFlex>
                         <SectionFlex>
                         <ImgConf src={Foto} width='175'></ImgConf>
                         <ImgConf src={Seta} width='64'   height='50'></ImgConf>
                         <ImgConf src={Img} width='183'></ImgConf>
                         </SectionFlex>
                         <SectionCol>
-                            <Section2Flex><PT>Alterar Nome:</PT> <input type='text'></input></Section2Flex>
-                            <Section2Flex><PT>Alterar data de nascimento:</PT> <input type='text'></input></Section2Flex>
-                            <Section2Flex><PT>Alterar numero:</PT> <input type='text'></input></Section2Flex>
+                            <Section2Flex><PT>Alterar Nome:</PT> <InputRee type='text'></InputRee></Section2Flex>
+                            <Section2Flex><PT>Data de nascimento:</PT> <InputRee type='text'></InputRee></Section2Flex>
+                            <Section2Flex><PT>Alterar numero:</PT> <InputRee type='text'></InputRee></Section2Flex>
                         </SectionCol>
                     </SectionInt>
 
@@ -36,10 +37,18 @@ export default function ConfigPerfil(){
     )
 }
 
+
+const InputRee = styled.input`
+border-radius: 25px;
+background-color:rgba(0, 0, 0, 0.1);
+width: 100%;
+`
 const PT = styled.p`
-padding:0 5px 0 0;`
+width: 200px;
+`
 
 const  SectionCol = styled.section`
+
 padding:  5px;
 display:flex;
 flex-direction: column;
@@ -47,11 +56,16 @@ align-items: flex-stretch;`
 
 const Section2Flex =  styled.section`
 padding: 5px;
+margin: 6px;
+border-radius: 25px;
+background-color:rgba(0, 0, 0, 0.09);
 display:flex;
-justify-content: center;`
+justify-content: center;
+`
 
 const ImgConf = styled.img`
 padding: 5px;
+
 flex: 0;
 `
 const SectionFlex = styled.section`
@@ -62,10 +76,11 @@ const DivRetangulo = styled.form`
 width:180px;
 height:  30px;
 display:flex;
-background-color:grey;
+background-color:rgba(0, 0, 0, 0.09);
 border-radius:50px;
 padding:5px;
 margin:10px;
+justify-content: center;
 `
 
 const Main = styled.section`
@@ -105,13 +120,15 @@ const Title = styled.h1`
 color: #F2C94C;
 font-weight: bold;
 font-size:30px;
+font-size: 3em;
 `
 
 const H1 = styled.h1`
-margin-left:20px;
+font-size: 20em;
+
 
 `
 const H1T = styled.h1`
-margin-left:20px;
+font-size: 1em;
 
 `

@@ -20,17 +20,16 @@ export default function AbasNavegacao() {
 
 const Container=styled.section`
 display:flex;
-max-width:1366px; 
-padding-bottom:30px;
-padding-top:30px;
-justify-content:space-around;
+flex-wrap:wrap;
+flex:0 0 auto;
+max-width:85.375rem; 
+min-height:100px;
+justify-content:space-evenly;
 align-items:center;
-background:#FFFFFF;
-  
-  
 
 `;
 const Traco=styled.div`
+    
     width:3px;
     height:52.02px;
     border-radius:30px;
@@ -38,6 +37,8 @@ const Traco=styled.div`
  
 `;
 const A=styled(Link)`
+    padding:10px;
+
     font-family: Catamaran;
     font-style: normal;
     font-weight: bold;

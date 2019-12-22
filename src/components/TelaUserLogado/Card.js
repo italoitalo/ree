@@ -15,16 +15,18 @@ import UserFoto from './../../img/itensCard/UserFoto.png'
 export default function Card() {
   return (
     <>
-      <h1>CARD</h1>
+      
       <CardSection>
-          <User>
-            <ImgUser src={UserFoto} alt=""/>
-            <H1User>user.1</H1User>
-          </User>
-          <ImgProd src={prodCelu} alt=""/>
+          <DivUserProd>
+            <User>
+              <ImgUser src={UserFoto} alt=""/>
+              <H1User>user.1</H1User>
+            </User>
+            <ImgProd src={prodCelu} alt=""/>
+          </DivUserProd>
           <InfoCard>
             <InfoText>
-              <PinfoText>Smartphone antigo funciona perfeitamente!</PinfoText>
+              <PinfoText>Smartphone antigo funciona perfeitamenteperfeitamenteperfeitamenteperfeitamente!</PinfoText>
             </InfoText>
             <AcoesCard>
               <ImgAcao src={chat} alt=""/>
@@ -41,49 +43,81 @@ export default function Card() {
 }
 
 const CardSection = styled.section`
-    max-width:534px;
+   display:flex;
+   max-width:534px;
     max-height:260px;
     padding:5px;
-
-
-
+    padding-right:28px;
     background: #EFEFEF;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
+    margin-top:50px;
+ 
+`;
+const DivUserProd = styled.section`
+    
 `;
 
 const User = styled.div`
 display:flex;
 align-items:center;
 justify-content:start;
+
 margin-left: 10px;
 max-width:265px;
-
-
+height:100%;
 background: #FFFFFF;
 border-radius: 45.5207px;
 `;
 const ImgUser = styled.img`
-
+margin-left:2px;
 `;
 const H1User = styled.h1`
+  font-family: Catamaran;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 31.8645px;
+  line-height: 52px;
+  text-align: center;
 
+  color: #000000;
+  margin-left:8px;
 `;
 const ImgProd = styled.img`
 
 `;
 const InfoCard = styled.section`
-
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+margin-left:25px;
 `;
 const InfoText = styled.div`
-
+ 
+    
+    background: #FFFFFF;
+    border-radius: 4.55207px;
+    max-width:190px;
+    padding:12px;
 `;
 const PinfoText = styled.p`
-
+   word-wrap:normal;
+; 
+    font-family: Catamaran;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18.2083px;
+    line-height: 30px;
+    color: #000000;
 `;
 const AcoesCard = styled.section`
+display:inline-flex;
+justify-content: space-between;
+align-items:center;
+max-width:190px;
 
 `;
 const ImgAcao = styled.img`
-
+padding:0px 10px;
 `;

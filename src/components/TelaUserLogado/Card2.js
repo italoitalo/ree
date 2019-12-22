@@ -15,35 +15,44 @@ import UserFoto from './../../img/itensCard/UserFoto.png'
 export default function Card() {
   return (
     <>
-      
-      <CardSection>
-          <DivUserProd>
-            <User>
-              <ImgUser src={UserFoto} alt=""/>
-              <H1User>user.1</H1User>
-            </User>
-            <ImgProd src={prodCelu} alt=""/>
-          </DivUserProd>
-          <InfoCard>
-            <InfoText>
-              <PinfoText>Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. Lorem Ipsum é o texto fictício   </PinfoText>
-            </InfoText>
-            <AcoesCard>
-              <ImgAcao src={chat} alt=""/>
-              <ImgAcao src={coment} alt=""/>
-              <ImgAcao src={like} alt=""/>
-              <ImgAcao src={share} alt=""/>
-            </AcoesCard>
-          </InfoCard>
-
-      </CardSection>
+        {/* <MidiaSection> */}
+            <SectionGrid>
+                <CardSection>
+                    <DivUserProd>
+                        <User>
+                        <ImgUser src={UserFoto} alt=""/>
+                        <H1User>user.2</H1User>
+                        </User>
+                        <ImgProd src={prodCelu} alt=""/>
+                    </DivUserProd>
+                    <InfoCard>
+                        <InfoText>
+                        <PinfoText>Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. Lorem Ipsum é o texto fictício padrão do setor desde os anos 1500, quando uma impressora desconhecida pegou uma galera do tipo e a mexeu para fazer um livro de amostras do tipo. Ele sobreviveu não apenas cinco séculos, mas também o </PinfoText>
+                        </InfoText>
+                        <AcoesCard>
+                        <ImgAcao src={chat} alt=""/>
+                        <ImgAcao src={coment} alt=""/>
+                        <ImgAcao src={like} alt=""/>
+                        <ImgAcao src={share} alt=""/>
+                        </AcoesCard>
+                    </InfoCard>
+                </CardSection>
+            </SectionGrid>
+        {/* </MidiaSection> */}
+    
 
     </>
   );
 }
+const SectionGrid = styled.section`
+      display:grid;
+      grid-row: span 2;
 
+
+`;
 const CardSection = styled.section`
-   display:flex;
+ 
+    display:flex;
     max-width:534px;
     min-height:260px;
     padding:10px;
@@ -53,7 +62,8 @@ const CardSection = styled.section`
     border-radius: 20px;
     margin : 0 40px;
     margin-top:50px;
-    
+
+   
     
      
  
@@ -109,7 +119,7 @@ const InfoText = styled.div`
 const PinfoText = styled.p`
     display:flex;
     flex-wrap:wrap;
-    
+    word-wrap: break-word;
     font-family: Catamaran;
     font-style: normal;
     font-weight: 500;
@@ -125,5 +135,14 @@ max-width:190px;
 
 `;
 const ImgAcao = styled.img`
-
+padding:0px 10px;
 `;
+// const MidiaSection = styled.section`
+
+// @media (max-width:500px ${CardSection})  {
+// background:red;
+
+// }
+
+// `;
+    

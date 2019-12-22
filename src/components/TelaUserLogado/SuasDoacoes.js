@@ -1,26 +1,28 @@
 // !    ARQUIVO criado para confeccionar a pagina de produtos disponiveis para os usuários logados
 
-import styled from 'styled-components'
+
 
 import React from 'react';
 import Publicidade from './Publicidade';
 import AbasNav from './AbasNavegacão';
+import SecaoDeProdutosDoacoes from './SecaoDeProdutosDoacoes';
+import Styled from 'styled-components';
 
 
-export default function SuasDoacoes() {
+export default function DoacoesPublicas() {
     return ( 
       <>
       <Container>
           <AbasNav />
-          <Publicidade />
-          <h1>Suas Doações</h1>
+           <Publicidade /> 
+          <SecaoDeProdutosDoacoes /> 
         </Container>    
       </>
     );
 }
-const Container=styled.section`
-    margin: 0 auto;
-    max-width:1366px; 
-    
+const Container=Styled.section`
+display:flex;
+flex-wrap:wrap;
+flex-direction:column;
+ 
 `;
-

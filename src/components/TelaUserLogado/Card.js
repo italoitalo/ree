@@ -26,7 +26,7 @@ export default function Card() {
           </DivUserProd>
           <InfoCard>
             <InfoText>
-              <PinfoText>Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. Lorem Ipsum é o texto fictício   </PinfoText>
+              <PinfoText>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam turpis libero, tincidunt in euismod a, finibus a metus.</PinfoText>
             </InfoText>
             <AcoesCard>
               <ImgAcao src={chat} alt=""/>

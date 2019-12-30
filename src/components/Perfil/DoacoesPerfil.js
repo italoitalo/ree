@@ -9,8 +9,7 @@ export default function Doacoes(){
         <>
             <Main>  
                 <NavPerfil/>
-               
-               
+               <h1>pagina doações</h1>
             </Main>
         </>
     )

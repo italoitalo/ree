@@ -11,6 +11,7 @@ export default function Cabecalho(){
                 <Navigation to="/"><Logo src={ree} height='40' /></Navigation>
             
                 <Ul>     
+                    <Navigation to ="/doe"><Button>Faça uma Doação!</Button></Navigation>
                     <Navigation to="/"><Li>Home</Li></Navigation>
                     <Navigation to="/cadastro"><Li>Cadastro</Li></Navigation>
                     <Navigation to="/login"><Li>Login</Li></Navigation>
@@ -24,6 +25,24 @@ export default function Cabecalho(){
 const Navigation = styled(Link)`
 text-decoration:none;
 `
+const Button = styled.div`
+    padding:10px;
+    padding-left:30px;
+    padding-right:30px;
+    margin-top:5px;
+    margin-right:20px;
+    color: black;
+    background-color:#51B981;
+    border-radius:20px;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 14px;
+
+    &:hover{
+        color: white;
+    }
+`
+
+
 
 const Div= styled.div`
     display:flex;

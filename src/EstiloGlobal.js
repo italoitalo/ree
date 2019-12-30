@@ -49,7 +49,7 @@ button{
     box-shadow:0;
     border:0;
     border-radius:50px;
-    min-height:2.0625rem
+    min-height:2rem
     
 }
 

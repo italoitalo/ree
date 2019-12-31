@@ -14,29 +14,75 @@ export default function ConfigPerfil(){
             <Main>
                 <NavPerfil/> 
                 <Container>
-                    <SectionInt>
-                    <SectionFlex><Title>Configurações  Pessoais</Title></SectionFlex>
-                        <SectionFlex>
-                        <DivRetangulo> <H1T>Alterar foto </H1T> </DivRetangulo></SectionFlex>
-                        <SectionFlex>
-                        <ImgConf src={Foto} width='175'></ImgConf>
-                        <ImgConf src={Seta} width='64'   height='50'></ImgConf>
-                        <ImgConf src={Img} width='183'></ImgConf>
-                        </SectionFlex>
-                        <SectionCol>
-                            <Section2Flex><PT>Alterar Nome:</PT> <InputRee type='text'></InputRee></Section2Flex>
-                            <Section2Flex><PT>Data de nascimento:</PT> <InputRee type='text'></InputRee></Section2Flex>
-                            <Section2Flex><PT>Alterar numero:</PT> <InputRee type='text'></InputRee></Section2Flex>
-                        </SectionCol>
-                    </SectionInt>
+                    <SectionColumn>
+                        <SectionInt>
+                        <SectionFlex><Title>Configurações  Pessoais</Title></SectionFlex>
+                            <SectionFlex>
+                            <DivRetangulo> <H1T>Alterar foto </H1T> </DivRetangulo></SectionFlex>
+                            <SectionFlex>
+                            <ImgConf src={Foto} width='175'></ImgConf>
+                            <ImgConf src={Seta} width='64'   height='50'></ImgConf>
+                            <ImgConf src={Img} width='183'></ImgConf>
+                            </SectionFlex>
+                            <SectionCol>
+                                <Section2Flex><PT>Alterar Nome:</PT> <InputRee type='text'></InputRee></Section2Flex>
+                                <Section2Flex><PT>Data de nascimento:</PT> <InputRee type='text'></InputRee></Section2Flex>
+                                <Section2Flex><PT>Alterar numero:</PT> <InputRee type='text'></InputRee></Section2Flex>
+                            </SectionCol>
+                        </SectionInt>
 
+                        <SectionInt>
+                            <SectionFlex><Title>Configurações de conta</Title></SectionFlex>
+                            <SectionCol>
+                                <Section2Flex><PT>Alterar Nome:</PT> <InputRee type='text'></InputRee></Section2Flex>
+                                <Section2Flex><PT>Data de nascimento:</PT> <InputRee type='text'></InputRee></Section2Flex>
+                                <Section2Flex><PT>Alterar numero:</PT> <InputRee type='text'></InputRee></Section2Flex>
+                            </SectionCol>
+                        </SectionInt>
 
+                        <SectionInt>
+                            <SectionFlex><Title>Configurações de segurança</Title></SectionFlex>
+                            <SectionCol>
+                                <Section2FlexSeg><PT>Mostrar informações de localização publicamente Mostrar numero de celular públicamente:</PT> <InputReeCheckBox type='checkbox' checked></InputReeCheckBox></Section2FlexSeg>
+                                <Section2FlexSeg><PT>Mostrar numero de celular públicamente:</PT> <InputReeCheckBox type='checkbox'></InputReeCheckBox></Section2FlexSeg>
+
+                            </SectionCol>
+                        </SectionInt>
+
+                    </SectionColumn>
                 </Container>
+
+                
             </Main>
         </>
     )
 }
+const Section2FlexSeg = styled.section`
+padding: 5px;
+margin: 6px;
+border-radius: 25px;
 
+display:flex;
+justify-content: flex-start;`
+
+const InputReeCheckBox = styled.input`
+border-radius: 25px;
+background-color:rgba(0, 0, 0, 0.1);
+
+`
+const SectionColumn = styled.section`
+display:flex;
+flex-direction:column;
+`
+const SectionInt = styled.section`
+    display:flex;
+    margin:15px;
+    width:600px;
+    flex-direction:column;
+    background-color:whitesmoke;
+    padding:30px;
+    border-radius:20px;
+`
 
 const InputRee = styled.input`
 border-radius: 25px;
@@ -99,14 +145,7 @@ const Input = styled.input`
 
 `
 
-const SectionInt = styled.section`
-    display:flex;
-    width:600px;
-    flex-direction:column;
-    background-color:whitesmoke;
-    padding:30px;
-    border-radius:20px;
-`
+
 
 const Form = styled.form`
 display:flex;
@@ -120,7 +159,7 @@ const Title = styled.h1`
 color: #F2C94C;
 font-weight: bold;
 font-size:30px;
-font-size: 3em;
+font-size: 2.5em;
 `
 
 const H1 = styled.h1`

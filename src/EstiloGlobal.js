@@ -1,6 +1,6 @@
-import {createGlobalStyle} from 'styled-components'
+import { createGlobalStyle } from 'styled-components'
 
-export default createGlobalStyle`
+export default createGlobalStyle `
     @import url('https://fonts.googleapis.com/css?family=Catamaran&display=swap');
     @import url('https://fonts.googleapis.com/css?family=Merriweather+Sans&display=swap');
 

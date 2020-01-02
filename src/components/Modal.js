@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import styled from 'styled-components'
+import styled from 'styled-components';
+
+import Telalogin from './TelaLogin'
 
 const Modal = ({ isShowing, hide }) => isShowing ? ReactDOM.createPortal(
   <React.Fragment>
@@ -12,9 +14,9 @@ const Modal = ({ isShowing, hide }) => isShowing ? ReactDOM.createPortal(
             <span aria-hidden="true">&times;</span>
           </ModalCloseButton>
         </ModalHeader>
-        <p>
-          Login.
-        </p>
+        <Main>
+          <Telalogin />
+        </Main>
       </ModalDiv>
     </ModalWrapperDiv>
   </React.Fragment>, document.body
@@ -36,13 +38,15 @@ const ModalOverlayDiv = styled.div`
 const ModalWrapperDiv = styled.div`
   position: fixed;
   top: 0;
-  left: 0;
+  left: 40%; //posição que ficará o modal
   z-index: 1050;
-  width: 100%;
-  height: 100%;
+  max-width: 340px; // largura do da sombra modal
+  
   overflow-x: hidden;
   overflow-y: auto;
   outline: 0;
+
+  
 `;
 
 const ModalDiv = styled.div`
@@ -50,13 +54,19 @@ const ModalDiv = styled.div`
   background: white;
   position: relative;
   margin: 1.75rem auto;
-  border-radius: 3px;
+  border-radius: 10px;
   max-width: 500px;
   padding: 2rem;
+  box-shadow: 0px 0px 45.4459px rgba(0, 0, 0, 0.3);
 `;
 const ModalHeader =styled.div`
     display: flex;
     justify-content: flex-end;
+
+`;
+
+const Main = styled.main`
+
 
 `;
 

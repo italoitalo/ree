@@ -1,32 +1,27 @@
 import React from 'react';
 import styled from 'styled-components';
-import Card from './Cards/Card'
-import Card2 from './Cards/Card2'
+import Card3 from './Cards/Card3'
 
 
 
-export default function SecaoDeProdutosDoacoes() {
+
+
+export default function SecaoDeMeusProdutosMinhasDoacoes() {
     return ( 
       <>
         <Container>
             <Produtos>
               <Grid>  
-                <Card2  />
-                <Card  />
-                <Card  />
-                <Card  />
-                <Card  />
-                <Card  />
-                <Card  />
-                <Card  />
-                <Card2  />
-                <Card  />
-                <Card  />
-                <Card  />
-                <Card  />
-                <Card  />
-                <Card2  />
-                <Card  />
+                <Card3/>
+                <Card3/>
+                <Card3/>
+                <Card3/>
+                <Card3/>
+                <Card3/>
+                <Card3/>
+                <Card3/>
+                <Card3/>
+                
               </Grid>
             </Produtos>
         </Container>    

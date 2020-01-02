@@ -3,8 +3,11 @@ import styled from 'styled-components';
 
 import { Link } from 'react-router-dom';
 import ree from './../../img/ree.svg'
+import useModal from './../useModal'
+import Modal from "./../Modal";
 
 export default function Cabecalho(){
+    const {isShowing, toggle} = useModal();
     return(
         <>
             <Div>
@@ -14,14 +17,16 @@ export default function Cabecalho(){
                     <Navigation to ="/doe"><Button>Faça uma Doação!</Button></Navigation>
                     <Navigation to="/"><Li>Home</Li></Navigation>
                     <Navigation to="/cadastro"><Li>Cadastro</Li></Navigation>
-                    <Navigation to="/login"><Li>Login</Li></Navigation>
+                    <Navigation to="#" ><Li onClick={toggle}>Login</Li></Navigation>
                     <Navigation to="/perfil"><Li>Perfil</Li></Navigation>
                     <Navigation to="/contato"><Li>Contato</Li></Navigation>
+                    <Modal isShowing={isShowing} hide={toggle} /> 
                 </Ul>
             </Div>
         </>
     )
 }
+
 const Navigation = styled(Link)`
 text-decoration:none;
 `

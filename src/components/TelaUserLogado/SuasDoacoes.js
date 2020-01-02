@@ -5,7 +5,7 @@
 import React from 'react';
 import Publicidade from './Publicidade';
 import AbasNav from './AbasNavegacão';
-import SecaoDeProdutosDoacoes from './SecaoDeProdutosDoacoes';
+import SecaoDeMeusProdutosMinhasDoacoes from './SecaoDeMeusProdutosMinhasDoacoes';
 import Styled from 'styled-components';
 
 
@@ -15,8 +15,7 @@ export default function DoacoesPublicas() {
       <Container>
           <AbasNav />
            <Publicidade /> 
-           <h1>suas doações</h1>
-          <SecaoDeProdutosDoacoes /> 
+            <SecaoDeMeusProdutosMinhasDoacoes /> 
         </Container>    
       </>
     );

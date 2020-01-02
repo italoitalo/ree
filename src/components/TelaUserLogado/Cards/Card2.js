@@ -2,12 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 
 
-import chat from './../../img/itensCard/chat.png'
-import coment from './../../img/itensCard/coment.png'
-import prodCelu from './../../img/itensCard/prodCelu.png'
-import share from './../../img/itensCard/share.png'
-import like from './../../img/itensCard/like.png'
-import UserFoto from './../../img/itensCard/UserFoto.png'
+import chat from './../../../img/itensCard/chat.png'
+import coment from './../../../img/itensCard/coment.png'
+import prodCelu from './../../../img/itensCard/prodCelu.png'
+import share from './../../../img/itensCard/share.png'
+import like from './../../../img/itensCard/like.png'
+import UserFoto from './../../../img/itensCard/UserFoto.png'
 
 
 
@@ -15,7 +15,7 @@ import UserFoto from './../../img/itensCard/UserFoto.png'
 export default function Card() {
   return (
     <>
-        {/* <MidiaSection> */}
+      
             <SectionGrid>
                 <CardSection>
                     <DivUserProd>
@@ -38,7 +38,7 @@ export default function Card() {
                     </InfoCard>
                 </CardSection>
             </SectionGrid>
-        {/* </MidiaSection> */}
+      
     
 
     </>

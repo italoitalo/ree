@@ -55,29 +55,10 @@ height:100%;
 
 
 const Grid = styled.section`
-    display: grid;
+  display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-auto-rows: auto;
   
 
 `;
 
-// const ColunaEsquerda = styled.section`
-//   display:inline-flex;
-//   flex-direction:column;
-//   align-items: center;
-//   flex-wrap:wrap;
-// justify-content:center;
-//   max-width:600px;
-//   background:red;
-
-// `;
-// const ColunaDireita = styled.section`
-//   display:inline-flex;
-//   flex-direction:column;
-//   align-items: center;
-//   flex-wrap:wrap;
-// justify-content:center;
-//   max-width:600px;
-//   background:blueviolet;
-// `;

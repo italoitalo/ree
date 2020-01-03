@@ -21,8 +21,8 @@ export default function DoacoesPublicas() {
     );
 }
 const Container=Styled.section`
-display:flex;
-flex-wrap:wrap;
-flex-direction:column;
- 
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+    align-content: space-around;
 `;

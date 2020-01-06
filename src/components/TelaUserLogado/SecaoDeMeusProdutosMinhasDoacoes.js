@@ -53,23 +53,3 @@ const Grid = styled.section`
   
 
 `;
-
-// const ColunaEsquerda = styled.section`
-//   display:inline-flex;
-//   flex-direction:column;
-//   align-items: center;
-//   flex-wrap:wrap;
-// justify-content:center;
-//   max-width:600px;
-//   background:red;
-
-// `;
-// const ColunaDireita = styled.section`
-//   display:inline-flex;
-//   flex-direction:column;
-//   align-items: center;
-//   flex-wrap:wrap;
-// justify-content:center;
-//   max-width:600px;
-//   background:blueviolet;
-// `;

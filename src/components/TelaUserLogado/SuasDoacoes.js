@@ -15,14 +15,16 @@ export default function DoacoesPublicas() {
       <Container>
           <AbasNav />
            <Publicidade /> 
-            <SecaoDeMeusProdutosMinhasDoacoes /> 
+          <SecaoDeMeusProdutosMinhasDoacoes /> 
         </Container>    
       </>
     );
 }
 const Container=Styled.section`
-display:flex;
-flex-wrap:wrap;
-flex-direction:column;
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction:column;
+  align-content: space-around;
+
  
 `;

@@ -12,10 +12,10 @@ export default function Cabecalho(){
             
                 <Ul>     
                     <Navigation to="/"><Li>Home</Li></Navigation>
-                    <Navigation to="/contato"><Li>Contato</Li></Navigation>
                     <Navigation to="/cadastro"><Li>Cadastro</Li></Navigation>
                     <Navigation to="/login"><Li>Login</Li></Navigation>
                     <Navigation to="/perfil"><Li>Perfil</Li></Navigation>
+                    <Navigation to="/contato"><Li>Contato</Li></Navigation>
                 </Ul>
             </Div>
         </>

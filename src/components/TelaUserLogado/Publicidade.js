@@ -17,9 +17,10 @@ export default function Publicidade() {
 const Div=styled.div`
     display:flex;
     justify-content:center;    
-    width:100%;
+    
 `;
 
 const Propaganda=styled.img`
-
+display:block;
+max-width:100%;
 `;

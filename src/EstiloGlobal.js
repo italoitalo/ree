@@ -1,6 +1,6 @@
-import {createGlobalStyle} from 'styled-components'
+import { createGlobalStyle } from 'styled-components'
 
-export default createGlobalStyle`
+export default createGlobalStyle `
     @import url('https://fonts.googleapis.com/css?family=Catamaran&display=swap');
     @import url('https://fonts.googleapis.com/css?family=Merriweather+Sans&display=swap');
 
@@ -49,7 +49,7 @@ button{
     box-shadow:0;
     border:0;
     border-radius:50px;
-    min-height:2.0625rem
+    min-height:2rem
     
 }
 

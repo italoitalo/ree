@@ -1,7 +1,27 @@
-import React from 'react'
+import React from 'react';
+import styled from 'styled-components';
+import DoacoesPublicas from './TelaUserLogado/DoacoesPublicas';
+
+
+
 
 export default function Home(){
     return(
-        <h1>Ree, Pagina Inicial</h1>
+        <>
+            <Container>
+                <DoacoesPublicas />
+               
+            </Container>
+        </>
     )
 }
+
+
+
+const Container = styled.section`
+        display:flex;
+        
+        justify-content:center;
+        align-items:center;
+`;
+

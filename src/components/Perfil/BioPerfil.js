@@ -16,7 +16,7 @@ export default function BioPerfil(){
                 <Main1>
                 <MainPessoal>
                                 <img src={User}></img>
-                                <MainCol><p>Dio Brando</p>
+                                <MainCol><p>João Silva</p>
                                 <img src={Config}></img>
                                 </MainCol>
                     </MainPessoal>
@@ -32,7 +32,7 @@ export default function BioPerfil(){
                                         Nome completo
                                     </PLi>
                                     <PLi2>                                       
-                                        Jonathan Joestar                                        
+                                        João Siva                                        
                                     </PLi2>                                    
                                 </Listra>
                                 <Listra>
@@ -184,9 +184,9 @@ margin: 0 0 15px 0;
 const Listra2 = styled.ul`
 width: 310px;
 height: 30px;
-border-radius: 20px;
 
-background-color:rgba(0, 0, 0, 0.1);
+
+border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 margin: 0 0 10px 0;
 display: flex;
 justify-content: space-between;

@@ -42,7 +42,10 @@ ul{
 
 input{
     box-shadow:0;
-    border:0
+    border:0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius:0;
+    
 }
 
 button{

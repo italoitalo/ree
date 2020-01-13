@@ -1,0 +1,8 @@
+/* informações importantes para deixar nosso projeto 
+ flexivel*/
+
+{
+    display: flex;
+    flex-flow: column wrap;
+    flex: 0 1 40%;
+}

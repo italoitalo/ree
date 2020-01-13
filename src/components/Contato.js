@@ -25,13 +25,16 @@ export default function Contato(){
 }
 const Container = styled.section`
     display:flex;
-    flex-direction:column;
+    flex-flow:column wrap;
+    flex: 0 1 100%;
+    height:auto;
+    
  
 
 `;
 const Content = styled.section`
     display:flex;
-    flex-direction:column;
+    flex-flow:column wrap;
 
 
 `;
@@ -49,11 +52,18 @@ const H1 = styled.h1`
     line-height: 37px;
     text-align: center;
 
-    
+    background: -webkit-linear-gradient(yellow,darkorange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 `;
 const DivMain = styled.section`
      background-image:url(${papeldeParede});
+     flex: 0 1 100%;
+     min-height:75vh;
+     background-repeat: round;
      display:flex;
+     flex-flow: row wrap;
      justify-content:center;
      border-top: 12px solid #51B981;
     
@@ -61,11 +71,11 @@ const DivMain = styled.section`
 
 const DivForm = styled.div`
     display:flex;
-    flex-direction:column;
-    flex: 0 1 auto; 
+    flex-flow: column wrap;
+    flex: 0 1 40%; 
     background: #FFFFFF;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
-    min-width:561px;
+    
 `;
 const H1Form = styled.h1`
     margin-top:30px;
@@ -74,7 +84,7 @@ const H1Form = styled.h1`
     font-family: Catamaran;
     font-style: normal;
     font-weight: bold;
-    font-size: 13.1015px;
+    font-size: 20px;
     line-height: 21px;
     text-align: center;
 
@@ -82,7 +92,7 @@ color: #51B981;
 `;
 const Inputs = styled.div`
     display:flex;
-   flex-direction:column;
+    flex-flow: column wrap;
    
    
    
@@ -90,13 +100,13 @@ const Inputs = styled.div`
 const Input = styled.input`
     display:flex;
     justify-content:stretch;
-    margin:20px;
-
+    margin:40px;
+    flex-flow: row wrap;
 
     font-family: Catamaran;
     font-style: normal;
     font-weight: bold;
-    font-size: 13.1015px;
+    font-size: 16.1015px;
     line-height: 21px;
 
     ::-webkit-input-placeholder{
@@ -110,6 +120,8 @@ const TextareaContat = styled.textarea`
     font-weight: bold;
     color:#51B981;
     margin:20px;
+    font-size: 16.1015px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 
     ::-webkit-input-placeholder{
         color: #BBBBBB;

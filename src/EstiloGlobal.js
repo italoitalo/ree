@@ -43,7 +43,7 @@ ul{
 input{
     box-shadow:0;
     border:0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     border-radius:0;
 
     font-family: Catamaran;
@@ -62,5 +62,17 @@ button{
     min-height:2rem
     
 }
+textarea{
+    box-shadow:0;
+    border:0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius:0;
 
+    font-family: Catamaran;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13.1015px;
+    line-height: 21px;
+    color:  #51B981;
+}
 `;

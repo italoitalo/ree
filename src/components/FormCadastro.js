@@ -102,7 +102,8 @@ const SectionForm = styled.section`
     background-color: #F2F2F2;
     display:flex;
     flex-grow:2;
-    
+    flex-flow: row wrap;
+    flex: 0 1 90%;
     align-items:center;
     justify-content:space-between;
 
@@ -115,7 +116,8 @@ const SectionForm = styled.section`
 const Form = styled.form`
     display:flex;
     margin-left:40px;
-    flex-direction:column;
+    flex-flow: column wrap;
+    flex: 0 1 40%;
     align-items:baseline;
     justify-content:center;
     max-width: 450px;  
@@ -150,8 +152,8 @@ const Pform =styled.p`
 `;
 
 const Input = styled.input`
-    background-color:#E0E0E0;
-    border-radius: 0 50px 50px 0;
+    background-color:#F2F2F2;
+   /*  border-radius: 0 50px 50px 0; */
     display:block;
     min-width:18rem;
     display:flex;
@@ -160,6 +162,7 @@ const Input = styled.input`
     color:black;
     font-weight:bold;
     padding-left:10px;
+    color:#51B981;
     
     
 `;

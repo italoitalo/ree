@@ -1,10 +1,18 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
+import {Helmet} from "react-helmet";
+
+import scroll from "./scroll"
 
 export default function Card(){
     return(
         <>
+        <Helmet>
+            <script src={'scroll'}/>
+        </Helmet>
+        
             <CardSection>
+            <button onclick="scrollWin()">Click me to scroll vertically!</button>
                 <H2>Oque quer doar?</H2>
                 <Div>
                     <Ul>
@@ -25,6 +33,7 @@ export default function Card(){
                         </Li>
                     </Ul>
                 </Div>
+                
             </CardSection>
         </>
         )
@@ -39,9 +48,11 @@ const Ul = styled.ul`
     display:flex;
     margin:10px;
 `
+
 const Li = styled.li`
     margin:20px;
-    `
+
+`
 const Button = styled.button`
 border-radius:20px;
 background-color:white;

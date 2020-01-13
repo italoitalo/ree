@@ -1,6 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import Card from './Card'
+import Card2 from './Card2'
+import Card3 from './Card3'
+
 export default function Doacoes(){
     return(
         <>
@@ -9,8 +12,8 @@ export default function Doacoes(){
                         <H1>Para começar,<br/>nos diga algumas coisas</H1>
                 </Banner>
                 <Card/>
-                <Card/> 
-                <Card/> 
+                <Card2/> 
+                <Card3/> 
             </Container>
         </>
     )

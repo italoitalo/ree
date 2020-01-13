@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import Scroll from './ScrollButton'
 
 export default function Card(){
     return(
@@ -15,6 +16,7 @@ export default function Card(){
                 </Div>
                 <Slide type="range" min="1" max="5"/>
                 
+                <Scroll/>
             </CardSection>
         </>
         )
@@ -81,6 +83,5 @@ const CardSection = styled.section`
     border-radius: 20px;
 
     margin:50px;
-    margin-top:-90px;
     margin-bottom: 300px;
     `

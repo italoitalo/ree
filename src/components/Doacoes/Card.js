@@ -1,19 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
-import {Helmet} from "react-helmet";
-
-import scroll from "./scroll"
+import Scroll from './ScrollButton'
 
 export default function Card(){
     return(
         <>
-        <Helmet>
-            <script src={'scroll'}/>
-        </Helmet>
-        
             <CardSection>
-            <button onclick="scrollWin()">Click me to scroll vertically!</button>
-                <H2>Oque quer doar?</H2>
+            
+            
+            <H2>Oque quer doar?</H2>
                 <Div>
                     <Ul>
                         <Li>
@@ -33,7 +28,7 @@ export default function Card(){
                         </Li>
                     </Ul>
                 </Div>
-                
+                <Scroll/>
             </CardSection>
         </>
         )

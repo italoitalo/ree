@@ -44,7 +44,7 @@ const Button = styled.div`
     font-size: 14px;
 
     &:hover{
-        background-color:green;
+        background-color: #289C72;
     }
 `
 

@@ -5,22 +5,33 @@ import Scroll from './ScrollButton'
 export default function Card(){
     return(
         <>
+            <Div2>
             <CardSection>
                 <H2>Qual o estado do seu item?</H2>
-                <Div>
+                <Rank>
                 <H3>Péssimo</H3> 
                 <H3>Ruim</H3> 
                 <H3>Bom</H3> 
                 <H3>Otimo</H3> 
                 <H3>Perfeito</H3>
-                </Div>
+                </Rank>
                 <Slide type="range" min="1" max="5"/>
-                
+                <Div2>
                 <Scroll/>
+                </Div2>
             </CardSection>
+            </Div2>
         </>
         )
     }
+
+
+const Div2 = styled.div `
+    display: flex;
+    justify-content: center;
+    margin-top:40px;
+`
+
 const Slide = styled.input`
     -webkit-appearance: none;
     width: 80%;
@@ -49,7 +60,7 @@ const Slide = styled.input`
     
   }
 `
-const Div = styled.div`
+const Rank = styled.div`
 display: flex;
 justify-content: center;
 margin-top:30px;
@@ -65,13 +76,12 @@ const H3 = styled.h3`
 `
 
 const H2 = styled.h2`
-
-font-size: 50px;
-background: -webkit-linear-gradient(yellow,darkorange);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-text-align:center;
-font-weight:900;
+    font-size: 50px;
+    background: -webkit-linear-gradient(yellow,darkorange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align:center;
+    font-weight:900;
 `
 
 const CardSection = styled.section`

@@ -10,11 +10,11 @@ import notebook from './../../img/PaginaDoacoes/open-laptop-computer.svg'
 export default function Card(){
     return(
         <>
+        <Div>
             <CardSection>
             
-            
             <H2>Oque quer doar?</H2>
-                <Div>
+               
                     <Ul>
                         <Li>
                             <Button><ImgIcon src={phone}/> <h1>Celulares</h1></Button>
@@ -32,43 +32,46 @@ export default function Card(){
                             <Button><ImgIcon src={keyboard}/><h1>Celulares</h1></Button>
                         </Li>
                     </Ul>
-                </Div>
-                <Scroll/>
+                    <Div>
+                        <Scroll/>
+                    </Div>
             </CardSection>
+        </Div>
         </>
         )
     }
-const ImgIcon = styled.img`
-    height:60px;
-`
 
 const Div = styled.div`
-display:flex;
-justify-content:center;
+    display: flex;
+    justify-content: center;
+`
+
+const ImgIcon = styled.img`
+    height:60px;
 `
 
 const Ul = styled.ul`
     display:flex;
     margin:10px;
+    justify-content:center;
 `
 
 const Li = styled.li`
     margin:20px;
-
 `
 const Button = styled.button`
-border-radius:20px;
-background-color:white;
-min-width:150px;
-padding:30px;`
+    border-radius:20px;
+    background-color:white;
+    min-width:150px;
+    padding:30px;`
 
-const H2 = styled.h2`
-font-size: 50px;
-background: -webkit-linear-gradient(yellow,darkorange);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-text-align:center;
-font-weight:900;
+    const H2 = styled.h2`
+    font-size: 50px;
+    background: -webkit-linear-gradient(yellow,darkorange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align:center;
+    font-weight:900;
 `
 
 const CardSection = styled.section`
@@ -81,5 +84,5 @@ const CardSection = styled.section`
 
     margin:50px;
     margin-top:-90px;
-    margin-bottom: 300px;
+    margin-bottom: 220px;
     `

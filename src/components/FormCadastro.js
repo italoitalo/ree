@@ -62,27 +62,22 @@ export default function form() {
         <ImgF src={ImgFundo} weight="" height="" alt=""/>
         </Containner>
    )
-
 }
 
 const Containner = styled.section`
     background: #51B981;
     display:flex;
-    
 `;
 
 const ImgF = styled.img`
-max-height:628px;
-@media(min-width: 768px) {
-    max-height:900px;
-    max-width:700px;
-        
-  }
+    height:800px;
+    @media(min-width: 360) {
+        max-height:900px;
+        }
 `;
 
 const View = styled.section`
     background: #51B981;
-
     display:flex;
     align-items:center;
     justify-content:center;
@@ -92,11 +87,8 @@ const View = styled.section`
     
     @media(min-width: 768px) {
         min-height: 85vh;
-
   }
-   
 `;
-
 
 const SectionForm = styled.section`
     background-color: #F2F2F2;
@@ -127,9 +119,8 @@ const Form = styled.form`
     font-weight: bold;
     font-size: 17px;
     line-height: 20px;
-    color: #828282;
+    color: #828282;  
 `;
-
 
 const Img = styled.img`
 `;
@@ -153,18 +144,25 @@ const Pform =styled.p`
 
 const Input = styled.input`
     background-color:#F2F2F2;
-   /*  border-radius: 0 50px 50px 0; */
     display:block;
-    min-width:18rem;
+    min-width:15rem;
     display:flex;
     flex-direction:column;
 
-    color:black;
     font-weight:bold;
     padding-left:10px;
     color:#51B981;
     
-    
+    &:hover{
+        background:white;
+        transition:0.3s;
+    }
+    &:focus{
+        background:white;
+        transition:0.3s;
+        border-top-right-radius:30px;
+        border-bottom-right-radius:30px;
+    }
 `;
 
 const Button = styled.button`
@@ -178,8 +176,7 @@ const Button = styled.button`
     
     font-weight:bold;
     font-size:17px;
-    color: black;
-
+    color: white;
 
     &:hover {
     transition-duration:1s;

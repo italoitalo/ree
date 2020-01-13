@@ -25,6 +25,6 @@ const Button = styled.button`
     font-weight:bolder;
 
     &:hover{
-        background-color: green;
+        background-color: #289C72;
     }
 `

@@ -5,31 +5,75 @@ import Scroll from './ScrollButton'
 export default function Card(){
     return(
         <>
+        <Div>
             <CardSection>
                 <H2>De uma descrição pra sua doação</H2>
-                <Div>
+               
                 <Titulo type='text-area' placeholder ='Titulo da Doação'/>
-                <Textarea type='text-area' placeholder='Descreva sua doação'/>
-                </Div> 
+                <Textarea name="Suas dúvidas" id="textarea" cols="30" rows="10" placeholder="Suas dúvidas"></Textarea>            
            </CardSection>
+        </Div>
         </>
         )
     }
+    
 const Div = styled.div`
-justify-content:center;
-
+    display: flex;
+    justify-content: center;
 `
 
 const Titulo = styled.input`
-width:70%;
-padding:5px;
-margin: 5px;
+    display:flex;
+    margin:15px 40px 15px 40px;
+    padding:10px;
+    background: whitesmoke;
+
+
+    font-family: Catamaran;
+    font-weight: bold;
+    font-size: 16px;
+
+    &:hover{
+        background:white;
+        transition:0.3s;
+    }
+    &:focus{
+        background:white;
+        transition:0.3s;
+        border-radius:30px;
+    }
+
+::-webkit-input-placeholder{
+    color: #BBBBBB;
+    font-weight: bold;
+}
 `
 const Textarea = styled.input`
-height:200px;
-width:70%;
-padding:5px;
-margin: 5px;
+    min-height:150px;
+    margin:10px;
+    padding: 10px;
+    background: whitesmoke;
+
+    font-weight: bold;
+    color:#51B981;
+    margin:15px 40px 15px 40px;
+    font-size: 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+
+    &:hover{
+        background:white;
+        transition:0.3s;
+    }
+    &:focus{
+        background:white;
+        transition:0.3s;
+        border-radius:30px;
+    }
+
+    ::-webkit-input-placeholder{
+        color: #BBBBBB;
+        font-weight: bold;
+    }
 `
 
 const H2 = styled.h2`

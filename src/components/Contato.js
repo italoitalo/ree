@@ -23,27 +23,25 @@ export default function Contato(){
         </Container>
     )
 }
+
+
 const Container = styled.section`
     display:flex;
     flex-flow:column wrap;
     flex: 0 1 100%;
     height:auto;
-    
- 
+`
 
-`;
 const Content = styled.section`
     display:flex;
     flex-flow:column wrap;
-
-
-`;
+    background: whitesmoke;
+`
 
 const H1 = styled.h1`
     display:flex;
     align-self:center;
     margin:30px;
-
 
     font-family: Catamaran;
     font-style: normal;
@@ -55,8 +53,8 @@ const H1 = styled.h1`
     background: -webkit-linear-gradient(yellow,darkorange);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+`
 
-`;
 const DivMain = styled.section`
      background-image:url(${papeldeParede});
      flex: 0 1 100%;
@@ -65,18 +63,17 @@ const DivMain = styled.section`
      display:flex;
      flex-flow: row wrap;
      justify-content:center;
-     border-top: 12px solid #51B981;
-    
+     border-top: 12px solid #51B981;   
 `
 
 const DivForm = styled.div`
     display:flex;
     flex-flow: column wrap;
     flex: 0 1 40%; 
-    background: #FFFFFF;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
-    
-`;
+    background: whitesmoke;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);   
+`
+
 const H1Form = styled.h1`
     margin-top:30px;
     align-self:center;
@@ -85,46 +82,68 @@ const H1Form = styled.h1`
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
-    line-height: 21px;
     text-align: center;
 
-color: #51B981;
-`;
+    color: #51B981;
+`
+
 const Inputs = styled.div`
     display:flex;
     flex-flow: column wrap;
-   
-   
-   
-`;
+`
+
 const Input = styled.input`
     display:flex;
     justify-content:stretch;
-    margin:40px;
+    margin:15px 40px 15px 40px;
+    padding:10px;
     flex-flow: row wrap;
-
+    
+    background: whitesmoke;
     font-family: Catamaran;
     font-style: normal;
     font-weight: bold;
-    font-size: 16.1015px;
+    font-size: 16px;
     line-height: 21px;
+
+    &:hover{
+        background:white;
+        transition:0.3s;
+    }
+    &:focus{
+        background:white;
+        transition:0.3s;
+        border-radius:30px;
+    }
 
     ::-webkit-input-placeholder{
         color: #BBBBBB;
         font-weight: bold;
     }
-`;
+`
+
 const TextareaContat = styled.textarea`
     margin:10px;
     border:none;
     font-weight: bold;
     color:#51B981;
-    margin:20px;
-    font-size: 16.1015px;
+    background:whitesmoke;
+    margin:15px 40px 15px 40px;
+    padding: 10px;
+    font-size: 16px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 
+    &:hover{
+        background:white;
+        transition:0.3s;
+    }
+    &:focus{
+        background:white;
+        transition:0.3s;
+        border-radius:30px;
+    }
     ::-webkit-input-placeholder{
         color: #BBBBBB;
         font-weight: bold;
     }
-`;
+`

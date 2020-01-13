@@ -24,7 +24,7 @@ const Modal = ({ isShowing, hide }) => isShowing ? ReactDOM.createPortal(
 
 export default Modal;
 
-const ModalOverlayDiv = styled.div`
+const ModalOverlayDiv = styled.div` /* fundo abaixo do modal */
   position: fixed;
     top: 0;
     left: 0;
@@ -57,7 +57,7 @@ const ModalDiv = styled.div`
   border-radius: 10px;
   max-width: 500px;
   padding: 2rem;
-  box-shadow: 0px 0px 45.4459px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 0px 0px 45.4459px rgba(0, 0, 0, 0.3); */
 `;
 const ModalHeader =styled.div`
     display: flex;
@@ -78,4 +78,5 @@ const  ModalCloseButton = styled.button`
   opacity: .3;
   cursor: pointer;
   border: none;
+  background:white;
 `;

@@ -38,10 +38,6 @@ const Container = styled.section`
     flex-direction: column;
     align-items: center;
     margin:0px 30px 30px 30px;
-   
-    
-  
-
 
 `;
 
@@ -78,16 +74,16 @@ const ImgInput = styled.img`
 `;
 
 const InputLogin = styled.input`
-    background: #E0E0E0;
+ /*    background: #E0E0E0; */
     height: 30px;
-    border-radius: 0 50px 50px 0;
+ /*    border-radius: 0 50px 50px 0; */
     display:block;
     min-width: 13.9375rem;
     
-    
+    font-family:'Catamaran', sans-serif;
     font-style: normal;
-    font-weight: normal;
-    font-size: 13.5176px;
+    font-weight: bold;
+    font-size: 15.5176px;
     line-height: 16px;
     
     
@@ -101,7 +97,7 @@ const ButtonLogin = styled.button`
     background: linear-gradient(90deg, #F2C94C 3.26%, #FFA31A 100.19%);
     cursor: pointer;
 
-    font-family: Roboto;
+    font-family:'Catamaran', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 13.5176px;
@@ -115,7 +111,7 @@ const ButtonCadastro = styled.button`
     background: #8E8E8E;    
     cursor: pointer;
 
-    font-family: Roboto;
+    font-family:'Catamaran', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 13.5176px;
@@ -127,7 +123,7 @@ color: #FFFFFF;
     
 `;
 const Paragrafo = styled.p`
-    font-family: Roboto;
+    font-family:'Catamaran', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;

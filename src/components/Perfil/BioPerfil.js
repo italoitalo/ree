@@ -13,14 +13,18 @@ export default function BioPerfil(){
         <>  
             <Main>
                 <NavPerfil/> 
-                    <Main2>
-                            <MainCol>
-                            <MainPessoal>
+                <Main1>
+                <MainPessoal>
                                 <img src={User}></img>
-                                <MainCol><p>Dio Brando</p>
+                                <MainCol><p>João Silva</p>
                                 <img src={Config}></img>
                                 </MainCol>
-                            </MainPessoal>
+                    </MainPessoal>
+                    <Main2>
+                    
+                    <MainCol>
+                            
+                            
                             <Card>
                                 <H1>Informações Pessoais</H1>
                                 <Listra>
@@ -28,7 +32,7 @@ export default function BioPerfil(){
                                         Nome completo
                                     </PLi>
                                     <PLi2>                                       
-                                        Jonathan Joestar                                        
+                                        João Siva                                        
                                     </PLi2>                                    
                                 </Listra>
                                 <Listra>
@@ -156,11 +160,17 @@ export default function BioPerfil(){
                             <img src={Config}></img>
                         </CardVertical>
                     </Main2>
+                    </Main1>
             </Main>
         </>
     )
 }
 
+const Main1 = styled.section`
+    display:flex;
+    flex-direction:column;
+    margin: 20px;
+`;
 
 const H2 = styled.h2`
 font-family: Catamaran;
@@ -174,9 +184,9 @@ margin: 0 0 15px 0;
 const Listra2 = styled.ul`
 width: 310px;
 height: 30px;
-border-radius: 20px;
 
-background-color:rgba(0, 0, 0, 0.1);
+
+border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 margin: 0 0 10px 0;
 display: flex;
 justify-content: space-between;
@@ -186,8 +196,8 @@ justify-content: space-between;
 const CardVertical = styled.div`
 width: 330px;
 height: 720px;
-
-background-color:rgba(0, 0, 0, 0.1);
+box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+background-color:#FFFFFF;
 margin: 0 0 15px 15px;
 border-radius: 17px;
 display:flex;
@@ -197,7 +207,8 @@ align-items: center;
 const CardMenor = styled.div`
 width: 450px;
 height: 200px;
-background-color:rgba(0, 0, 0, 0.1);
+background-color:#FFFFFF;
+box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
 margin: 0 0 15px 0;
 border-radius: 17px;
 
@@ -237,7 +248,8 @@ justify-content: space-between;
 const Card = styled.div`
 width: 450px;
 height: 330px;
-background-color:rgba(0, 0, 0, 0.1);
+background-color:#FFFFFF;
+box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
 border-radius: 17px;
 margin: 0 0 15px 0;
 /* flex */
@@ -274,6 +286,7 @@ margin: 10px;
 
 const Main = styled.section`
 display:flex;
+background-color:  #F8F9FA;
 
 
 `

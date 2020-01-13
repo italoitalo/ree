@@ -1,5 +1,6 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
+import Scroll from './ScrollButton'
 
 import phone from './../../img/PaginaDoacoes/mobile-phone.svg'
 import keyboard from './../../img/PaginaDoacoes/keyboard.svg'
@@ -10,7 +11,9 @@ export default function Card(){
     return(
         <>
             <CardSection>
-                <H2>Oque quer doar?</H2>
+            
+            
+            <H2>Oque quer doar?</H2>
                 <Div>
                     <Ul>
                         <Li>
@@ -30,6 +33,7 @@ export default function Card(){
                         </Li>
                     </Ul>
                 </Div>
+                <Scroll/>
             </CardSection>
         </>
         )
@@ -47,9 +51,11 @@ const Ul = styled.ul`
     display:flex;
     margin:10px;
 `
+
 const Li = styled.li`
     margin:20px;
-    `
+
+`
 const Button = styled.button`
 border-radius:20px;
 background-color:white;

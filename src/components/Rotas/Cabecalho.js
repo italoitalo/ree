@@ -16,10 +16,10 @@ export default function Cabecalho(){
                 <Ul>     
                     <Navigation to ="/doe"><Button>Faça uma Doação!</Button></Navigation>
                     <Navigation to="/"><Li>Home</Li></Navigation>
+                    <Navigation to="/contato"><Li>Contato</Li></Navigation>
                     <Navigation to="/cadastro"><Li>Cadastro</Li></Navigation>
                     <Navigation to="#" ><Li onClick={toggle}>Login</Li></Navigation>
                     <Navigation to="/perfil"><Li>Perfil</Li></Navigation>
-                    <Navigation to="/contato"><Li>Contato</Li></Navigation>
                     <Modal isShowing={isShowing} hide={toggle} /> 
                 </Ul>
             </Div>
@@ -36,14 +36,15 @@ const Button = styled.div`
     padding-right:30px;
     margin-top:5px;
     margin-right:20px;
-    color: black;
+    color: white;
+    font-weight:normal;
     background-color:#51B981;
     border-radius:20px;
     font-family: 'Merriweather Sans', sans-serif;
     font-size: 14px;
 
     &:hover{
-        color: white;
+        background-color:green;
     }
 `
 

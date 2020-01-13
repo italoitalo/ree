@@ -1,6 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import phone from './../../img/PaginaDoacoes/mobile-phone.svg'
+import keyboard from './../../img/PaginaDoacoes/keyboard.svg'
+import headphone from './../../img/PaginaDoacoes/music-headphones.svg'
+import plug from './../../img/PaginaDoacoes/rounded-plug.svg'
+import notebook from './../../img/PaginaDoacoes/open-laptop-computer.svg'
 export default function Card(){
     return(
         <>
@@ -9,19 +14,19 @@ export default function Card(){
                 <Div>
                     <Ul>
                         <Li>
-                            <Button>teste</Button>
+                            <Button><ImgIcon src={phone}/> <h1>Celulares</h1></Button>
                         </Li>
                         <Li>
-                            <Button>teste</Button>
+                            <Button><ImgIcon src={notebook}/><h1>Notebooks</h1></Button>
                         </Li>
                         <Li>
-                            <Button>teste</Button>
+                            <Button><ImgIcon src={headphone}/><h1>Fones</h1></Button>
                         </Li>
                         <Li>
-                            <Button>teste</Button>
+                            <Button><ImgIcon src={plug}/><h1>Cabos</h1></Button>
                         </Li>
                         <Li>
-                            <Button>teste</Button>
+                            <Button><ImgIcon src={keyboard}/><h1>Celulares</h1></Button>
                         </Li>
                     </Ul>
                 </Div>
@@ -29,6 +34,9 @@ export default function Card(){
         </>
         )
     }
+const ImgIcon = styled.img`
+    height:60px;
+`
 
 const Div = styled.div`
 display:flex;
@@ -45,7 +53,8 @@ const Li = styled.li`
 const Button = styled.button`
 border-radius:20px;
 background-color:white;
-padding:50px;`
+min-width:150px;
+padding:30px;`
 
 const H2 = styled.h2`
 font-size: 50px;

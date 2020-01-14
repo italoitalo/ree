@@ -122,13 +122,13 @@ const Form = styled.form`
     color: #828282;  
 `;
 
-const Img = styled.img`
-`;
+    const Img = styled.img`
+    `;
 
-const DivInput = styled.div`
-display:flex;
-margin-top:20px;
-margin-left:42px;
+    const DivInput = styled.div`
+    display:flex;
+    margin-top:20px;
+    margin-left:42px;
 
 `;
 
@@ -156,10 +156,13 @@ const Input = styled.input`
     &:hover{
         background:white;
         transition:0.3s;
+        
+        border-top-right-radius:5px;
+        border-bottom-right-radius:5px;
     }
     &:focus{
         background:white;
-        transition:0.3s;
+        transition:0.5s;
         border-top-right-radius:30px;
         border-bottom-right-radius:30px;
     }

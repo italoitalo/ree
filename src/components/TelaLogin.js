@@ -6,7 +6,8 @@ import Userfoto from './../img/TelaLogin/Userfoto.png'
 import UserPass from './../img/TelaLogin/UserPass.png'
 
 export default function TelaLogin() {
-    return ( <Container>
+    return ( 
+    <Container>
         <Figure>
             <ImgUSer src={UserPerfil}/>
         </Figure>
@@ -74,20 +75,32 @@ const ImgInput = styled.img`
 `;
 
 const InputLogin = styled.input`
- /*    background: #E0E0E0; */
     height: 30px;
- /*    border-radius: 0 50px 50px 0; */
     display:block;
-    min-width: 13.9375rem;
+    min-width: 13rem;
     
     font-family:'Catamaran', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 15.5176px;
+    font-size: 16px;
     line-height: 16px;
     
-    
+    background:whitesmoke;
     color: #828282;
+
+    &:hover{
+        background:white;
+        transition:0.3s;
+        
+        border-top-right-radius:5px;
+        border-bottom-right-radius:5px;
+    }
+    &:focus{
+        background:white;
+        transition:0.5s;
+        border-top-right-radius:30px;
+        border-bottom-right-radius:30px;
+    }
     
 `;
 const ButtonLogin = styled.button`
@@ -100,26 +113,24 @@ const ButtonLogin = styled.button`
     font-family:'Catamaran', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 13.5176px;
+    font-size: 13px;
     line-height: 16px;
 
     color: #FFFFFF;
 `;
 const ButtonCadastro = styled.button`
     min-width: 200px;
-    min-height: 27px;
+    min-height: 25px;
     background: #8E8E8E;    
     cursor: pointer;
 
     font-family:'Catamaran', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 13.5176px;
+    font-size: 13px;
     line-height: 16px;
 
-
-
-color: #FFFFFF;
+    color: #FFFFFF;
     
 `;
 const Paragrafo = styled.p`

@@ -25,55 +25,73 @@ export default function ConfigPerfil(){
                             <ImgConf src={Img} width='183'></ImgConf>
                             </SectionFlex>
                             <SectionCol>
-                                <Section2Flex><PT>Alterar Nome:</PT> <InputRee type='text'></InputRee></Section2Flex>
-                                <Section2Flex><PT>Data de nascimento:</PT> <InputRee type='text'></InputRee></Section2Flex>
-                                <Section2Flex><PT>Alterar numero:</PT> <InputRee type='text'></InputRee></Section2Flex>
+                                <Main>
+                                <PT>Alterar Nome:</PT>
+                                <InputRee type='text'></InputRee>
+                                </Main>
+                                <Main>
+                                <PT>Data de nascimento:</PT> 
+                                <InputRee type='text'></InputRee>
+                                </Main>
+                                <Main>
+                                <PT>Alterar numero:</PT> 
+                                <InputRee type='text'></InputRee>
+                                </Main>
+                           
                             </SectionCol>
                         </SectionInt>
 
                         <SectionInt>
                             <SectionFlex><Title>Configurações de conta</Title></SectionFlex>
                             <SectionCol>
-                                <Section2Flex><PT>Alterar Nome:</PT> <InputRee type='text'></InputRee></Section2Flex>
-                                <Section2Flex><PT>Data de nascimento:</PT> <InputRee type='text'></InputRee></Section2Flex>
-                                <Section2Flex><PT>Alterar numero:</PT> <InputRee type='text'></InputRee></Section2Flex>
+                                <Main>
+                                <PT>Alterar Nome:</PT> 
+                                <InputRee type='text'></InputRee>
+                                </Main>
+                                <Main>
+                                <PT>Data de nascimento:</PT>
+                                <InputRee type='text'></InputRee>
+                                </Main>
+                                <Main>
+                                <PT>Alterar numero:</PT>
+                                <InputRee type='text'></InputRee>
+                                </Main>
                             </SectionCol>
                         </SectionInt>
 
                         <SectionInt>
                             <SectionFlex><Title>Configurações de segurança</Title></SectionFlex>
                             <SectionCol>
-                                <Section2FlexSeg><PT>Mostrar informações de localização publicamente Mostrar numero de celular públicamente:</PT> <InputReeCheckBox type='checkbox' checked></InputReeCheckBox></Section2FlexSeg>
-                                <Section2FlexSeg><PT>Mostrar numero de celular públicamente:</PT> <InputReeCheckBox type='checkbox'></InputReeCheckBox></Section2FlexSeg>
-
+                                
+                                <Main>
+                                <PT>Mostrar informações de localização publicamente Mostrar numero de celular públicamente:</PT>
+                                <InputReeCheckBox type='checkbox' checked></InputReeCheckBox>
+                                </Main>
+                                <Main>
+                                <PT>Mostrar numero de celular públicamente:</PT> 
+                                <InputReeCheckBox type='checkbox'></InputReeCheckBox>
+                                </Main>
                             </SectionCol>
                         </SectionInt>
 
                     </SectionColumn>
                 </Container>
-
-                
             </Main>
         </>
     )
 }
-const Section2FlexSeg = styled.section`
-padding: 5px;
-margin: 6px;
-border-radius: 25px;
 
-display:flex;
-justify-content: flex-start;`
 
 const InputReeCheckBox = styled.input`
 border-radius: 25px;
 background-color:rgba(0, 0, 0, 0.1);
-
 `
+
 const SectionColumn = styled.section`
 display:flex;
 flex-direction:column;
 `
+
 const SectionInt = styled.section`
     display:flex;
     margin:15px;
@@ -85,12 +103,26 @@ const SectionInt = styled.section`
 `
 
 const InputRee = styled.input`
-border-radius: 25px;
-background-color:rgba(0, 0, 0, 0.1);
-width: 100%;
+background-color:whitesmoke;
+width: 1000px;
+padding: 5px;
+margin:5px;
+
+&:hover{
+        background:white;
+        transition:0.3s;
+        
+        border-radius:5px;
+    }
+    &:focus{
+        background:white;
+        transition:0.5s;
+        border-radius:30px;
+    }
 `
 const PT = styled.p`
-width: 200px;
+width: 100%;
+align-self:flex-end;
 `
 
 const  SectionCol = styled.section`
@@ -100,14 +132,7 @@ display:flex;
 flex-direction: column;
 align-items: flex-stretch;`
 
-const Section2Flex =  styled.section`
-padding: 5px;
-margin: 6px;
-border-radius: 25px;
-background-color:rgba(0, 0, 0, 0.09);
-display:flex;
-justify-content: center;
-`
+
 
 const ImgConf = styled.img`
 padding: 5px;

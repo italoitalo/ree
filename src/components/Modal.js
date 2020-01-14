@@ -45,13 +45,11 @@ const ModalWrapperDiv = styled.div`
   overflow-x: hidden;
   overflow-y: auto;
   outline: 0;
-
-  
 `;
 
 const ModalDiv = styled.div`
   z-index: 100;
-  background: white;
+  background: whitesmoke;
   position: relative;
   margin: 1.75rem auto;
   border-radius: 10px;
@@ -59,14 +57,13 @@ const ModalDiv = styled.div`
   padding: 2rem;
   /* box-shadow: 0px 0px 45.4459px rgba(0, 0, 0, 0.3); */
 `;
+
 const ModalHeader =styled.div`
     display: flex;
     justify-content: flex-end;
-
 `;
 
 const Main = styled.main`
-
 
 `;
 

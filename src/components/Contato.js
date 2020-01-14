@@ -109,10 +109,12 @@ const Input = styled.input`
     &:hover{
         background:white;
         transition:0.3s;
+        
+        border-radius:5px
     }
     &:focus{
         background:white;
-        transition:0.3s;
+        transition:0.5s;
         border-radius:30px;
     }
 

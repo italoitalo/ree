@@ -15,15 +15,14 @@ export default function BioPerfil(){
                 <NavPerfil/> 
                 <Main1>
                 <MainPessoal>
-                                <img src={User}></img>
-                                <MainCol><p>João Silva</p>
+                                <img src={User} weight="100" heigth="150" width="150"></img>
+                                <MainCol><P>João Silva</P>
                                 <img src={Config}></img>
                                 </MainCol>
                     </MainPessoal>
                     <Main2>
                     
                     <MainCol>
-                            
                             
                             <Card>
                                 <H1>Informações Pessoais</H1>
@@ -70,15 +69,13 @@ export default function BioPerfil(){
                                 <img src={Config}></img>
                                 
                             </Card>
-                            <CardMenor>
+                            <Card>
                                 <H1>
                                     Datas
                                 </H1>
                                 <Listra>
                                     <PLi>
                                     Data de nascimento
-
-
                                     </PLi>
                                     <PLi2>                                       
                                     22 de Maio, 1973                                    
@@ -102,16 +99,14 @@ export default function BioPerfil(){
                                     </PLi2> 
                                 </Listra>
                                 <img src={Config}></img>
-                            </CardMenor>
-                            <CardMenor>
+                            </Card>
+                            <Card>
                                 <H1>
                                     Outros
                                 </H1>
                                 <Listra>
                                     <PLi>
                                     Cor preferida
-
-
                                     </PLi>
                                     <PLi2>                                       
                                         Roxo                                  
@@ -120,8 +115,6 @@ export default function BioPerfil(){
                                 <Listra>
                                     <PLi>
                                     Veículo
- 
- 
                                     </PLi>
                                     <PLi2>                                       
                                                                             
@@ -136,10 +129,10 @@ export default function BioPerfil(){
                                     </PLi2> 
                                 </Listra>
                                 <img src={Config}></img>
-                            </CardMenor>
+                            </Card>
                             
                         </MainCol>
-                        <CardVertical>
+                        <Card>
                             <img src={Local}></img>
                             <H2>
                                 Rio de janeiro - RJ Meier
@@ -158,13 +151,18 @@ export default function BioPerfil(){
                             </Listra2>
                             <img src={Mapa}></img>
                             <img src={Config}></img>
-                        </CardVertical>
+                        </Card>
                     </Main2>
                     </Main1>
             </Main>
         </>
     )
 }
+const P = styled.p`
+    font-size:3em;
+    font-weight:bolder;
+    margin-left:30px;
+`
 
 const Main1 = styled.section`
     display:flex;
@@ -192,35 +190,9 @@ display: flex;
 justify-content: space-between;
 
 `
-
-const CardVertical = styled.div`
-width: 330px;
-height: 720px;
-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
-background-color:#FFFFFF;
-margin: 0 0 15px 15px;
-border-radius: 17px;
-display:flex;
-flex-direction:column;
-align-items: center;
-`
-const CardMenor = styled.div`
-width: 450px;
-height: 200px;
-background-color:#FFFFFF;
-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
-margin: 0 0 15px 0;
-border-radius: 17px;
-
-/* flex */
-display:flex;
-flex-direction: column;
-align-items: center;
-`
-
 const PLi2 = styled.p`
 margin:0 5px 0 0;
-font-size:1.25em;
+font-size:1em;
 font-weight: bold;
 color:rgba(0, 0, 0, 1);
 `
@@ -228,30 +200,30 @@ color:rgba(0, 0, 0, 1);
 
 const PLi = styled.p`
 margin:0 0 0 5px;
-font-size:1.25em;
+font-size:1em;
 font-weight: bold;
 color:rgba(0, 0, 0, 0.4);
 
 `
 
 const Listra = styled.ul`
-width: 430px;
+width: 410px;
 height: 30px;
-border-radius: 20px;
-background-color:rgba(0, 0, 0, 0.1);
+
+
+border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 margin: 0 0 10px 0;
 display: flex;
 justify-content: space-between;
-
 `
 
 const Card = styled.div`
-width: 450px;
-height: 330px;
+min-width:450px;
 background-color:#FFFFFF;
 box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
 border-radius: 17px;
-margin: 0 0 15px 0;
+margin: 15px;
+padding:20px;
 /* flex */
 display:flex;
 flex-direction: column;

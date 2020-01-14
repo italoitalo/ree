@@ -36,11 +36,15 @@ const Titulo = styled.input`
     &:hover{
         background:white;
         transition:0.3s;
+        
+        border-top-right-radius:5px;
+        border-bottom-right-radius:5px;
     }
     &:focus{
         background:white;
-        transition:0.3s;
-        border-radius:30px;
+        transition:0.5s;
+        border-top-right-radius:30px;
+        border-bottom-right-radius:30px;
     }
 
 ::-webkit-input-placeholder{
@@ -63,10 +67,12 @@ const Textarea = styled.input`
     &:hover{
         background:white;
         transition:0.3s;
+        
+        border-radius:5px;
     }
     &:focus{
         background:white;
-        transition:0.3s;
+        transition:0.5s;
         border-radius:30px;
     }
 

@@ -55,7 +55,7 @@ export default function form() {
                     <Button type="submit">Cadastre-se</Button>
                 </Form>
 
-                <ImgPerfil src={Ilustracao01} weight="" height="300" alt=""/>
+                <ImgPerfil src={Ilustracao01} weight="" height="200" alt=""/>
 
               </SectionForm>
         </View>
@@ -70,7 +70,7 @@ const Containner = styled.section`
 `;
 
 const ImgF = styled.img`
-    height:800px;
+    height:630px;
     @media(min-width: 360) {
         max-height:900px;
         }
@@ -79,9 +79,9 @@ const ImgF = styled.img`
 const View = styled.section`
     background: #51B981;
     display:flex;
-    align-items:center;
+    align-items:flex-start;
     justify-content:center;
-    
+    margin: 30px -10px 0 0;
     width:100%;
     min-height: 85vh;
     
@@ -99,7 +99,7 @@ const SectionForm = styled.section`
     align-items:center;
     justify-content:space-between;
 
-    margin:60px;
+    margin:0;
     border-radius:18px; 
     min-width:665px;
     max-width:1100px;

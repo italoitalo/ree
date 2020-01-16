@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 import chat from './../../../img/itensCard/chat.png'
 import coment from './../../../img/itensCard/coment.png'
-import prodCelu from './../../../img/itensCard/prodCelu.png'
+import prodCelu from './../../../img/itensCard/prodCelu.jpg'
 import share from './../../../img/itensCard/share.png'
 import like from './../../../img/itensCard/like.png'
 import UserFoto from './../../../img/itensCard/UserFoto.png'
@@ -44,20 +44,22 @@ export default function Card() {
 
 const CardSection = styled.section`
    display:flex;
-    max-width:534px;
+    max-width:700px;
     min-height:260px;
     padding:10px;
     padding-right:28px;
-    background: #EFEFEF;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
+    background: white;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
     margin : 0 40px;
     margin-top:50px;
-    
-    
-     
- 
+
+    &:hover{
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+      transition: 0.4s;
+    }
 `;
+
 const DivUserProd = styled.section`
   display:flex;
   flex-direction:column;
@@ -89,7 +91,16 @@ const H1User = styled.h1`
   margin-left:8px;
 `;
 const ImgProd = styled.img`
-  
+margin:10px;
+border-radius:10px;
+max-height:200px;
+box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+
+&:hover{
+  max-height:220px;
+  transition: 0.5s;
+}
+
 `;
 const InfoCard = styled.section`
 display:flex;
@@ -103,17 +114,18 @@ const InfoText = styled.div`
     background: #FFFFFF;
     border-radius: 4.55207px;
     max-width:190px;
-    padding:12px;
+    padding:10px;
     height:auto;
 `;
 const PinfoText = styled.p`
     display:flex;
-    flex-wrap:wrap;
-    
+    /* flex-wrap:wrap; */
+    min-height:20px;
     font-family: Catamaran;
     font-style: normal;
     font-weight: 500;
-    font-size: 18.2083px;
+    min-width: 160px;
+    font-size: 18px;
     line-height: 30px;
     color: #000000;
 `;

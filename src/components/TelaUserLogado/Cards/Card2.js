@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 import chat from './../../../img/itensCard/chat.png'
 import coment from './../../../img/itensCard/coment.png'
-import prodCelu from './../../../img/itensCard/prodCelu.png'
+import prodCelu from './../../../img/itensCard/prodCelu.jpg'
 import share from './../../../img/itensCard/share.png'
 import like from './../../../img/itensCard/like.png'
 import UserFoto from './../../../img/itensCard/UserFoto.png'
@@ -62,9 +62,8 @@ const CardSection = styled.section`
     border-radius: 20px;
     margin : 0 40px;
     margin-top:50px;
-
    
-    
+   
      
  
 `;
@@ -99,6 +98,9 @@ const H1User = styled.h1`
   margin-left:8px;
 `;
 const ImgProd = styled.img`
+
+max-height:200px;
+margin:20px;
   
 `;
 const InfoCard = styled.section`

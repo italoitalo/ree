@@ -16,12 +16,6 @@ export default function SecaoDeMeusProdutosMinhasDoacoes() {
                 <Card3/>
                 <Card3/>
                 <Card3/>
-                <Card3/>
-                <Card3/>
-                <Card3/>
-                <Card3/>
-                <Card3/>
-                
               </Grid>
             </Produtos>
         </Container>    
@@ -30,11 +24,14 @@ export default function SecaoDeMeusProdutosMinhasDoacoes() {
 }
 
 const Container = styled.section`
-display:inline-flex;
+background:whitesmoke;
+box-shadow: 0px 4px 80px rgba(0, 0, 0, 0.25);
+border-radius:10px;
+margin-top: -40px;
+z-index:0;
 flex-wrap:wrap;
 justify-content:center;
-padding-bottom:50px;
-
+padding-bottom:30px;
 `;
 const Produtos = styled.section`
 display:inline-flex;

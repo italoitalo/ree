@@ -1,85 +1,95 @@
 import React from 'react'
 import styled from 'styled-components'
 import papeldeParede from './../img/TelaContatos/fundoContatos.png'
-
+import twitter from './../img/SocialMedia/twitter-black-shape.svg'
+import facebook from './../img/SocialMedia/facebook-logo.svg'
+import github from './../img/SocialMedia/github-character.svg'
+import instagram from './../img/SocialMedia/instagram-symbol.svg'
+import linkedin from './../img/SocialMedia/linkedin-letters.svg'
 export default function Contato(){
     return(
-        <Container>
-            <Content>
+    <Container>
+            <Banner>
                 <H1>Tem alguma dúvida? Entre em contato!</H1>
-                <DivMain>
-                    
-                    <DivForm>
-                        <H1Form>Envie um e-mail para nossa equipe!</H1Form>
-                        <Inputs>
-                            <Input type="text" name="nome" id="nome"  placeholder="Nome"/>
-                            <Input type="text" name="Sobrenome" id="snome" placeholder="Sobrenome"/>
-                            <Input type="email" name="E-mail" id="email" placeholder="email"/>
-                            <TextareaContat name="Suas dúvidas" id="textarea" cols="30" rows="10" placeholder="Suas dúvidas"></TextareaContat>
-                        </Inputs>
-                    </DivForm>
-                </DivMain>
-            </Content>
-        </Container>
+            </Banner>
+            <Flex>
+                <DivForm>
+                    <H1Form>Envie um e-mail para nossa equipe!</H1Form>
+                    <Inputs>
+                        <Input type="text" name="nome" id="nome"  placeholder="Nome"/>
+                        <Input type="text" name="Sobrenome" id="snome" placeholder="Sobrenome"/>
+                        <Input type="email" name="E-mail" id="email" placeholder="email"/>
+                        <TextareaContat name="Suas dúvidas" id="textarea" cols="30" rows="10" placeholder="Suas dúvidas"></TextareaContat>
+                    </Inputs>
+                    <Button>Enviar</Button>
+                </DivForm>
+
+                <DivForm>
+                    <H1Form>Nos encontre nas Redes Sociais!</H1Form>
+                    <Flex>
+                        <A href="https://twitter.com/equiperee" target="_blank"> <img src={twitter} height="40px"/></A>
+                        <A href="https://facebook.com/" target="_blank"> <img src={facebook}height="40px"/></A>
+                        <A href="https://www.instagram.com/equiperee/" target="_blank"> <img src={instagram}height="40px"/></A>
+                        <A href="https://github.com/" target="_blank"> <img src={github}height="40px"/></A>
+                        <A href="https://www.linkedin.com/" target="_blank"> <img src={linkedin}height="40px"/></A>
+                    </Flex>
+
+                </DivForm>
+            </Flex>
+    </Container>
     )
 }
-
+const A = styled.a`
+    margin:10px;
+    height:45px;
+    width:45px;
+    padding:10px;
+`
+const Flex = styled.div `
+display:flex;
+justify-content:center;
+`
+const Banner = styled.div`
+background-image: linear-gradient(to bottom right, #4EAB79,#51B981 );
+margin: 10px 150px 10px 150px;
+border-radius: 10px;
+min-height:80px;
+justify-content:space-evenly;
+align-items:center;
+z-index:1;
+box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
+`;
 
 const Container = styled.section`
     display:flex;
-    flex-flow:column wrap;
-    flex: 0 1 100%;
-    height:auto;
-`
+    flex-direction:column;
+    background-image:url(${papeldeParede});
+    background-repeat:no-repeat;
+    background-size: 100%
 
-const Content = styled.section`
-    display:flex;
-    flex-flow:column wrap;
-    background: whitesmoke;
 `
 
 const H1 = styled.h1`
-    display:flex;
-    align-self:center;
-    margin:30px;
-
-    font-family: Catamaran;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 44.8498px;
-    line-height: 37px;
-    text-align: center;
-
-    background: -webkit-linear-gradient(yellow,darkorange);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-`
-
-const DivMain = styled.section`
-     background-image:url(${papeldeParede});
-     flex: 0 1 100%;
-     min-height:75vh;
-     background-repeat: round;
-     display:flex;
-     flex-flow: row wrap;
-     justify-content:center;
-     border-top: 12px solid #51B981;   
+    text-align:center;
+    margin:20px;
+    font-size: 40px;
+    color:white;
 `
 
 const DivForm = styled.div`
     display:flex;
+    border-radius:10px;
+    padding:30px 0 30px 0;
+    align-self:center;
+    margin:-30px 10px 10px 0px;
+    max-width:400px;
     flex-flow: column wrap;
-    flex: 0 1 40%; 
-    background: whitesmoke;
+    background: white;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);   
 `
 
 const H1Form = styled.h1`
-    margin-top:30px;
     align-self:center;
-
-    font-family: Catamaran;
-    font-style: normal;
     font-weight: bold;
     font-size: 20px;
     text-align: center;
@@ -99,24 +109,10 @@ const Input = styled.input`
     padding:10px;
     flex-flow: row wrap;
     
-    background: whitesmoke;
-    font-family: Catamaran;
-    font-style: normal;
+    background: white;
     font-weight: bold;
     font-size: 16px;
     line-height: 21px;
-
-    &:hover{
-        background:white;
-        transition:0.3s;
-        
-        border-radius:5px
-    }
-    &:focus{
-        background:white;
-        transition:0.5s;
-        border-radius:30px;
-    }
 
     ::-webkit-input-placeholder{
         color: #BBBBBB;
@@ -126,26 +122,33 @@ const Input = styled.input`
 
 const TextareaContat = styled.textarea`
     margin:10px;
+    max-height:200px;
     border:none;
     font-weight: bold;
     color:#51B981;
-    background:whitesmoke;
+    background:white;
     margin:15px 40px 15px 40px;
     padding: 10px;
     font-size: 16px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 
-    &:hover{
-        background:white;
-        transition:0.3s;
-    }
-    &:focus{
-        background:white;
-        transition:0.3s;
-        border-radius:30px;
-    }
+
     ::-webkit-input-placeholder{
         color: #BBBBBB;
         font-weight: bold;
+    }
+`
+
+const Button = styled.button`
+    width: 100px;
+    height: 40px;
+    align-self: center;
+    color: whitesmoke;
+    background-color: #51B981;
+    font-family:'Catamaran', sans-serif;
+    font-weight:bolder;
+    margin: 10px 0 10px;
+    &:hover{
+        background-color: #289C72;
     }
 `

@@ -19,34 +19,42 @@ export default function AbasNavegacao() {
 
 
 const Container=styled.section`
+background-image: linear-gradient(to bottom right, #4EAB79,#51B981 );
+margin: 20px 80px 0px 80px;
+border-radius: 10px;
 display:flex;
 flex-wrap:wrap;
-flex:0 0 auto;
-max-width:85.375rem; 
-min-height:100px;
+min-height:80px;
 justify-content:space-evenly;
 align-items:center;
+z-index:1;
 
+&:hover{
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  transition: 0.4s;
+}
 `;
+
 const Traco=styled.div`
-    
     width:3px;
-    height:52.02px;
+    height:50px;
     border-radius:30px;
-    background:#C4C4C4;
- 
+    background:white;
 `;
 const A=styled(Link)`
     padding:10px;
-
+    cursor:pointer;
     font-family: Catamaran;
-    font-style: normal;
     font-weight: bold;
-    font-size: 35px;
-    line-height: 57px;
+    font-size: 32px;
     text-align: center;
-    color: #999999;
+    color: white;
     text-decoration:none;
+
+    &:hover{
+      font-size:35px
+      transition: 0.1s;
+    }
 `;
 
 

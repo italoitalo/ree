@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import Card from './Cards/Card'
-import Card2 from './Cards/Card2'
 
 
 
@@ -10,13 +9,11 @@ export default function SecaoDeProdutosDoacoes() {
     return ( 
       <>
         <Container>
-      
             <Produtos>
               <Grid>  
                 <Card/>
                 <Card/>
-                <Card2/>
-                <Card2/>
+                <Card/>
               </Grid>
             </Produtos>
         </Container>    
@@ -25,17 +22,19 @@ export default function SecaoDeProdutosDoacoes() {
 }
 
 const Container = styled.section`
-display:inline-flex;
+background:whitesmoke;
+box-shadow: 0px 4px 80px rgba(0, 0, 0, 0.25);
+border-radius:10px;
+margin-top: -40px;
+z-index:0;
 flex-wrap:wrap;
 justify-content:center;
-padding-bottom:50px;
-
+padding-bottom:30px;
 `;
+
 const Produtos = styled.section`
-display:inline-flex;
 flex-wrap:wrap;
-padding-top:50px;
-justify-content:flex-start;
+padding-top:30px;
 max-width:1230px;
 height:100%;
 `;
@@ -43,9 +42,6 @@ height:100%;
 
 const Grid = styled.section`
   display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-auto-rows: auto;
-  
-
+	grid-template-columns: repeat(2, 3fr);
 `;
 

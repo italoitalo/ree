@@ -3,7 +3,6 @@
 
 
 import React from 'react';
-import Publicidade from './Publicidade';
 import AbasNav from './AbasNavegacão';
 import SecaoDeProdutosDoacoes from './SecaoDeProdutosDoacoes';
 import Styled from 'styled-components';
@@ -14,15 +13,14 @@ export default function DoacoesPublicas() {
       <>
       <Container>
           <AbasNav />
-           <Publicidade /> 
           <SecaoDeProdutosDoacoes /> 
-        </Container>    
+      </Container>    
       </>
     );
 }
 const Container=Styled.section`
-    display:flex;
-    flex-wrap:wrap;
-    flex-direction:column;
-    align-content: space-around;
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction:column;
+  align-content: space-around;
 `;

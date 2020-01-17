@@ -30,25 +30,21 @@ export default function Cabecalho(){
 const Navigation = styled(Link)`
 text-decoration:none;
 `
-const Button = styled.div`
-    padding:10px;
-    padding-left:30px;
-    padding-right:30px;
-    margin-top:5px;
-    margin-right:20px;
-    color: white;
-    font-weight:normal;
-    background-color:#51B981;
-    border-radius:20px;
+const Button = styled.button`
+    padding:12px;
+    margin: 5px 10px;
+    color: #51B981;
+    font-weight:bolder;
+    border: 2px solid #51B981;
     font-family: 'Merriweather Sans', sans-serif;
     font-size: 14px;
 
     &:hover{
-        background-color: #289C72;
+        transition: 1s;
+        background-color: #51b981;
+        color: white
     }
 `
-
-
 
 const Div= styled.div`
     display:flex;
@@ -64,9 +60,9 @@ const Logo = styled.img`
 `
 
 const Li = styled.li`
-    padding:5px;
-    margin-top:10px;
-    margin-right:20px;
+    padding:10px;
+    margin: 9px 10px;
+    
     color: black;
     font-family: 'Merriweather Sans', sans-serif;
     font-size: 14px;

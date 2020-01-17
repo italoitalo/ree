@@ -14,17 +14,17 @@ export default function TelaLogin() {
         <Form action="">
             <DivUserPass>
                 <ImgInput src={Userfoto}/>
-                <InputLogin type="email" name="" id=""/>
+                <InputLogin type="text" placeholder="Login" name="" id=""/>
             </DivUserPass>
 
             <DivUserPass>
                 <ImgInput src={UserPass}/>
-                <InputLogin type="password" name="" id=""/>
+                <InputLogin type="password" placeholder="Senha"name="" id=""/>
             </DivUserPass>
             <Buttons>
                 <ButtonLogin type="submit">Login</ButtonLogin>
                 <Paragrafo>Não possui conta?</Paragrafo>
-                <ButtonCadastro type="submit">Cadastre-se</ButtonCadastro>
+                <ButtonCadastro type="password">Cadastre-se</ButtonCadastro>
             </Buttons>
         </Form>
     </Container> 
@@ -47,12 +47,11 @@ const Figure = styled.figure`
 `;
 
 const ImgUSer = styled.img`
-    width: 112.65px;
-    height: 113.03px;
+    width: 112px;
+    height: 113px;
 `;
 
 const Form = styled.form`
-
 `;
 
 const DivUserPass = styled.div`
@@ -61,12 +60,11 @@ const DivUserPass = styled.div`
     justify-content: center;
     margin: 8px;
 `;
+
 const Buttons = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    
 `;
 
 const ImgInput = styled.img`
@@ -85,23 +83,8 @@ const InputLogin = styled.input`
     font-size: 16px;
     line-height: 16px;
     
-    background:whitesmoke;
+    background:white;
     color: #828282;
-
-    &:hover{
-        background:white;
-        transition:0.3s;
-        
-        border-top-right-radius:5px;
-        border-bottom-right-radius:5px;
-    }
-    &:focus{
-        background:white;
-        transition:0.5s;
-        border-top-right-radius:30px;
-        border-bottom-right-radius:30px;
-    }
-    
 `;
 const ButtonLogin = styled.button`
     margin:40px;

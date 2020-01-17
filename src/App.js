@@ -9,7 +9,7 @@ import Rodape from './components/Rotas/Rodape'
 export default function App() {
 
   return (
-    <>
+    <body>
       <Router>
         <Cabecalho/>
         <Rotas/>
@@ -17,6 +17,6 @@ export default function App() {
 
         <GlobalStyles />
       </Router>
-    </>
+    </body>
   );
 }

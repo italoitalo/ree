@@ -220,7 +220,7 @@ justify-content: space-between;
 const Card = styled.div`
 min-width:450px;
 background-color:#FFFFFF;
-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 border-radius: 17px;
 margin: 15px;
 padding:20px;

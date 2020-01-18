@@ -19,7 +19,7 @@ export default function Contato(){
                         <Input type="text" name="nome" id="nome"  placeholder="Nome"/>
                         <Input type="text" name="Sobrenome" id="snome" placeholder="Sobrenome"/>
                         <Input type="email" name="E-mail" id="email" placeholder="email"/>
-                        <TextareaContat name="Suas dúvidas" id="textarea" cols="30" rows="10" placeholder="Suas dúvidas"></TextareaContat>
+                        <TextareaContat name="Suas dúvidas" id="textarea" cols="30" rows="4" placeholder="Suas dúvidas"></TextareaContat>
                     </Inputs>
                     <Button>Enviar</Button>
                 </DivForm>

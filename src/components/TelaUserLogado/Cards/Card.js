@@ -60,8 +60,9 @@ display:flex;
 
 const CardSection = styled.section`
    display:flex;
-    max-width:700px;
-    min-height:260px;
+    /* max-width:600px;
+    max-height:300px; */
+    flex: 0 1 10%;
     padding:10px;
     background: white;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
@@ -77,19 +78,27 @@ const CardSection = styled.section`
 `;
 
 const ImgProd = styled.img`
-margin:10px;
+margin:15px;
 border-radius:10px;
-max-height:200px;
-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
 
-transition:0.4s;
+box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	
+
+transition:all 0.4s;
 &:hover{
-  max-height:220px;
-  transition: 0.5s;
+  /* max-height:220px;
+  transition: 0.5s; */
+  -moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
 }
 `;
 
 const DivUserProd = styled.section`
+  overflow:-moz-hidden-unscrollable; 
   display:flex;
   flex-direction:column;
   align-content: center;

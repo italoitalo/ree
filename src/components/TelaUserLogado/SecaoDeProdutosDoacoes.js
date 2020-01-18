@@ -29,12 +29,12 @@ margin-top: -40px;
 z-index:0;
 flex-wrap:wrap;
 justify-content:center;
-padding-bottom:30px;
+padding: 30px;
 `;
 
 const Produtos = styled.section`
 flex-wrap:wrap;
-padding-top:30px;
+padding-top:10px;
 
 max-width:1200px;
 height:100%;
@@ -43,7 +43,6 @@ height:100%;
 
 const Grid = styled.section`
   display: grid;
-  
-	grid-template-columns: repeat(2, 3fr);
+  grid-template-columns: repeat(2, 3fr);
 `;
 

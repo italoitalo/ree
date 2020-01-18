@@ -67,7 +67,7 @@ const CardSection = styled.section`
     background: white;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-    margin : 50px 40px;
+    margin : 20px 20px;
 
     transition:0.4s;
 

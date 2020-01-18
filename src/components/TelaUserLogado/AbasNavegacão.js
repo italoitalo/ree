@@ -29,9 +29,10 @@ justify-content:space-evenly;
 align-items:center;
 z-index:1;
 
-&:hover{
+
+/* &:hover{
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  transition: 0.4s;
+  transition: 0.4s; */
 }
 `;
 
@@ -50,10 +51,11 @@ const A=styled(Link)`
     text-align: center;
     color: white;
     text-decoration:none;
+   
 
     &:hover{
-      font-size:35px
-      transition: 0.1s;
+      font-size:34px
+      transition: 0.2s;
     }
 `;
 

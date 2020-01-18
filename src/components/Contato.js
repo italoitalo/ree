@@ -66,6 +66,7 @@ const Container = styled.section`
     background-image:url(${papeldeParede});
     background-repeat:no-repeat;
     background-size: 100%
+    background-attachment: fixed;
 
 `
 

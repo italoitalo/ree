@@ -35,13 +35,15 @@ padding-bottom:30px;
 const Produtos = styled.section`
 flex-wrap:wrap;
 padding-top:30px;
-max-width:1230px;
+
+max-width:1200px;
 height:100%;
 `;
 
 
 const Grid = styled.section`
   display: grid;
+  
 	grid-template-columns: repeat(2, 3fr);
 `;
 

@@ -76,7 +76,12 @@ input{
 
     font-family: Catamaran;
     font-size: 13px;
+    font-weight:bolder;
     color:  #51B981; 
+
+    &::placeholder{
+    font-weight:bolder;
+}
     
     &:hover{
         background:whitesmoke;
@@ -90,11 +95,13 @@ a{
     cursor:pointer;
 }
 button{
+    background:white;
     box-shadow:0;
     border:0;
     border-radius:8px;
     cursor:pointer;
     transition: 0.4s;
+
     &:hover{
     transition: 0.4s;
     }

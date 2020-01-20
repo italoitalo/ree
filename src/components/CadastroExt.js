@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from  'styled-components'
 
-import Porta from './../img/formCadastroImg/porta.jpg'
+import Mapa from './../img/formCadastroImg/mapa.jpg'
 
 export default function newform() {
     return (
@@ -12,20 +12,20 @@ export default function newform() {
                 <form>
                     <Ul>
                         <Li>
-                        <Input1 type="text" name="" id="" placeholder="Nome" required/>                         
-                        <Input1 type="text" name="" id="" placeholder="Sobrenome" required/>                         
+                        <Input type="number" name="" id="" placeholder="CPF" required/>                         
                         </Li>
-                    
                         <Li>
-                        <Input type="password" name="" id="" placeholder="Senha" required/>                         
+                        <Input1 type="number" name="" id="" placeholder="CEP" required/>                         
+                        <Input1 type="text" name="" id="" placeholder="Estado" required/>                         
+                        </Li>
+                        <Li>
+                        <Input1 type="text" name="" id="" placeholder="Rua" required/>                         
+                        <Input1 type="number" name="" id="" placeholder="Numero" required/>                         
                         </Li>
 
                         <Li>
-                        <Input type="email" name="" id="" placeholder="E-mail" required/>                         
-                        </Li>
-
-                        <Li>
-                        <Input type="number" name="" id="" placeholder="Celular"/>                         
+                        <Input1 type="text" name="" id="" placeholder="Bairro" required/>                         
+                        <Input1 type="text" name="" id="" placeholder="Cidade" required/>                         
                         </Li>
 
                     </Ul>
@@ -34,7 +34,7 @@ export default function newform() {
             </LadoA>
             
             <LadoB>
-                <Img src={Porta}/>
+                <Img src={Mapa}/>
                 <H1>Faça Parte</H1>
                 <H2>A diferença está em suas mãos</H2>
             </LadoB>

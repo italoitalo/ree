@@ -2,7 +2,7 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
 import Home from './../Home'
-import FormCadastro from '../FormCadastro'
+import CadastroExt from '../CadastroExt'
 import BioPerfil from '../Perfil/BioPerfil'
 import Contato from './../Contato'
 import Login from './../Login'
@@ -20,11 +20,11 @@ export default function Rotas(){
                 <Switch>
                     <Route exact path="/" component={Home}/>
                     <Route exact path="/perfil" component={BioPerfil}/>     
-                    <Route  path="/cadastro" component={FormCadastro}/>         
+                    <Route  path="/cadastro" component={NovoCadastro}/>         
                     <Route  path="/contato" component={Contato}/>
                     <Route  path="/login" component={Login}/>
                     <Route  path="/doe" component={Doacoes}/>
-                    <Route path='/novocadastro' component={NovoCadastro}/>
+                    <Route path='/novocadastro' component={CadastroExt}/>
 
                     <Route exact path="/perfil/doacoes" component={DoacoesPerfil}/>   
                     <Route exact path="/perfil/interesses" component={InteressesPerfil}/>   

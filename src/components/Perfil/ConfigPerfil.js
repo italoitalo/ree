@@ -16,15 +16,16 @@ export default function ConfigPerfil(){
                 <Container>
                     <SectionColumn>
                         <SectionInt>
-                        <SectionFlex><Title>Configurações  Pessoais</Title></SectionFlex>
-                            <SectionFlex>
-                            <DivRetangulo> <H1T>Alterar foto </H1T> </DivRetangulo></SectionFlex>
-                            <SectionFlex>
+                        <SectionFlex>
+                            <Title>Configurações  Pessoais</Title>
+                        </SectionFlex>
+                        <SectionFlex>
+                            <button>Alterar foto </button>
                             <ImgConf src={Foto} width='175'></ImgConf>
                             <ImgConf src={Seta} width='64'   height='50'></ImgConf>
                             <ImgConf src={Img} width='183'></ImgConf>
-                            </SectionFlex>
-                            <SectionCol>
+                        </SectionFlex>
+                        <SectionCol>
                                 <Main>
                                 <PT>Alterar Nome:</PT>
                                 <InputRee type='text'></InputRee>
@@ -37,8 +38,7 @@ export default function ConfigPerfil(){
                                 <PT>Alterar numero:</PT> 
                                 <InputRee type='text'></InputRee>
                                 </Main>
-                           
-                            </SectionCol>
+                        </SectionCol>
                         </SectionInt>
 
                         <SectionInt>
@@ -97,42 +97,28 @@ const SectionInt = styled.section`
     margin:15px;
     width:600px;
     flex-direction:column;
-    background-color:whitesmoke;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
     padding:30px;
     border-radius:20px;
 `
 
 const InputRee = styled.input`
-background-color:whitesmoke;
 width: 1000px;
 padding: 5px;
 margin:5px;
-
-&:hover{
-        background:white;
-        transition:0.3s;
-        
-        border-radius:5px;
-    }
-    &:focus{
-        background:white;
-        transition:0.5s;
-        border-radius:30px;
-    }
 `
+
 const PT = styled.p`
 width: 100%;
 align-self:flex-end;
 `
 
 const  SectionCol = styled.section`
-
 padding:  5px;
 display:flex;
 flex-direction: column;
-align-items: flex-stretch;`
-
-
+align-items: flex-stretch;
+`
 
 const ImgConf = styled.img`
 padding: 5px;
@@ -142,21 +128,12 @@ flex: 0;
 const SectionFlex = styled.section`
 justify-content: center;
 align-items: center;
-display:flex    `
-const DivRetangulo = styled.form`
-width:180px;
-height:  30px;
 display:flex;
-background-color:rgba(0, 0, 0, 0.09);
-border-radius:50px;
-padding:5px;
-margin:10px;
-justify-content: center;
 `
-
 const Main = styled.section`
     display:flex;
 `
+
 const Container = styled.section `
     width:100%;
     max-width:1360px;
@@ -166,33 +143,9 @@ const Container = styled.section `
     justify-content:space-evenly;
 `
 
-const Input = styled.input`
-
-`
-
-
-
-const Form = styled.form`
-display:flex;
-background-color:white;
-border-radius:50px;
-padding:5px;
-margin:10px;
-`
-
 const Title = styled.h1`
 color: #F2C94C;
 font-weight: bold;
 font-size:30px;
 font-size: 2.5em;
-`
-
-const H1 = styled.h1`
-font-size: 20em;
-
-
-`
-const H1T = styled.h1`
-font-size: 1em;
-
 `

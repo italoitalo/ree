@@ -49,7 +49,7 @@ const ModalWrapperDiv = styled.div`
 
 const ModalDiv = styled.div`
   z-index: 100;
-  background: whitesmoke;
+  background: white;
   position: relative;
   margin: 1.75rem auto;
   border-radius: 10px;

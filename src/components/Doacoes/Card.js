@@ -63,7 +63,11 @@ const Button = styled.button`
     border-radius:20px;
     background-color:white;
     min-width:150px;
-    padding:30px;`
+    padding:30px;
+    &:hover{
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    }
+    `
 
     const H2 = styled.h2`
     font-size: 50px;
@@ -72,17 +76,15 @@ const Button = styled.button`
     -webkit-text-fill-color: transparent;
     text-align:center;
     font-weight:900;
+
 `
 
 const CardSection = styled.section`
+    margin: -50px 0 200px 0;
     width:75%;
     min-height:300px;
     padding:10px;
     background: whitesmoke;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
-
-    margin:50px;
-    margin-top:-90px;
-    margin-bottom: 220px;
     `

@@ -26,26 +26,13 @@ const Titulo = styled.input`
     display:flex;
     margin:15px 40px 15px 40px;
     padding:10px;
-    background: whitesmoke;
 
 
     font-family: Catamaran;
     font-weight: bold;
     font-size: 16px;
 
-    &:hover{
-        background:white;
-        transition:0.3s;
-        
-        border-top-right-radius:5px;
-        border-bottom-right-radius:5px;
-    }
-    &:focus{
-        background:white;
-        transition:0.5s;
-        border-top-right-radius:30px;
-        border-bottom-right-radius:30px;
-    }
+   
 
 ::-webkit-input-placeholder{
     color: #BBBBBB;
@@ -56,25 +43,12 @@ const Textarea = styled.input`
     min-height:150px;
     margin:10px;
     padding: 10px;
-    background: whitesmoke;
 
     font-weight: bold;
     color:#51B981;
     margin:15px 40px 15px 40px;
     font-size: 16px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-
-    &:hover{
-        background:white;
-        transition:0.3s;
-        
-        border-radius:5px;
-    }
-    &:focus{
-        background:white;
-        transition:0.5s;
-        border-radius:30px;
-    }
 
     ::-webkit-input-placeholder{
         color: #BBBBBB;
@@ -97,8 +71,7 @@ const CardSection = styled.section`
     width:75%;
     min-height:300px;
     padding:10px;
-    background: whitesmoke;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
 
     margin:50px;

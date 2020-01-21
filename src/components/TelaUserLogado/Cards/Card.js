@@ -2,12 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 
 
-import chat from './../../../img/itensCard/chat.png'
-import coment from './../../../img/itensCard/coment.png'
-import prodCelu from './../../../img/itensCard/prodCelu.jpg'
-import share from './../../../img/itensCard/share.png'
-import like from './../../../img/itensCard/like.png'
+import chat from './../../../img/itensCard/chat.svg'
+import coment from './../../../img/itensCard/comment.svg'
+import share from './../../../img/itensCard/share.svg'
+import like from './../../../img/itensCard/like.svg'
+
 import UserFoto from './../../../img/itensCard/UserFoto.png'
+import prodCelu from './../../../img/itensCard/prodCelu.jpg'
 
 
 
@@ -20,7 +21,7 @@ export default function Card() {
           <DivUserProd>
             <User>
               <ImgUser src={UserFoto} alt=""/>
-              <H1User>user.1</H1User>
+              <H1User>Usuário</H1User>
             </User>
             <ImgProd src={prodCelu} alt=""/>
           </DivUserProd>
@@ -29,10 +30,10 @@ export default function Card() {
               <PinfoText>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam turpis libero, tincidunt in euismod a, finibus a metus.</PinfoText>
             </InfoText>
             <AcoesCard>
-              <ImgAcao src={chat} alt=""/>
-              <ImgAcao src={coment} alt=""/>
-              <ImgAcao src={like} alt=""/>
-              <ImgAcao src={share} alt=""/>
+              <SocialButton href="#"><img src={chat} alt="chat" height="20"/></SocialButton>
+              <SocialButton href="#"><img src={share} alt="chat" height="20"/></SocialButton>
+              <SocialButton href="#"><img src={like} alt="chat" height="20"/></SocialButton>
+              <SocialButton href="#"><img src={coment} alt="chat" height="20"/></SocialButton>
             </AcoesCard>
           </InfoCard>
 
@@ -42,17 +43,33 @@ export default function Card() {
   );
 }
 
+const SocialButton = styled.button`
+  height:20px;
+  width:20px;
+  margin:10px;
+  background:white;
+  opacity: 0.4;
+
+  &:hover{
+    opacity:1;
+  }
+`
+const AcoesCard = styled.section`
+display:flex;
+`;
+
 const CardSection = styled.section`
    display:flex;
-    max-width:700px;
-    min-height:260px;
+    /* max-width:600px;
+    max-height:300px; */
+    flex: 0 1 10%;
     padding:10px;
-    padding-right:28px;
     background: white;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-    margin : 0 40px;
-    margin-top:50px;
+    margin : 20px 20px;
+
+    transition:0.4s;
 
     &:hover{
       box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
@@ -60,7 +77,28 @@ const CardSection = styled.section`
     }
 `;
 
+const ImgProd = styled.img`
+margin:15px;
+border-radius:10px;
+
+box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	
+
+transition:all 0.4s;
+&:hover{
+  /* max-height:220px;
+  transition: 0.5s; */
+  -moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+`;
+
 const DivUserProd = styled.section`
+  overflow:-moz-hidden-unscrollable; 
   display:flex;
   flex-direction:column;
   align-content: center;
@@ -69,38 +107,19 @@ const DivUserProd = styled.section`
 
 const User = styled.div`
 display:flex;
-align-items:center;
-justify-content:start;
 margin-left: 10px;
 max-width:265px;
-background: #FFFFFF;
-border-radius: 45.5207px;
+background: whitesmoke;
+border-radius: 45px;
 `;
 const ImgUser = styled.img`
 margin-left:2px;
 `;
 const H1User = styled.h1`
-  font-family: Catamaran;
-  font-style: normal;
+  align-self:center;
   font-weight: bold;
-  font-size: 31.8645px;
-  line-height: 52px;
-  text-align: center;
-
-  color: #000000;
+  font-size: 20px;
   margin-left:8px;
-`;
-const ImgProd = styled.img`
-margin:10px;
-border-radius:10px;
-max-height:200px;
-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
-
-&:hover{
-  max-height:220px;
-  transition: 0.5s;
-}
-
 `;
 const InfoCard = styled.section`
 display:flex;
@@ -110,32 +129,18 @@ justify-content:center;
 margin-left:25px;
 `;
 const InfoText = styled.div`
-    
-    background: #FFFFFF;
-    border-radius: 4.55207px;
-    max-width:190px;
-    padding:10px;
-    height:auto;
+  border-radius: 4.55207px;
+  max-width:190px;
+  padding:10px;
+  height:auto;
 `;
 const PinfoText = styled.p`
-    display:flex;
-    /* flex-wrap:wrap; */
     min-height:20px;
     font-family: Catamaran;
-    font-style: normal;
-    font-weight: 500;
     min-width: 160px;
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 15px;
     color: #000000;
-`;
-const AcoesCard = styled.section`
-display:inline-flex;
-justify-content: space-between;
-align-items:center;
-max-width:190px;
+`
 
-`;
-const ImgAcao = styled.img`
 
-`;
+

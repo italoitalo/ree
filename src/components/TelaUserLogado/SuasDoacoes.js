@@ -3,7 +3,6 @@
 
 
 import React from 'react';
-import Publicidade from './Publicidade';
 import AbasNav from './AbasNavegacão';
 import SecaoDeMeusProdutosMinhasDoacoes from './SecaoDeMeusProdutosMinhasDoacoes';
 import Styled from 'styled-components';
@@ -14,7 +13,6 @@ export default function DoacoesPublicas() {
       <>
       <Container>
           <AbasNav />
-           <Publicidade /> 
           <SecaoDeMeusProdutosMinhasDoacoes /> 
         </Container>    
       </>
@@ -26,5 +24,4 @@ const Container=Styled.section`
   flex-direction:column;
   align-content: space-around;
 
- 
 `;

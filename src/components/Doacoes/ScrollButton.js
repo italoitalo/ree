@@ -18,7 +18,8 @@ export default function Scroll() {
 }
 
 const Button = styled.button`
-    width: 150px;
+    width: 100px;
+    height: 40px;
     color: whitesmoke;
     background-color: #51B981;
     font-family:'Catamaran', sans-serif;

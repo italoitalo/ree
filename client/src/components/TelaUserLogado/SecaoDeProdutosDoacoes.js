@@ -5,12 +5,16 @@ import Card from './Cards/Card'
 
 
 
+
 export default function SecaoDeProdutosDoacoes() {
     return ( 
       <>
         <Container>
             <Produtos>
               <Grid>  
+                <Card/>
+                <Card/>
+                <Card/>
                 <Card/>
                 <Card/>
                 <Card/>
@@ -43,6 +47,6 @@ height:100%;
 
 const Grid = styled.section`
   display: grid;
-  grid-template-columns: repeat(2, 3fr);
+  grid-template-columns: repeat(2, 12fr);
 `;
 

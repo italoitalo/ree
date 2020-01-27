@@ -13,12 +13,12 @@ export default function form() {
         <Containner>
             <View>
             <SectionForm>
-                <Form>
+                <Form action="/home/suasdoacoes" method="POST">
                     <DivInput>
                         <DivImg>
                             <Img src={Iconuser} weight="" height="25" alt=""/>
                         </DivImg>
-                        <Input type="text" name="" id="" placeholder="Nome de Usuário" required/> 
+                        <Input type="text" name="nome" id="" placeholder="Nome de Usuário" required/> 
                         <Pform>(5-15 caracteres)</Pform>
                     </DivInput>  
                     
@@ -26,7 +26,7 @@ export default function form() {
                         <DivImg>
                             <Img src={IconPass} weight="" height="25" alt=""/>
                         </DivImg>
-                        <Input type="password" name="" id="" placeholder="Senha" required/>
+                        <Input type="password" name="password" id="" placeholder="Senha" required/>
                         <Pform>(5-15 caracteres)</Pform>
                     </DivInput>  
 
@@ -41,14 +41,14 @@ export default function form() {
                         <DivImg>
                             <Img src={IconEmail} weight="" height="15" alt=""/>
                         </DivImg>
-                        <Input type="email" name="" id="" placeholder="E-mail" required />
+                        <Input type="email" name="email" id="" placeholder="E-mail" required />
                     </DivInput>   
 
                     <DivInput>
                         <DivImg>
                             <Img src={IconCel} weight="" height="25" alt=""/>
                         </DivImg> 
-                        <Input type="tel" name="" id=""placeholder="Celular"/>
+                        <Input type="tel" name="celular" id=""placeholder="Celular"/>
                         <Pform>(Opcional)</Pform>     
                     </DivInput>   
 

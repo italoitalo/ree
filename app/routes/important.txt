@@ -1,6 +1,6 @@
-essa pasta conterá os arquivos que ficarão responsáveis pelas rotas como um todo;
+/* essa pasta conterá os arquivos que ficarão responsáveis pelas rotas como um todo;
 
 na maioria dos projetos aqui ficam as rotas entre as páginas, no entanto, em nosso projeto as rotas entre as 
 paginas já estão prontas; 
 
-por isso podemos armazenar aqui os arquivo de rotas com o banco de dados; 
+por isso podemos armazenar aqui os arquivo de rotas com o banco de dados;  */

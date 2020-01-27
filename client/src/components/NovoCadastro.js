@@ -1,31 +1,34 @@
 import React from 'react'
 import styled from  'styled-components'
 
+
 import Porta from './../img/formCadastroImg/porta.jpg'
 
 export default function newform() {
+    
+    
     return (
         <>
         <Container>
             <Box>
             <LadoA>
-                <form>
+                <form action="/cadastro" method="POST">
                     <Ul>
                         <Li>
-                        <Input1 type="text" name="" id="" placeholder="Nome" required/>                         
-                        <Input1 type="text" name="" id="" placeholder="Sobrenome" required/>                         
+                        <Input1 type="text" name="nome" id="nome" placeholder="Nome" required/>                         
+                        <Input1 type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" required/>                         
                         </Li>
                     
                         <Li>
-                        <Input type="password" name="" id="" placeholder="Senha" required/>                         
+                        <Input type="password" name="senha" id="password" placeholder="Senha" required/>                         
                         </Li>
 
                         <Li>
-                        <Input type="email" name="" id="" placeholder="E-mail" required/>                         
+                        <Input type="email" name="email" id="email" placeholder="E-mail" required/>                         
                         </Li>
 
                         <Li>
-                        <Input type="number" name="" id="" placeholder="Celular"/>                         
+                        <Input type="number" name="celular" id="celular" placeholder="Celular"/>                         
                         </Li>
 
                     </Ul>

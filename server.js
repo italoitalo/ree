@@ -5,12 +5,17 @@ as rodas dinamicas usando consign, bem como estabelece a porta que ambos os "ser
 
 const express = require('express');
 var consign = require('consign');
+const bodyParser = require('body-parser')
 
 const app = express();
 
 //app.set('view engine','ejs')
 app.set('view engine', 'react')
 app.set('views', './app/views')
+
+//configurando o body parser
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json())
 
 consign()
     .include('app/routes')

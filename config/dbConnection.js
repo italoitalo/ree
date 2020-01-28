@@ -17,9 +17,9 @@ module.exports = () => {
 
 
 
-const sequelize = new Sequelize('quadro64_ree', 'quadro64_italo', '123456', {
-    host: "quadroecia.com",
-    dialect: 'mysql'
+const sequelize = new Sequelize('3', '3', '3', {
+    host: "3",
+    dialect: '3l'
 
 })
 

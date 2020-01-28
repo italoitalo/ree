@@ -1,35 +1,11 @@
-/* var connMysql = () => {
-    console.log('Conexao com o bd foi estabelecida');
-    return mysql.createConnection({
-        host: 'localhost',
-        user: 'root',
-        password: '123456',
-        database: 'testeree'
-    });
-};
+const  mysql = require('mysql2')
 
-module.exports = () => {
-    console.log('O autoload carregou o modulo de conexão com o BD')
-    return connMysql
-} */
+var connection = mysql.createConnection({
+    host: 'quadroecia.com',
+    user: 'quadro64_italo',
+    password: '123456',
+    database: 'quadro64_ree'
+});
 
- const Sequelize = require('sequelize')
+module.exports = connection;
 
-
-
-const sequelize = new Sequelize('3', '3', '3', {
-    host: "3",
-    dialect: '3l'
-
-})
-
-sequelize.authenticate().then(() => {
-    console.log('Banco conectado com sucesso!')
-}).catch(erro => {
-    console.log('Falha ao se concetar ao banco de Dados:' + erro)
-})
-
-module.exports = {
-    sequelize: sequelize,
-    Sequelize: Sequelize
-} 

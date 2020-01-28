@@ -13,12 +13,12 @@ module.exports = () => {
     return connMysql
 } */
 
-const Sequelize = require('sequelize')
+ const Sequelize = require('sequelize')
 
 
 
-const sequelize = new Sequelize('testeree', 'root', '123456', {
-    host: "localhost",
+const sequelize = new Sequelize('quadro64_ree', 'quadro64_italo', '123456', {
+    host: "quadroecia.com",
     dialect: 'mysql'
 
 })
@@ -32,4 +32,4 @@ sequelize.authenticate().then(() => {
 module.exports = {
     sequelize: sequelize,
     Sequelize: Sequelize
-}
+} 

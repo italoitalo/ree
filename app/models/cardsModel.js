@@ -1,4 +1,4 @@
-db = require('./../../config/dbConnection')
+/* db = require('./../../config/dbConnection')
 
 
 //model de cards
@@ -20,4 +20,4 @@ const CardsModel = db.sequelize.define('cards', {
 /* CardsModel.create({
     titulo: "cooler",
     conteudo: "aparelho usado mas em boas condições",
-}) */
+}) */ */

@@ -1,4 +1,4 @@
-/* const server = require('./../../server')
+ const server = require('./../../server')
 const db = require('./../../config/dbConnection')
 const usuario = require('./../models/usersModel')
 
@@ -17,4 +17,4 @@ app.post('/cadastro', (req, res) => {
     }).catch((erro) => {
         res.send("ususário não cadastrado, houve um erro" + erro)
     })
-}) */
+}) 

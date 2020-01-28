@@ -1,4 +1,4 @@
-dbConnection = require('../../config/dbConnection')
+ dbConnection = require('../../config/dbConnection')
 
 
 //model de usuários
@@ -21,7 +21,7 @@ const Usuario = db.sequelize.define('usuarios', {
     }
 })
 module.exports = Usuario
-
+ 
 
 //Usuario.sync({ force: true }) //-> não tirar este comentário!!
 
@@ -31,7 +31,6 @@ module.exports = Usuario
 // cria um novo registro de usuário na tabela Usuario no banco
 
 
-/* 
 Usuario.create({
                 nome: "Bruno",
                 sobrenome: "Cabral",
@@ -40,4 +39,3 @@ Usuario.create({
                 celular: 988734469
 
  }) 
- */

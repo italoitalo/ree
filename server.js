@@ -51,5 +51,12 @@ app.post('/cadastro', (req, res) => {
     
 });
 
+app.post('/cadastroproduto', (req, res) => {
+    connection.query(`INSERT  INTO card (nome_card, estado_do_produto, caracteristicas) VALUES ('${req.body.nome}','${req.body.estado}', '${req.body.caracteristicas }' );`) 
+    res.send("<h1> produto cadastrado </h1>")
+
+    
+});
+
 
 app.listen(port, () => console.log(`Listening on port ${port}`));

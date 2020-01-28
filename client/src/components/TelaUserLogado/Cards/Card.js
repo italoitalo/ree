@@ -12,10 +12,11 @@ import prodCelu from './../../../img/itensCard/prodCelu.jpg'
 
 
 
-
 export default function Card() {
   return (
     <>
+
+    
       
       <CardSection>
           <DivUserProd>

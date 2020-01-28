@@ -1,4 +1,4 @@
-const {Router} = require ('express')
+/* const {Router} = require ('express')
 const  routes = Router()
 const  connection = require('../../config/dbConnection')
 
@@ -11,3 +11,4 @@ routes.post('/cadastro', (req, res) => {
     
 });
 module.exports = routes
+ */

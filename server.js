@@ -6,8 +6,7 @@ as rodas dinamicas usando consign, bem como estabelece a porta que ambos os "ser
 const express = require('express');
 var consign = require('consign');
 const bodyParser = require('body-parser')
-
-const routes = require('./app/routes/routes')
+const connection = require('./config/dbConnection')
 
 const app = express();
 
@@ -18,7 +17,6 @@ app.set('views', './app/views')
 //configurando o body parser
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
-app.use(routes)
 
 consign()
     .include('app/routes')
@@ -30,13 +28,13 @@ module.exports = app
 
 const port = process.env.PORT || 5000;
 
-/* 
+
 app.post('/cadastro', (req, res) => {
-    connection.query(`INSERT  INTO user (username, email) VALUES ('${req.body.nome}', '${req.body.email}' );`) 
+    connection.query(`INSERT  INTO user (username, lastname, password, email, celphone) VALUES ('${req.body.nome}','${req.body.sobrenome}', '${req.body.senha }', '${req.body.email}', '${req.body.celular}' );`) 
     res.send("<h1> enviado </h1>")
 
     
 });
- */
+
 
 app.listen(port, () => console.log(`Listening on port ${port}`));

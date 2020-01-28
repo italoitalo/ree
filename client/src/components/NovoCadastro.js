@@ -15,12 +15,12 @@ export default function newform() {
                 <form action="/cadastro" method="POST">
                     <Ul>
                         <Li>
-                        <Input1 type="text" name="nome" id="nome" placeholder="Nodddme" required/>                         
+                        <Input1 type="text" name="nome" id="nome" placeholder="Nome" required/>                         
                         <Input1 type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" required/>                         
                         </Li>
                     
                         <Li>
-                        <Input type="password" name="senha" id="password" placeholder="Senha" required/>                         
+                        <Input type="password" name="senha" id="senha" placeholder="Senha" required/>                         
                         </Li>
 
                         <Li>

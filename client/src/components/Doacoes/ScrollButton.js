@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
-export default function Scroll() {
 
+export default function Scroll() {
   function AutoScroll() {
       window.scrollBy({
           top: 700,

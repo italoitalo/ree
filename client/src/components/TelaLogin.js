@@ -13,12 +13,10 @@ export default function TelaLogin() {
         </Figure>
         <Form action="">
             <DivUserPass>
-                <ImgInput src={Userfoto}/>
                 <InputLogin type="text" placeholder="Login" name="" id=""/>
             </DivUserPass>
 
             <DivUserPass>
-                <ImgInput src={UserPass}/>
                 <InputLogin type="password" placeholder="Senha"name="" id=""/>
             </DivUserPass>
             <Buttons>
@@ -39,7 +37,6 @@ const Container = styled.section`
     flex-direction: column;
     align-items: center;
     margin:0px 30px 30px 30px;
-
 `;
 
 const Figure = styled.figure`
@@ -73,33 +70,33 @@ const ImgInput = styled.img`
 `;
 
 const InputLogin = styled.input`
-    height: 30px;
     display:block;
     min-width: 13rem;
-    
-    font-family:'Catamaran', sans-serif;
-    font-style: normal;
+    padding:10px;
     font-weight: bold;
     font-size: 16px;
-    line-height: 16px;
     
     background:white;
-    color: #828282;
+    color: #51B981;
 `;
 const ButtonLogin = styled.button`
     margin:40px;
-    min-width: 200px;
-    min-height: 27px;
-    background: linear-gradient(90deg, #F2C94C 3.26%, #FFA31A 100.19%);
+    min-width: 150px;
+    min-height: 50px;
+    border: solid #F2C94C;
     cursor: pointer;
 
-    font-family:'Catamaran', sans-serif;
-    font-style: normal;
-    font-weight: normal;
     font-size: 13px;
-    line-height: 16px;
+    font-weight:bolder;
 
-    color: #FFFFFF;
+    color: #F2C94C;
+
+        &:hover{
+    transition: 1s;
+    border: none;
+    background: #FFA31A;
+    color:white;
+}
 `;
 const ButtonCadastro = styled.button`
     min-width: 200px;

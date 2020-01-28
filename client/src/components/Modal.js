@@ -25,7 +25,8 @@ const Modal = ({ isShowing, hide }) => isShowing ? ReactDOM.createPortal(
 export default Modal;
 
 const ModalOverlayDiv = styled.div` /* fundo abaixo do modal */
-  position: fixed;
+    position: fixed;
+    animation: none;
     top: 0;
     left: 0;
     z-index: 1040;

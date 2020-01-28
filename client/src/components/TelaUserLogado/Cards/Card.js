@@ -23,7 +23,7 @@ export default function Card() {
               <ImgUser src={UserFoto} alt=""/>
               <H1User>Usuário</H1User>
             </User>
-            <ImgProd src={prodCelu} alt=""/>
+            <ImgProd alt="PRODCEL" src={prodCelu} />
           </DivUserProd>
           <InfoCard>
             <InfoText>

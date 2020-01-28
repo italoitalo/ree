@@ -16,7 +16,7 @@ export default function form() {
                 <Form action="/home/suasdoacoes" method="POST">
                     <DivInput>
                         <DivImg>
-                            <Img src={Iconuser} weight="" height="25" alt=""/>
+                            <Img alt="iconuser" src={Iconuser} weight="" height="25" alt=""/>
                         </DivImg>
                         <Input type="text" name="nome" id="" placeholder="Nome de Usuário" required/> 
                         <Pform>(5-15 caracteres)</Pform>
@@ -24,7 +24,7 @@ export default function form() {
                     
                     <DivInput>
                         <DivImg>
-                            <Img src={IconPass} weight="" height="25" alt=""/>
+                            <Img alt="iconpassw" src={IconPass} weight="" height="25" alt=""/>
                         </DivImg>
                         <Input type="password" name="password" id="" placeholder="Senha" required/>
                         <Pform>(5-15 caracteres)</Pform>
@@ -32,21 +32,21 @@ export default function form() {
 
                     <DivInput> 
                         <DivImg>
-                            <Img src={IconPass} weight="" height="25" alt="" />
+                            <Img alt="iconpassw" src={IconPass} weight="" height="25" alt="" />
                         </DivImg>
                         <Input type="password" name="" id="" placeholder="Repetir Senha" required/>
                     </DivInput>
 
                     <DivInput>
                         <DivImg>
-                            <Img src={IconEmail} weight="" height="15" alt=""/>
+                            <Img alt="iconemail" src={IconEmail} weight="" height="15" alt=""/>
                         </DivImg>
                         <Input type="email" name="email" id="" placeholder="E-mail" required />
                     </DivInput>   
 
                     <DivInput>
                         <DivImg>
-                            <Img src={IconCel} weight="" height="25" alt=""/>
+                            <Img alt="iconcel" src={IconCel} weight="" height="25" alt=""/>
                         </DivImg> 
                         <Input type="tel" name="celular" id=""placeholder="Celular"/>
                         <Pform>(Opcional)</Pform>     
@@ -55,11 +55,11 @@ export default function form() {
                     <Button type="submit">Cadastre-se</Button>
                 </Form>
 
-                <ImgPerfil src={Ilustracao01} weight="" height="200" alt=""/>
+                <ImgPerfil alt="iconIlustracao"src={Ilustracao01} weight="" height="200" alt=""/>
 
               </SectionForm>
         </View>
-        <ImgF src={ImgFundo} weight="" height="" alt=""/>
+        <ImgF  alt="imagem de fundo"src={ImgFundo} weight="" height="" alt=""/>
         </Containner>
    )
 }

@@ -21,9 +21,9 @@ export default function ConfigPerfil(){
                         </SectionFlex>
                         <SectionFlex>
                             <button>Alterar foto </button>
-                            <ImgConf src={Foto} width='175'></ImgConf>
-                            <ImgConf src={Seta} width='64'   height='50'></ImgConf>
-                            <ImgConf src={Img} width='183'></ImgConf>
+                            <ImgConf alt="imagem de foto" src={Foto} width='175'></ImgConf>
+                            <ImgConf alt="imagemSeta" src={Seta} width='64'   height='50'></ImgConf>
+                            <ImgConf alt="imagem55" src={Img} width='183'></ImgConf>
                         </SectionFlex>
                         <SectionCol>
                                 <Main>

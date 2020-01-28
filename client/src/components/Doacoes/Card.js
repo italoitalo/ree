@@ -17,19 +17,19 @@ export default function Card(){
                
                     <Ul>
                         <Li>
-                            <Button><ImgIcon src={phone}/> <h1>Celulares</h1></Button>
+                            <Button><ImgIcon alt="iconTel" src={phone}/> <h1>Celulares</h1></Button>
                         </Li>
                         <Li>
-                            <Button><ImgIcon src={notebook}/><h1>Notebooks</h1></Button>
+                            <Button><ImgIcon alt="iconNot" src={notebook}/><h1>Notebooks</h1></Button>
                         </Li>
                         <Li>
-                            <Button><ImgIcon src={headphone}/><h1>Fones</h1></Button>
+                            <Button><ImgIcon alt="iconheadphone"src={headphone}/><h1>Fones</h1></Button>
                         </Li>
                         <Li>
-                            <Button><ImgIcon src={plug}/><h1>Cabos</h1></Button>
+                            <Button><ImgIcon alt="iconplug"src={plug}/><h1>Cabos</h1></Button>
                         </Li>
                         <Li>
-                            <Button><ImgIcon src={keyboard}/><h1>Celulares</h1></Button>
+                            <Button><ImgIcon alt="iconkeyboard" src={keyboard}/><h1>Celulares</h1></Button>
                         </Li>
                     </Ul>
                     <Div>

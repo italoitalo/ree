@@ -7,10 +7,11 @@ const express = require('express');
 var consign = require('consign');
 const bodyParser = require('body-parser')
 const connection = require('./config/dbConnection')
+const routes = require ("./app/routes/routes")
 
 const app = express();
 
-//app.set('view engine','ejs')
+app.use(routes)
 app.set('view engine', 'react')
 app.set('views', './app/views')
 

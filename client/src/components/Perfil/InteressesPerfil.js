@@ -13,7 +13,7 @@ export default function Interesses(){
                 <Container>
                     <SectionInt>
                         <Title>No que você pode ajudar?</Title>
-                        <Img src={Ilustracao02} height='100' width='100'/>
+                        <Img alt="ilutracao2" src={Ilustracao02} height='100' width='100'/>
                         <Form>
                             <H1>Celulares</H1> 
                             <Input name='' id='' type='checkbox' value="teste"/>
@@ -48,7 +48,7 @@ export default function Interesses(){
 
                     <SectionInt>
                         <Title>Do que você precisa?</Title>
-                        <Img src={Ilustracao01} height='100' width='120'/>
+                        <Img alt="ilustracao1" src={Ilustracao01} height='100' width='120'/>
                         
                         <Form>
                             <H1>Celulares</H1> 

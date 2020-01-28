@@ -17,10 +17,10 @@ export default function Card() {
       <CardSection>
           <DivUserProd>
             <User>
-              <ImgUser src={UserFoto} alt=""/>
+              <ImgUser src={UserFoto} alt="usuário foto"/>
               <H1User>Usuário</H1User>
             </User>
-            <ImgProd src={cooler} alt=""/>
+            <ImgProd src={cooler} alt="imagem do produto"/>
           </DivUserProd>
           <InfoCard>
             <InfoText>

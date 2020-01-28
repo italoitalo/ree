@@ -2,14 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 
 import UserPerfil from './../img/TelaLogin/UserPerfil.png'
-import Userfoto from './../img/TelaLogin/Userfoto.png'
-import UserPass from './../img/TelaLogin/UserPass.png'
+
 
 export default function TelaLogin() {
     return ( 
     <Container>
         <Figure>
-            <ImgUSer src={UserPerfil}/>
+            <ImgUSer alt="fotoUserPerfil" src={UserPerfil}/>
         </Figure>
         <Form action="">
             <DivUserPass>

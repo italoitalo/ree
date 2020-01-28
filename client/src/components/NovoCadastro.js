@@ -37,7 +37,7 @@ export default function newform() {
             </LadoA>
             
             <LadoB>
-                <Img src={Porta}/>
+                <Img alt="imagemporta" src={Porta}/>
                 <H1>Faça Parte</H1>
                 <H2>A diferença está em suas mãos</H2>
             </LadoB>

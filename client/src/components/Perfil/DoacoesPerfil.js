@@ -46,12 +46,12 @@ export default function Doacoes(){
                                             <li>Altruísta </li>
                                         </Ulist>
                                         <Ulist>
-                                            <li> <img src={Star}></img></li>
-                                            <li> <img src={Star}></img></li>
-                                            <li> <img src={Star}></img></li>
-                                            <li><img src={Star}></img></li>                                            
-                                            <li><img src={Star}></img></li>
-                                            <li><img src={Star}></img></li>
+                                            <li> <img alt="star" src={Star}></img></li>
+                                            <li> <img alt="star" src={Star}></img></li>
+                                            <li> <img alt="star" src={Star}></img></li>
+                                            <li><img alt="star" src={Star}></img></li>                                            
+                                            <li><img alt="star" src={Star}></img></li>
+                                            <li><img alt="star" src={Star}></img></li>
                                         </Ulist>
                                         </SectionDiplay>
                                     </Lista>
@@ -71,11 +71,11 @@ export default function Doacoes(){
                                             <li>Queridinho </li>
                                         </UlistRed>
                                         <Ulist>
-                                            <li> <img src={Star}></img></li>
-                                            <li> <img src={Star}></img></li>
-                                            <li> <img src={Star}></img></li>
-                                            <li><img src={Star}></img></li>                                            
-                                            <li><img src={Star}></img></li>
+                                            <li> <img alt="star" src={Star}></img></li>
+                                            <li> <img alt="star" src={Star}></img></li>
+                                            <li> <img alt="star" src={Star}></img></li>
+                                            <li><img alt="star" src={Star}></img></li>                                            
+                                            <li><img alt="star" src={Star}></img></li>
                                         </Ulist>
                                         </SectionDiplay>
                                     </Lista> </DivEmPe>

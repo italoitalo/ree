@@ -15,9 +15,9 @@ export default function BioPerfil(){
                 <NavPerfil/> 
                 <Main1>
                 <MainPessoal>
-                                <img src={User} weight="100" heigth="150" width="150"></img>
+                                <img alt="iconuser" src={User} weight="100" heigth="150" width="150"></img>
                                 <MainCol><P>João Silva</P>
-                                <img src={Config}></img>
+                                <img alt="imagem de configuracao" src={Config}></img>
                                 </MainCol>
                     </MainPessoal>
                     <Main2>
@@ -66,7 +66,7 @@ export default function BioPerfil(){
                                         **********                                      
                                     </PLi2>                                    
                                 </Listra>
-                                <img src={Config}></img>
+                                <img alt="iconconfig"src={Config}></img>
                                 
                             </Card>
                             <Card>
@@ -98,7 +98,7 @@ export default function BioPerfil(){
                                     Dezembro de 2019                                     
                                     </PLi2> 
                                 </Listra>
-                                <img src={Config}></img>
+                                <img  alt="iconconfig2"src={Config}></img>
                             </Card>
                             <Card>
                                 <H1>
@@ -128,12 +128,12 @@ export default function BioPerfil(){
                                                                         
                                     </PLi2> 
                                 </Listra>
-                                <img src={Config}></img>
+                                <img alt="iconconfig3"src={Config}></img>
                             </Card>
                             
                         </MainCol>
                         <Card>
-                            <img src={Local}></img>
+                            <img alt="imagemlocal"src={Local}></img>
                             <H2>
                                 Rio de janeiro - RJ Meier
                             </H2>
@@ -149,8 +149,8 @@ export default function BioPerfil(){
                                 <PLi>Complemento</PLi>
                                 <PLi2>casa 2</PLi2>
                             </Listra2>
-                            <img src={Mapa}></img>
-                            <img src={Config}></img>
+                            <img alt="imagemMapa" src={Mapa}></img>
+                            <img alt="imagemconfig" src={Config}></img>
                         </Card>
                     </Main2>
                     </Main1>

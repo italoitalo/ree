@@ -63,10 +63,6 @@ const Buttons = styled.div`
     align-items: center;
 `;
 
-const ImgInput = styled.img`
-    width: 30px;
-    height: 30px;
-`;
 
 const InputLogin = styled.input`
     display:block;

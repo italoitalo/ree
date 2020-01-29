@@ -11,7 +11,7 @@ import Doacoes from './../Doacoes/Doacoes'
 
 import NovoCadastro from '../NovoCadastro'
 import NovoCadastroProduto from '../NovoCadastroProduto'
-import Teste from '../teste'
+
 
 import DoacoesPerfil from '../Perfil/DoacoesPerfil'
 import InteressesPerfil from '../Perfil/InteressesPerfil'

@@ -29,7 +29,7 @@ export default function Contato(){
                     <Flex>
                         <A href="https://twitter.com/equiperee" target="_blank"> <img alt="icontwitter" src={twitter} height="40px"/></A>
                         <A href="https://facebook.com/" target="_blank"> <img  alt="iconfacebook" src={facebook}height="40px"/></A>
-                        <A href="https://www.instagram.com/equiperee/" alt="iconinstagran" target="_blank"> <img src={instagram}height="40px"/></A>
+                        <A href="https://www.instagram.com/equiperee/" alt="iconinstagran" target="_blank"> <img src={instagram}height="40px" alt="icone intagram"/></A>
                         <A href="https://github.com/" target="_blank"> <img alt="icongithub" src={github}height="40px"/></A>
                         <A href="https://www.linkedin.com/" target="_blank"> <img alt="icontlinkedin" src={linkedin}height="40px"/></A>
                     </Flex>

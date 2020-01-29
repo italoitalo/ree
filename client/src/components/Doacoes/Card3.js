@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Scroll from './ScrollButton'
+
 
 export default function Card(){
     return(

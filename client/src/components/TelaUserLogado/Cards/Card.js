@@ -9,7 +9,10 @@ import like from './../../../img/itensCard/like.svg'
 
 import UserFoto from './../../../img/itensCard/UserFoto.png'
 import prodCelu from './../../../img/itensCard/prodCelu.jpg'
-
+const ImgInput = styled.img`
+    width: 30px;
+    height: 30px;
+`;
 
 
 export default function Card() {

@@ -15,7 +15,7 @@ export default function newform() {
                 <form action="/cadastro" method="POST">
                     <Ul>
                         <Li>
-                        <Input1 type="text" name="nome" id="nome" placeholder="Nome" required/>                         
+                        <Input1 type="text" name="nome" id="nome" placeholder="Nomdde" required/>                         
                         <Input1 type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" required/>                         
                         </Li>
                     

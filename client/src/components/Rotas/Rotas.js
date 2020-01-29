@@ -13,6 +13,7 @@ import NovoCadastro from '../NovoCadastro'
 import NovoCadastroProduto from '../NovoCadastroProduto'
 
 
+
 import DoacoesPerfil from '../Perfil/DoacoesPerfil'
 import InteressesPerfil from '../Perfil/InteressesPerfil'
 import ConfigPerfil from '../Perfil/ConfigPerfil'
@@ -28,6 +29,7 @@ export default function Rotas(){
                     <Route  path="/doe" component={Doacoes}/>
                     <Route path='/cadastroext' component={CadastroExt}/>
                     <Route path='/cadastroproduto' component={NovoCadastroProduto}/>
+
 
 
                     <Route exact path="/perfil/doacoes" component={DoacoesPerfil}/>   

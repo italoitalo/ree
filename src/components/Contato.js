@@ -65,7 +65,7 @@ const Container = styled.section`
     flex-direction:column;
     background-image:url(${papeldeParede});
     background-repeat:no-repeat;
-    background-size: 100%
+    background-size: 100%;
     background-attachment: fixed;
 
 `

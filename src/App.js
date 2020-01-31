@@ -1,7 +1,7 @@
 import React from 'react';
 import {BrowserRouter as Router } from 'react-router-dom';
 
-import GlobalStyles from './EstiloGlobal';
+import GlobalStyles from '../EstiloGlobal';
 
 import Rotas from './components/Rotas/Rotas';
 import Cabecalho from './components/Rotas/Cabecalho';

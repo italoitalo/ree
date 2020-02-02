@@ -13,11 +13,7 @@ export default function SecaoDeProdutosDoacoes() {
             <Produtos>
               <Grid>  
                 <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
+               
               </Grid>
             </Produtos>
         </Container>    

@@ -8,6 +8,7 @@ import Contato from './../Contato'
 import Login from './../Login'
 import SuasDoacoes from './../TelaUserLogado/SuasDoacoes'
 import Doacoes from './../Doacoes/Doacoes'
+/* import cardsrout from './../../components/TelaUserLogado/Cards/cardsroute' */
 
 import NovoCadastro from '../NovoCadastro'
 import NovoCadastroProduto from '../NovoCadastroProduto'
@@ -29,6 +30,7 @@ export default function Rotas(){
                     <Route  path="/doe" component={Doacoes}/>
                     <Route path='/cadastroext' component={CadastroExt}/>
                     <Route path='/cadastroproduto' component={NovoCadastroProduto}/>
+                    {/* <Route  path="/cardsrout" component={cardsrout}/> */}
 
 
 

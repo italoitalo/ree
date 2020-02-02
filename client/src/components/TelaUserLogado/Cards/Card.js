@@ -1,5 +1,6 @@
-import React from 'react';
+import React,{useEffect, useState} from 'react';
 import styled from 'styled-components';
+import api from './../../../services/api'
 
 
 import chat from './../../../img/itensCard/chat.svg'
@@ -9,29 +10,34 @@ import like from './../../../img/itensCard/like.svg'
 
 import UserFoto from './../../../img/itensCard/UserFoto.png'
 import prodCelu from './../../../img/itensCard/prodCelu.jpg'
-const ImgInput = styled.img`
-    width: 30px;
-    height: 30px;
-`;
 
-
+ 
 export default function Card() {
-  return (
-    <>
 
-    
-      
-      <CardSection>
+  const [Card, setCard] = useState([])
+
+  useEffect(()=>{
+    async function loadCards(){
+      const response =await api.post('/card')
+           
+      setCard(response.data)
+    }
+    loadCards()
+  },[])
+return (
+    <>
+      {Card.map(Card =>(
+        <CardSection key={Card.id_card}>
           <DivUserProd>
             <User>
-              <ImgUser src={UserFoto} alt=""/>
-              <H1User>Usuário</H1User>
+              <ImgUser src={UserFoto} alt="imagem do usuário"/>
+              <H1User>{Card.nome_card}</H1User>
             </User>
             <ImgProd alt="PRODCEL" src={prodCelu} />
           </DivUserProd>
           <InfoCard>
             <InfoText>
-              <PinfoText>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam turpis libero, tincidunt in euismod a, finibus a metus.</PinfoText>
+              <PinfoText>{Card.caracteristicas}</PinfoText>
             </InfoText>
             <AcoesCard>
               <SocialButton href="#"><img src={chat} alt="chat" height="20"/></SocialButton>
@@ -40,9 +46,8 @@ export default function Card() {
               <SocialButton href="#"><img src={coment} alt="chat" height="20"/></SocialButton>
             </AcoesCard>
           </InfoCard>
-
-      </CardSection>
-
+        </CardSection>
+      ))}
     </>
   );
 }

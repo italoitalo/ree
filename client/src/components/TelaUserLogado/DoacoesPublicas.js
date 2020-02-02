@@ -8,13 +8,14 @@ import SecaoDeProdutosDoacoes from './SecaoDeProdutosDoacoes';
 import Styled from 'styled-components';
 
 
+
 export default function DoacoesPublicas() {
     return ( 
       <>
       <Container>
           <AbasNav />
           <SecaoDeProdutosDoacoes /> 
-      </Container>    
+       </Container>    
       </>
     );
 }

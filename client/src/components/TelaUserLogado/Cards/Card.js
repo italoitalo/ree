@@ -144,11 +144,13 @@ const InfoText = styled.div`
   height:auto;
 `;
 const PinfoText = styled.p`
+    word-wrap:break-word;
     min-height:20px;
     font-family: Catamaran;
     min-width: 160px;
     font-size: 15px;
     color: #000000;
+    background-color:red;
 `
 
 

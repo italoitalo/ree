@@ -1,0 +1,3 @@
+/* Nesta pasta deverá conter as views. 
+talves não precisaremos usar essa pasta, no entanto ela precisa existir caso queiramos renderizar alguma coisa para testes;
+ */

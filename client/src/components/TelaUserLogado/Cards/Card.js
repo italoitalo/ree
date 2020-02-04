@@ -30,14 +30,15 @@ return (
         <CardSection key={Card.id_card}>
           <DivUserProd>
             <User>
-              <ImgUser src={UserFoto} alt="imagem do usuário"/>
-              <H1User>{Card.nome_card}</H1User>
+              <ImgUser src={Card.img_url_user} alt="imagem do usuário"/>
+              <H1User>{Card.username_}</H1User>
             </User>
             <ImgProd alt="PRODCEL" src={prodCelu} />
           </DivUserProd>
           <InfoCard>
             <InfoText>
-              <PinfoText>{Card.caracteristicas}</PinfoText>
+            <H1Prod>{Card.username_}</H1Prod>
+            <PinfoText>{Card.caracteristicas}</PinfoText>
             </InfoText>
             <AcoesCard>
               <SocialButton href="#"><img src={chat} alt="chat" height="20"/></SocialButton>
@@ -130,6 +131,14 @@ const H1User = styled.h1`
   font-size: 20px;
   margin-left:8px;
 `;
+const H1Prod = styled.h1`
+  align-self:center;
+  font-weight: bold;
+  font-size: 20px;
+  
+`;
+
+
 const InfoCard = styled.section`
 display:flex;
 flex-direction:column;
@@ -150,8 +159,5 @@ const PinfoText = styled.p`
     min-width: 160px;
     font-size: 15px;
     color: #000000;
-    background-color:red;
-`
-
-
-
+    
+`;

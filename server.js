@@ -9,10 +9,6 @@ const connection = require('./config/dbConnection')
 const bodyParser = require('body-parser')
 const cors = require('cors')
 
-
-
-
-
 const app = express();
 app.use(cors())
 
@@ -24,15 +20,20 @@ app.set('views', './app/views')
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
+// configurando o consign
 consign()
     .include('app/routes', './server.js')
     .then('config/dbConnection.js')
     .into(app);
 module.exports = app
 
+// rota de conecção do backend com frontend, não apagar rota;
+app.get('/api/mensagem', (req, res) => {
+    res.send({ express: 'Hello From Express' });
+  });
 
 
-const port = process.env.PORT || 5000;
+
 
 
 app.post('/cadastro', (req, res) => {
@@ -49,15 +50,7 @@ app.post('/cadastroproduto', (req, res) => {
 
 });
 
-/* app.post('/card', (req, res) => {
-    connection.query(`SELECT * FROM card`,
-        (error, result) => {
-            res.send(result)
-            console.log(result)
-        })
 
-        
-}) */
 
 
 app.post('/card', (req, res) => {
@@ -71,8 +64,6 @@ app.post('/card', (req, res) => {
         
 })
 
-
-
-
-
+//porta servidor
+const port = process.env.PORT || 5000;
 app.listen(port, () => console.log(`Listening on port ${port}`));

@@ -8,7 +8,7 @@ import coment from './../../../img/itensCard/comment.svg'
 import share from './../../../img/itensCard/share.svg'
 import like from './../../../img/itensCard/like.svg'
 
-import UserFoto from './../../../img/itensCard/UserFoto.png'
+/* import UserFoto from './../../../img/itensCard/UserFoto.png' */
 import prodCelu from './../../../img/itensCard/prodCelu.jpg'
 
  
@@ -37,7 +37,7 @@ return (
           </DivUserProd>
           <InfoCard>
             <InfoText>
-            <H1Prod>{Card.username_}</H1Prod>
+            <H1Prod>{Card.name_card_}</H1Prod>
             <PinfoText>{Card.caracteristicas}</PinfoText>
             </InfoText>
             <AcoesCard>

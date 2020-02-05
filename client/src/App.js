@@ -6,7 +6,9 @@ import GlobalStyles from './EstiloGlobal';
 import Rotas from './components/Rotas/Rotas';
 import Cabecalho from './components/Rotas/Cabecalho';
 import Rodape from './components/Rotas/Rodape'
+
 export default function App() {
+
 
   return (
     <body>

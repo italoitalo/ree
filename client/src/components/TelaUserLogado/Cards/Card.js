@@ -31,13 +31,13 @@ return (
           <DivUserProd>
             <User>
               <ImgUser src={Card.img_url_user} alt="imagem do usuário"/>
-              <H1User>{Card.username_}</H1User>
+              <H1User>{Card.username}</H1User>
             </User>
-            <ImgProd alt="PRODCEL" src={prodCelu} />
+            <ImgProd alt="PRODCEL" src={Card.img_url_card} />
           </DivUserProd>
           <InfoCard>
             <InfoText>
-            <H1Prod>{Card.name_card_}</H1Prod>
+            <H1Prod>{Card.nome_card}</H1Prod>
             <PinfoText>{Card.caracteristicas}</PinfoText>
             </InfoText>
             <AcoesCard>
@@ -52,6 +52,7 @@ return (
     </>
   );
 }
+
 
 const SocialButton = styled.button`
   height:20px;
@@ -123,7 +124,10 @@ background: whitesmoke;
 border-radius: 45px;
 `;
 const ImgUser = styled.img`
+width: 80px;
+height: 80px;
 margin-left:2px;
+border-radius: 50%;
 `;
 const H1User = styled.h1`
   align-self:center;

@@ -14,7 +14,7 @@ export default function newform() {
                 <H1>Para começar,<br/>nos diga algumas coisas</H1>
             </Banner>
                 <form action="/cadastroproduto" method="POST">
-        
+                    
                     <Box>
                         <Title>Oque quer doar?</Title>
                         
@@ -47,6 +47,7 @@ export default function newform() {
                         <input type="text" name="caracteristicas" id="caracteristicas" placeholder="caracteristicas" required/> 
                     </Box> 
 
+                    <input type="text" name="id" id="id"  placeholder="id"/>id
                     <button type="submit"> submit </button>
                 </form>
         </Container>

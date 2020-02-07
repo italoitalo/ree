@@ -10,129 +10,90 @@ export default function newform() {
     return (
         <>
         <Container>
-            <Box>
-            <LadoA>
+            <Banner>
+                <H1>Para começar,<br/>nos diga algumas coisas</H1>
+            </Banner>
                 <form action="/cadastroproduto" method="POST">
-                    <Ul>
-                        <Li>
-                        <Input1 type="text" name="nome" id="nome" placeholder="Nome do produto" required/>                         
-                        <Input1 type="text" name="estado" id="estado" placeholder="Estado do produto" required/>                         
-                        </Li>
-                    
-                        <Li>
-                        <Input type="text" name="caracteristicas" id="caracteristicas" placeholder="caracteristicas" required/>                         
-                        </Li>
+        
+                    <Box>
+                        <Title>Oque quer doar?</Title>
+                        
+                        <Input2 type="radio" name="tipo" id="tipo" value="Celular" required/>Celular
+                        <Input2 type="radio" name="tipo" id="tipo" value="Notebook" required/>Notebook
+                        <Input2 type="radio" name="tipo" id="tipo" value="Fones" required/>Fones
+                        <Input2 type="radio" name="tipo" id="tipo" value="Cabos" required/>Cabos
+                        <Input2 type="radio" name="tipo" id="tipo" value="Gadgets" required/>Gadgets
+                   
+                    </Box> 
 
-                    </Ul>
-                    <Button type="submit">Cadastre seu produto</Button>
+                    <Box>
+                        <Title>Qual o estado do seu item?</Title>
+                        
+                        <Input2 type="radio" name="estado" id="estado" value="Péssimo" required/>Péssimo
+                        <Input2 type="radio" name="estado" id="estado" value="Ruim" required/>Ruim
+                        <Input2 type="radio" name="estado" id="estado" value="Bom" required/>Bom
+                        <Input2 type="radio" name="estado" id="estado" value="Ótimo" required/>Ótimo
+                        <Input2 type="radio" name="estado" id="estado" value="Perfeito" required/>Perfeito
+                    </Box> 
+
+                    <Box>
+                        <Title>Mande uma foto do seu item</Title>
+                        <input type="file" name="fotoProduto" id="fotoProduto" required/>
+                    </Box> 
+
+                    <Box>
+                        <Title>insira sua Descrição!</Title>
+                        <input type="text" name="nome" id="nome" placeholder="Titulo da doação" required/> 
+                        <input type="text" name="caracteristicas" id="caracteristicas" placeholder="caracteristicas" required/> 
+                    </Box> 
+
+                    <button type="submit"> submit </button>
                 </form>
-            </LadoA>
-            
-            <LadoB>
-                <Img src={Porta}/>
-                <H1>Faça Parte</H1>
-                <H2>A diferença está em suas mãos</H2>
-            </LadoB>
-            </Box>
         </Container>
         </>
     )
 }
 
-const Img = styled.img`
-    width:100%;
-    height:100%;
-    border-top-right-radius:10px;
-    border-bottom-right-radius:10px;
-    opacity:0.5;
-    z-index:0;
+
+const Input2 = styled.input`
 `
 
-const H1 = styled.h1`
-font-size:40px;
-color:white;
-z-index:1;
-margin:40% -240px;
+const Title = styled.h1`
+    font-size:35pt;
+    color: rgba(0,0,0,0.8);
 `
 
-const H2 = styled.h1`
-font-size:18px;
-color:white;
-z-index:1;
-margin:60% 20px;
-`
-
-const Button = styled.button`
-    margin-left: 40%;
-    padding:10px 20px;
-    font-weight:bolder;
-    font-size:14px;
-    color: #51B981;
-    border: solid #51B981;
-    &:hover{
-        background: #51B981;
-        color:white;
-    }
-`
-
-const Input = styled.input`
-padding:10px;
-margin: 0 10px;
-width: 94%;
-`
-
-const Input1 = styled.input`
-padding:10px;
-margin: 0 10px;
-width:45%;
-`
-
-const Ul = styled.ul`
-    margin: 50px;
-    display: flex;
-    flex-direction:column;
-`
-
-const Li = styled.li`
-margin: 10px;
-`
-
-
-const LadoA = styled.div `
+const Box = styled.section`
     background:white;
-    height:100%;
-    width:80%;
-    border-top-left-radius:10px;
-    border-bottom-left-radius:10px;
-`
+    height:350px;
+    width:1000px;
+    margin-top: -50px;
+    margin-bottom:400px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
 
-const LadoB = styled.div `
-    display: flex;
-    background:black;
-    z-index:0;
-    height:100%;
-    width:40%;
-    border-top-right-radius:10px;
-    border-bottom-right-radius:10px;
+    text-align: center;
 `
 
 const Container = styled.section`
-height:100%;
-width:100%;
-display:flex;
-justify-content: center;
-padding:50px;
-
-&:hover{
-        background: #51B981;
-}
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 `
 
-const Box = styled.div`
-border-radius:10px;
-display:flex;
-height:450px;
-width:80%;
-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+const Banner = styled.section`
+    min-height:250px;
+    width:100%;
+    background-image: linear-gradient(to bottom right, rgb(68, 226, 139), rgb(68, 233, 90) );
+    justify-content:center;
+`
+
+const H1 = styled.h1`
+    font-size:70px;
+    color: whitesmoke;
+    margin-top:25px;
+    margin-left:160px;
+    font-weight:900;
+    line-height: 0.9;
 `

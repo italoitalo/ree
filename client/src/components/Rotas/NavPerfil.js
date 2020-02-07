@@ -45,19 +45,16 @@ const Container = styled.section`
 `
 
 // BOTAO VERDE ESCURO (HOVER)
-const Botao = styled.div`
-    background-color: #51B981;
+const Botao = styled.div` 
 
     padding: 5px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 40px;
-
-   border-top-left-radius:15px;
-   border-bottom-left-radius:15px;
-
+    margin: 30px 0 30px 40px;
+    border-top-left-radius:5px;
+    border-bottom-left-radius:5px;
+    transition: 0.2s;
+    
    &:hover {
-    transition: 0.5s;
+    transition: 0.1s;
     background-color: white;
   }
 `
@@ -67,7 +64,7 @@ const Nav = styled.div`
     height:700px;;
     width: 300px;
     position: relative; 
-    background-image: linear-gradient(#6CD79D, #6CD79D); 
+    background-image: linear-gradient(to bottom right, rgb(68, 226, 139), rgb(68, 233, 90) );
 `
 //TITULO DOS BOTOES
 const H1 = styled.h1`

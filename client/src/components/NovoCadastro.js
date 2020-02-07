@@ -15,7 +15,7 @@ export default function newform() {
                 <form action="/cadastro" method="POST">
                     <Ul>
                         <Li>
-                        <Input1 type="text" name="nome" id="nome" placeholder="Nomdde" required/>                         
+                        <Input1 type="text" name="nome" id="nome" placeholder="Nome" required/>                         
                         <Input1 type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" required/>                         
                         </Li>
                     
@@ -72,13 +72,14 @@ margin:60% 20px;
 
 const Button = styled.button`
     margin-left: 40%;
-    padding:10px 20px;
+    padding:20px 40px;
     font-weight:bolder;
-    font-size:14px;
-    color: #51B981;
-    border: solid #51B981;
+    font-size:16px;
+    color: rgb(68, 226, 139);
+    border: solid rgb(68, 226, 139);
+
     &:hover{
-        background: #51B981;
+        background-image: linear-gradient(to bottom right, rgb(68, 226, 139), rgb(68, 233, 90) );
         color:white;
     }
 `
@@ -132,7 +133,7 @@ justify-content: center;
 padding:50px;
 
 &:hover{
-        background: #51B981;
+    background: rgb(68, 226, 139);
 }
 
 `

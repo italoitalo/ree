@@ -19,15 +19,15 @@ export default function AbasNavegacao() {
 
 
 const Container=styled.section`
-background-image: linear-gradient(to bottom right, #4EAB79,#51B981 );
-margin: 20px 80px 0px 80px;
-border-radius: 10px;
-display:flex;
-flex-wrap:wrap;
-min-height:80px;
-justify-content:space-evenly;
-align-items:center;
-z-index:1;
+ background-image: linear-gradient(to bottom right, rgb(68, 226, 139), rgb(68, 233, 90) );
+  margin: 20px 80px 0px 80px;
+  border-radius: 10px;
+  display:flex;
+  flex-wrap:wrap;
+  min-height:80px;
+  justify-content:space-evenly;
+  align-items:center;
+  z-index:1;
 
 
 /* &:hover{

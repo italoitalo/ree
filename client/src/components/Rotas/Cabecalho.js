@@ -30,18 +30,19 @@ export default function Cabecalho(){
 const Navigation = styled(Link)`
 text-decoration:none;
 `
+
 const Button = styled.button`
     padding:12px;
     margin: 5px 10px;
-    color: #51B981;
+    color: rgb(68, 226, 139);
     font-weight:bolder;
-    border: 2px solid #51B981;
+    border: 2px solid rgb(68, 226, 139);;
     font-family: 'Merriweather Sans', sans-serif;
     font-size: 14px;
 
     &:hover{
-        transition: 1s;
-        background-color: #51b981;
+        transition: 0.2s;
+        background-color: rgb(68, 226, 139);;
         color: white
     }
 `
@@ -49,12 +50,11 @@ const Button = styled.button`
 const Div= styled.div`
     display:flex;
     background-color: whitesmoke;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
     position:relative;
 `
 
 const Logo = styled.img`
-    
     padding-left:20px;
     padding-top:10px;
 `
@@ -68,8 +68,10 @@ const Li = styled.li`
     font-size: 14px;
 
     &:hover{
-        color: #51B981;
-        background-color:whitesmoke;
+    background: -webkit-linear-gradient(rgb(68, 233, 90),rgb(39, 177, 58) );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color:whitesmoke;
     }
 `  
 

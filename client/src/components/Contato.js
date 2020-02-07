@@ -50,7 +50,8 @@ display:flex;
 justify-content:center;
 `
 const Banner = styled.div`
-background-image: linear-gradient(to bottom right, #4EAB79,#51B981 );
+ background-image: linear-gradient(to bottom right, rgb(68, 226, 139), rgb(68, 233, 90) );
+    
 margin: 10px 150px 10px 150px;
 border-radius: 10px;
 min-height:80px;
@@ -67,7 +68,6 @@ const Container = styled.section`
     background-repeat:no-repeat;
     background-size: 100%;
     background-attachment: fixed;
-
 `
 
 const H1 = styled.h1`
@@ -95,7 +95,9 @@ const H1Form = styled.h1`
     font-size: 20px;
     text-align: center;
 
-    color: #51B981;
+    background: -webkit-linear-gradient(rgb(68, 233, 90),rgb(39, 177, 58) );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 `
 
 const Inputs = styled.div`
@@ -126,7 +128,9 @@ const TextareaContat = styled.textarea`
     max-height:200px;
     border:none;
     font-weight: bold;
-    color:#51B981;
+    background: -webkit-linear-gradient(rgb(68, 233, 90),rgb(39, 177, 58) );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     background:white;
     margin:15px 40px 15px 40px;
     padding: 10px;
@@ -144,12 +148,16 @@ const Button = styled.button`
     width: 100px;
     height: 40px;
     align-self: center;
-    color: whitesmoke;
-    background-color: #51B981;
+    color: whitesmoke; 
+    background-image: linear-gradient(to bottom right, rgb(68, 226, 139), rgb(68, 233, 90) );
+    
     font-family:'Catamaran', sans-serif;
     font-weight:bolder;
     margin: 10px 0 10px;
+    transition: 0.3s;
+    
     &:hover{
-        background-color: #289C72;
+        transition: 0.3s;
+        background-image: linear-gradient(to bottom right, rgb(168, 226, 139), rgb(68, 233, 90) );
     }
 `

@@ -18,22 +18,22 @@ export default function newform() {
                     <Box>
                         <Title>Oque quer doar?</Title>
                         
-                        <Input2 type="radio" name="tipo" id="tipo" value="Celular" required/>Celular
-                        <Input2 type="radio" name="tipo" id="tipo" value="Notebook" required/>Notebook
-                        <Input2 type="radio" name="tipo" id="tipo" value="Fones" required/>Fones
-                        <Input2 type="radio" name="tipo" id="tipo" value="Cabos" required/>Cabos
-                        <Input2 type="radio" name="tipo" id="tipo" value="Gadgets" required/>Gadgets
+                        <input type="radio" name="tipo" id="tipo" value="Celular" required/>Celular
+                        <input type="radio" name="tipo" id="tipo" value="Notebook" required/>Notebook
+                        <input type="radio" name="tipo" id="tipo" value="Fones" required/>Fones
+                        <input type="radio" name="tipo" id="tipo" value="Cabos" required/>Cabos
+                        <input type="radio" name="tipo" id="tipo" value="Gadgets" required/>Gadgets
                    
                     </Box> 
 
                     <Box>
                         <Title>Qual o estado do seu item?</Title>
                         
-                        <Input2 type="radio" name="estado" id="estado" value="Péssimo" required/>Péssimo
-                        <Input2 type="radio" name="estado" id="estado" value="Ruim" required/>Ruim
-                        <Input2 type="radio" name="estado" id="estado" value="Bom" required/>Bom
-                        <Input2 type="radio" name="estado" id="estado" value="Ótimo" required/>Ótimo
-                        <Input2 type="radio" name="estado" id="estado" value="Perfeito" required/>Perfeito
+                        <input type="radio" name="estado" id="estado" value="Péssimo" required/>Péssimo
+                        <input type="radio" name="estado" id="estado" value="Ruim" required/>Ruim
+                        <input type="radio" name="estado" id="estado" value="Bom" required/>Bom
+                        <input type="radio" name="estado" id="estado" value="Ótimo" required/>Ótimo
+                        <input type="radio" name="estado" id="estado" value="Perfeito" required/>Perfeito
                     </Box> 
 
                     <Box>
@@ -53,11 +53,6 @@ export default function newform() {
         </>
     )
 }
-
-
-const Input2 = styled.input`
-`
-
 const Title = styled.h1`
     font-size:35pt;
     color: rgba(0,0,0,0.8);

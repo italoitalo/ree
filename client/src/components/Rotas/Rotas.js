@@ -13,6 +13,8 @@ import Doacoes from './../Doacoes/Doacoes'
 import NovoCadastro from '../NovoCadastro'
 import NovoCadastroProduto from '../NovoCadastroProduto'
 
+import DoacaoEnviada from'../Confirm/DoacaoEnviada'
+import CadastroRealizado from'../Confirm/CadastroRealizado'
 
 
 import DoacoesPerfil from '../Perfil/DoacoesPerfil'
@@ -30,6 +32,9 @@ export default function Rotas(){
                     <Route  path="/doe" component={Doacoes}/>
                     <Route path='/cadastroext' component={CadastroExt}/>
                     <Route path='/cadastroproduto' component={NovoCadastroProduto}/>
+                    
+                    <Route path='/doacaoenviada' component={DoacaoEnviada}/>
+                    <Route path='/CadastroRealizado' component={CadastroRealizado}/>
                     {/* <Route  path="/cardsrout" component={cardsrout}/> */}
 
 

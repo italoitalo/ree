@@ -1,14 +1,15 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import Home from './../Home'
+import Home from './../../landpage/landpageIndex'
+import HomePrivate from '../HomePrivate'
 import CadastroExt from '../CadastroExt'
 import BioPerfil from '../Perfil/BioPerfil'
 import Contato from './../Contato'
 import Login from './../Login'
 import SuasDoacoes from './../TelaUserLogado/SuasDoacoes'
 import Doacoes from './../Doacoes/Doacoes'
-/* import cardsrout from './../../components/TelaUserLogado/Cards/cardsroute' */
+
 
 import NovoCadastro from '../NovoCadastro'
 import NovoCadastroProduto from '../NovoCadastroProduto'
@@ -25,6 +26,7 @@ export default function Rotas(){
         <>
                 <Switch>
                     <Route exact path="/" component={Home}/>
+                    <Route exact path="/private" component={HomePrivate}/>
                     <Route exact path="/perfil" component={BioPerfil}/>     
                     <Route  path="/cadastro" component={NovoCadastro}/>         
                     <Route  path="/contato" component={Contato}/>

@@ -3,7 +3,6 @@
   "name": "ree-app",
   "version": "0.1.0",
   "private": true,
-  
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -11,6 +10,7 @@
     "create-react-app": "^3.3.0",
     "global": "^4.4.0",
     "react": "^16.12.0",
+    "react-animate-on-scroll": "^2.1.5",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
     "react-router-dom": "^5.1.2",
@@ -38,7 +38,5 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-   
-  }
+  "devDependencies": {}
 }

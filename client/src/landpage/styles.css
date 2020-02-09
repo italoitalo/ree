@@ -1,0 +1,478 @@
+/* HTML EM GERAL */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+ ::-webkit-scrollbar-track {
+    background: #f8f8f8;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: rgb(216, 216, 216);
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: rgb(168, 168, 168);
+}
+
+.cornflowerblue {
+    background: -webkit-linear-gradient(rgb(106, 150, 231), rgb(44, 104, 216));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.crimson {
+    background: -webkit-linear-gradient(#b11131, rgb(255, 20, 20));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gold {
+    background: -webkit-linear-gradient(gold, rgb(235, 168, 12));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.greenyellow {
+    background: -webkit-linear-gradient(greenyellow, rgb(136, 211, 24));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hotpink {
+    background: -webkit-linear-gradient(hotpink, rgb(255, 17, 136));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.purple {
+    background: -webkit-linear-gradient(rgb(179, 80, 218), rgb(168, 17, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.greenree {
+    background: -webkit-linear-gradient(rgb(68, 233, 90), rgb(39, 177, 58));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+* {
+    transition: 0.3s;
+    outline: none;
+    background: none;
+    box-shadow: none;
+    border: none;
+    margin: 0 auto;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Catamaran', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+ul {
+    display: flex;
+    margin-top: 15px;
+    height: 100%;
+}
+
+a {
+    cursor: pointer;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.8);
+    margin: 0px 10px 0px 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: rgba(0, 0, 0, 0.8)
+}
+
+.flex {
+    display: flex;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* -------------------------------------------------------------------- */
+
+
+/* -------------------------- HEADER ---------------------------------- */
+
+.header {
+    height: 55px;
+}
+
+
+/* -------------------------------------------------------------------------------
+---------------------------------CAROUSEL---------------------------------------- */
+
+#slideshow {
+    height: 20px;
+    max-width: 300px;
+}
+
+.slide {
+    display: flex;
+    margin-left: 40%;
+    font-size: 30pt;
+}
+
+.slide>h1 {
+    text-align: center;
+}
+
+.slick {
+    font-size: 30pt;
+}
+
+.botaobanner:hover {
+    font-size: 50pt;
+}
+
+
+/* -----------------------------------------------------------------------------------
+-------------------------------------CONTAINER----------------------------------------- 
+
+-------------------------------------BANNER INICIAL-----------------------------------*/
+
+.container {
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+}
+
+.banner {
+    height: 230px;
+    width: 400px;
+    margin-top: 30px;
+}
+
+.textobanner {
+    text-align: center;
+    font-size: 50pt;
+    line-height: 45pt;
+    color: rgb(0, 0, 0, 0.8);
+}
+
+.textobanner2 {
+    text-align: center;
+    font-size: 35pt;
+    color: rgb(0, 0, 0, 0.8);
+}
+
+button {
+    color: rgb(68, 226, 139);
+    font-size: 35pt;
+    font-weight: 900;
+    text-align: center;
+    transition: 0.3s;
+}
+
+button:hover {
+    transition: 0.4s;
+    color: rgb(0, 255, 115);
+}
+
+
+/* ---------------------------------COMO FUNCIONA-------------------------------
+----------------------------------------BANNER---------------------------------- */
+
+.how {
+    display: flex;
+    margin-top: 150px;
+    width: 100%;
+    background-image: linear-gradient(to bottom right, rgb(68, 226, 139), rgb(68, 233, 90));
+    box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.1);
+}
+
+.ScrollAnimation {
+    display: flex;
+    align-items: space-between;
+}
+
+.howtext {
+    margin-top: 100px;
+    text-align: center;
+    color: white;
+}
+
+.black {
+    color: rgb(0, 0, 0, 0.8);
+}
+
+
+/* -------------------------------------------COMO FUNCIONA - SEÇÕES --------------------------- */
+
+.how-box {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 100px 0 0 0;
+    width: 100%;
+}
+
+.howtext>h1 {
+    font-size: 62pt;
+    line-height: 45pt;
+}
+
+.howtext>h2 {
+    font-size: 16pt;
+    margin-top: 30px;
+    color: rgb(0, 0, 0, 0.6);
+    line-height: 20pt;
+}
+
+.howtext>h3 {
+    font-size: 26pt;
+    font-weight: 600;
+    color: white;
+}
+
+
+/* --------------------------------------------INSTITUIÇOES ETC----------------------------- */
+
+.pense {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.pense>h1 {
+    margin-top: 100px;
+    font-size: 35pt;
+}
+
+.cardspense {
+    display: flex;
+    width: 80%;
+}
+
+.cardp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 60px 15px 0 15px;
+    height: 300px;
+    width: 100%;
+    background: white;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+.bannerp {
+    height: 50px;
+    margin-top: 30px;
+}
+
+.howcad {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 60px 0 60px 0;
+    background-image: linear-gradient(to bottom right, rgb(68, 226, 139), rgb(68, 233, 90));
+    box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cadastro {
+    border: solid rgb(68, 226, 139);
+    border-radius: 10px;
+    padding: 0px 10px 0px 10px;
+    font-size: 50pt;
+    background: white;
+}
+
+.cadastro:hover {
+    color: rgb(0, 255, 115);
+    border: solid rgb(68, 226, 139);
+    padding: 0px 100px 0px 100px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
+}
+
+
+/* -----------------------------------------PROBLEMA DO LIXO-------------------------------- */
+
+.consci {
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+    padding: 10px;
+    height: 100%;
+    width: 85%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.1);
+    text-align: start;
+}
+
+.consci>h1 {
+    font-size: 50pt;
+    font-weight: 900;
+}
+
+
+/* -----------------------------------------SOBRE----------------------------------------- */
+
+.contato {
+    font-size: 18pt;
+    color: rgb(0, 0, 0, 0.8);
+    margin-bottom: 40px;
+}
+
+.contato:hover {
+    color: white
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 200px 0 0 0;
+}
+
+.titleabout {
+    font-size: 50pt;
+    line-height: 40pt;
+    font-weight: 900;
+    color: rgb(68, 226, 139);
+}
+
+.abouttext {
+    display: flex;
+    height: 800px;
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 60px 15px 0 15px;
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transition: 0.3s;
+    height: 320px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+.aboutimg {
+    width: 100px;
+    border-radius: 100px;
+}
+
+.card>h3 {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 12pt;
+    width: 150px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    width: 100%;
+    background: whitesmoke;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0px -10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+footer>a {
+    margin: 30px 0px 0px 0px;
+    color: rgb(0, 0, 0, 0.8)
+}
+
+footer>a:hover {
+    color: royalblue;
+}
+
+@media screen and (max-width: 455px) {
+    .banner {
+        width: 290px;
+    }
+    .how {
+        flex-wrap: wrap;
+    }
+    .how-box {
+        flex-wrap: wrap;
+    }
+    .howtext {
+        margin-top: -20px;
+    }
+    .howtext>h1 {
+        font-size: 38pt;
+    }
+    .howtext>h2 {
+        font-size: 15pt;
+    }
+    .cardspense {
+        flex-wrap: wrap;
+    }
+    .consci>h1 {
+        font-size: 22pt;
+        text-align: center;
+    }
+    .consci>div>div>h2 {
+        font-size: 15pt;
+        text-align: center;
+    }
+    .consci>div>div>p {
+        font-size: 11pt;
+        margin: 10px 20px 10px 20px;
+    }
+    .consci>div {
+        flex-wrap: wrap;
+    }
+    .titleabout {
+        font-size: 30pt;
+    }
+    .abouttext {
+        flex-wrap: wrap;
+        max-width: 100px;
+    }
+    .aboutimg {
+        height: 60px;
+        width: 60px;
+    }
+    .slide {
+        font-size: 25pt;
+        margin: 0px 0px 0px 50px;
+    }
+    .slick {
+        font-size: 25pt;
+    }
+}

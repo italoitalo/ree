@@ -64,7 +64,6 @@
     background: none;
     box-shadow: none;
     border: none;
-    margin: 0 auto;
     text-decoration: none;
     list-style: none;
     font-family: 'Catamaran', sans-serif;
@@ -77,21 +76,24 @@ html {
 body {
     overflow-x: hidden;
 }
+.navigation{
+text-decoration:none;
+}
 
-ul {
+.ul {
     display: flex;
     margin-top: 15px;
     height: 100%;
 }
 
-a {
+.a {
     cursor: pointer;
     font-weight: 600;
     color: rgba(0, 0, 0, 0.8);
     margin: 0px 10px 0px 10px;
 }
 
-nav {
+.nav {
     display: flex;
     justify-content: center;
 }
@@ -105,6 +107,12 @@ h4 {
 
 .flex {
     display: flex;
+}
+.margin{
+    
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .column {
@@ -182,7 +190,7 @@ h4 {
     color: rgb(0, 0, 0, 0.8);
 }
 
-button {
+.button {
     color: rgb(68, 226, 139);
     font-size: 35pt;
     font-weight: 900;
@@ -190,7 +198,7 @@ button {
     transition: 0.3s;
 }
 
-button:hover {
+.button:hover {
     transition: 0.4s;
     color: rgb(0, 255, 115);
 }
@@ -201,6 +209,7 @@ button:hover {
 
 .how {
     display: flex;
+    justify-content:center ;
     margin-top: 150px;
     width: 100%;
     background-image: linear-gradient(to bottom right, rgb(68, 226, 139), rgb(68, 233, 90));
@@ -256,6 +265,7 @@ button:hover {
 .pense {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%;
 }
 
@@ -266,6 +276,7 @@ button:hover {
 
 .cardspense {
     display: flex;
+    margin: 0 auto;
     width: 80%;
 }
 
@@ -297,7 +308,7 @@ button:hover {
     box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.1);
 }
 
-.cadastro {
+.Cadastro {
     border: solid rgb(68, 226, 139);
     border-radius: 10px;
     padding: 0px 10px 0px 10px;
@@ -305,7 +316,7 @@ button:hover {
     background: white;
 }
 
-.cadastro:hover {
+.Cadastro:hover {
     color: rgb(0, 255, 115);
     border: solid rgb(68, 226, 139);
     padding: 0px 100px 0px 100px;
@@ -315,9 +326,10 @@ button:hover {
 
 /* -----------------------------------------PROBLEMA DO LIXO-------------------------------- */
 
-.consci {
+.Consci {
     display: flex;
     flex-direction: column;
+    margin:0 auto;
     margin-top: 150px;
     padding: 10px;
     height: 100%;
@@ -327,7 +339,7 @@ button:hover {
     text-align: start;
 }
 
-.consci>h1 {
+.Consci>h1 {
     font-size: 50pt;
     font-weight: 900;
 }
@@ -338,7 +350,7 @@ button:hover {
 .contato {
     font-size: 18pt;
     color: rgb(0, 0, 0, 0.8);
-    margin-bottom: 40px;
+    margin:0px 40px 40px 40px;
 }
 
 .contato:hover {
@@ -400,23 +412,20 @@ button:hover {
     width: 150px;
 }
 
-footer {
+.footer {
     display: flex;
     justify-content: space-around;
     height: 100px;
-    width: 100%;
+    width: 1000px;
     background: whitesmoke;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    box-shadow: 0px -10px 20px 0px rgba(0, 0, 0, 0.1);
 }
 
-footer>a {
+.footer>a {
     margin: 30px 0px 0px 0px;
     color: rgb(0, 0, 0, 0.8)
 }
 
-footer>a:hover {
+.footer>a:hover {
     color: royalblue;
 }
 
@@ -442,19 +451,19 @@ footer>a:hover {
     .cardspense {
         flex-wrap: wrap;
     }
-    .consci>h1 {
+    .Consci>h1 {
         font-size: 22pt;
         text-align: center;
     }
-    .consci>div>div>h2 {
+    .Consci>div>div>h2 {
         font-size: 15pt;
         text-align: center;
     }
-    .consci>div>div>p {
+    .Consci>div>div>p {
         font-size: 11pt;
         margin: 10px 20px 10px 20px;
     }
-    .consci>div {
+    .Consci>div {
         flex-wrap: wrap;
     }
     .titleabout {

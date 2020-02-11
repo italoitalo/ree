@@ -1,22 +1,28 @@
 import React, { Fragment } from 'react';
 import ScrollAnimation from 'react-animate-on-scroll'
 
+import {Link} from 'react-router-dom'
+import useModal from '../components/useModal'
+import Modal from '../components/Modal';
 
 import "./styles.css"
 import "./animate.min.css"
 
 export default function LandPage(){
+    const {isShowing, toggle} = useModal();
+
     return(
-        <Fragment>
+        <Fragment><section className="borda">
+
                 <header className="header">
-            <nav>
-                <ul>
-                    <a href="/">
-                        Cadastro
-                    </a>
-                    <a href="/">
-                        Login
-                    </a>
+            <nav className="nav">
+                <ul className="ul">
+                    
+                    <Link className="navigation" to="/cadastro"><li className="a">Cadastro</li></Link>
+                    <Link className="navigation" to="#" ><li className="a" onClick={toggle}>Login</li></Link> 
+                    
+                    <Modal isShowing={isShowing} hide={toggle} /> 
+
                 </ul>
             </nav>
         </header>
@@ -37,20 +43,18 @@ export default function LandPage(){
                 </div> */}
             </div>
         </div>            
-            <ScrollAnimation animateIn='fadeInLeft'
-            animateOut='fadeOutRight'>
+            <ScrollAnimation animateIn='fadeInLeft' animateOnce={true}>
                 <img  className="banner" src={require("./src/img/conexão.svg")} />
                 <h1  className="textobanner"> A diferença está <br/> nas suas mãos. </h1>
             </ScrollAnimation>
             
 
-            <button onclick="scrollToHow()" className="botaobanner"> Entenda! </button>
+            <button onclick="scrollToHow()" className="button botaobanner"> Entenda! </button>
     </section>
 
             <section id="how"  className="how">
                
-                <ScrollAnimation  animateIn='fadeInLeft'
-                animateOut='fadeOutRight'>
+                <ScrollAnimation  animateIn='fadeInLeft' animateOnce={true}>
                     <div className="ScrollAnimation"> 
                         <img  className="banner" src={require("./src/img/troca.svg")} />
                         <div className= "howtext">
@@ -64,22 +68,24 @@ export default function LandPage(){
 
             <section className="how-box">
 
-                <div data-aos="fade-right" className="howtext black ">
+            <ScrollAnimation  animateIn='fadeInLeft' animateOnce={true}>
+                <div className="howtext black ">
+                
                     <h1>    Reunir  </h1>
                     <h2>    Gentileza gera gentileza, <br/> 
                             encontre doadores de produtos tecnológicos <br/>
                             ou então doe você mesmo!
                     </h2>
                 </div>
+            </ScrollAnimation>
                 <img className="banner" src={require("./src/img/2-sentados.svg")} />
-
             </section>
 
             <section className="how-box">
 
                 <img className="banner" src={require("./src/img/progresso.svg")}/>
-
-                <div data-aos="fade-left" className="howtext black ">
+                <ScrollAnimation  animateIn='fadeInRight' animateOnce={true}>
+                <div className="howtext black ">
                     <h1>    Reutilizar  </h1>
                     <h2>    Não importa o estado do seu item,<br/>
                             Doe o que não usa mais para pessoas que precisam e<br/>
@@ -87,25 +93,30 @@ export default function LandPage(){
                             Pode ser útil para alguem!
                     </h2>
                 </div>
-
+                </ScrollAnimation>
             </section>
 
             <section className="how-box">
-                <div data-aos="fade-right"className="howtext black ">
+            <ScrollAnimation  animateIn='fadeInLeft' animateOnce={true}>
+
+                <div className="howtext black ">
                     <h1>    Reconectar </h1>
                     <h2>    Transforme a realidade a sua volta!<br/>
                             Melhore a qualidade de vida da sua Sociedade.<br/>
                             Se reconecte com o mundo! 
                     </h2>
                 </div>
+            </ScrollAnimation>
                 <img className="banner" src={require("./src/img/troca 2.svg")}/>
             </section>
 
+            <section  className="pense">
             <img className="banner flex" src={require("./src/img/montanhas.svg")}/>
 
-            <section  className="pense">
-                <h1 data-aos="fade-up"className="greenree">...pense nisso:</h1>
-                <div data-aos="fade-up" className="cardspense">
+                <h1 className="greenree">...pense nisso:</h1>
+
+                <ScrollAnimation animateIn='fadeInLeft' animateOnce={true}>
+                <div  className="cardspense">
                     <div className="cardp">
 
                         <img className="bannerp"src={require("./src/img/heart-shape-silhouette.svg")}/>
@@ -139,18 +150,19 @@ export default function LandPage(){
                         </h3>
                     </div>
                 </div>
+                </ScrollAnimation>
             </section>
 
-            <section data-aos="fade-up" className="howcad">
+            <section className="howcad">
 
-                <button className="Cadastro"> faça parte </button>
+                <button className="button Cadastro"> faça parte </button>
 
             </section>
 
-            <section data-aos="fade-down" className="Consci">
-            <h1 data-aos="fade-down" className="greenree">O problema do Lixo Eletrônico</h1>
+            <section className="Consci">
+            <h1 className="greenree">O problema do Lixo Eletrônico</h1>
             <div  className="flex">
-                <img data-aos="fade-left"className="banner" src={require("./src/img/world.svg")}/>
+                <img className="banner" src={require("./src/img/world.svg")}/>
                 <div>
                     <h2 > Brasil é o líder de produção de lixo <br/> eletrônico na América Latina </h2>
                 <p>
@@ -180,7 +192,7 @@ export default function LandPage(){
                         <h3 style={{fontSize:"20pt"}}>Pronto para ajudar pessoas? Ligue para nós ou envie um e-mail<br/> e entraremos em 
                         contato com você o mais breve possível!</h3>
 
-                        <div className="flex">
+                        <div className="margin">
 
                             <div className="column">
                                 <img className="bannerp" src={require("./src/img/telephone-symbol-button.svg")}/>
@@ -199,44 +211,31 @@ export default function LandPage(){
                     <div className="card">
                         <h1>Bruno</h1>
                         <img className="aboutimg" src={require("./src/img/5.jpg")}/>
-                        <h3>lorem ipsum dore it me lorem ipsum dore it me</h3>
+                        <h3>A persistência é o caminho do êxito!</h3>
                     </div>
                     <div className="card">
                         <h1>Italo</h1>
                         <img className="aboutimg"  src={require("./src/img/3.jpg")}/>
-                        <h3>lorem ipsum dore it me lorem ipsum dore it me</h3>
+                        <h3>A tecnologia move o mundo!</h3>
                     </div>
                     <div className="card">
                         <h1>Matheus</h1>
                         <img className="aboutimg" src={require("./src/img/4.jpg")}/>
-                        <h3>lorem ipsum dore it me lorem ipsum dore it me</h3>
+                        <h3>Seja a mudança que você quer ver no mundo.</h3>
                     </div>
                     <div className="card">
                         <h1>Rhuan</h1>
                         <img className="aboutimg" src={require("./src/img/2.jpg")}/>
-                        <h3>lorem ipsum dore it me lorem ipsum dore it me</h3>
+                        <h3>Se você pode sonhar, você pode fazer!</h3>
                     </div>
                     <div className="card">
                         <h1>Tayanne</h1>
                         <img className="aboutimg" src={require("./src/img/1.jpg")}/>
-                        <h3>lorem ipsum dore it me lorem ipsum dore it me</h3>
+                        <h3>O conhecimento fala, mas a sabedoria escuta.</h3>
                     </div>
                 </div>
-
-        <section>
-
-            <footer>
-                <a>Instagram</a>
-                <a>Twitter</a>
-                <a>Facebook</a>
-            </footer>
         </section>
-
-          //aimation on scroll
-
-
-
-        </section>
-    </ Fragment>
+        
+    </section></ Fragment>
     )
 }

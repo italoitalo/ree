@@ -8,7 +8,6 @@ import BioPerfil from '../Perfil/BioPerfil'
 import Contato from './../Contato'
 import Login from './../Login'
 import SuasDoacoes from './../TelaUserLogado/SuasDoacoes'
-import Doacoes from './../Doacoes/Doacoes'
 
 
 import NovoCadastro from '../NovoCadastro'
@@ -31,9 +30,8 @@ export default function Rotas(){
                     <Route  path="/cadastro" component={NovoCadastro}/>         
                     <Route  path="/contato" component={Contato}/>
                     <Route  path="/login" component={Login}/>
-                    <Route  path="/doe" component={Doacoes}/>
+                    <Route  path="/doe" component={NovoCadastroProduto}/>
                     <Route path='/cadastroext' component={CadastroExt}/>
-                    <Route path='/cadastroproduto' component={NovoCadastroProduto}/>
                     
                     <Route path='/doacaoenviada' component={DoacaoEnviada}/>
                     <Route path='/CadastroRealizado' component={CadastroRealizado}/>

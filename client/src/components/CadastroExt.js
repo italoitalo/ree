@@ -6,6 +6,7 @@ import Mapa from './../img/formCadastroImg/mapa.jpg'
 export default function newform() {
     return (
         <>
+        
         <Container>
             <Box>
             <LadoA>

@@ -30,11 +30,13 @@ export default function Contato(){
                 <DivForm>
                     <H1Form>Nos encontre nas Redes Sociais!</H1Form>
                     <Flex>
-                        <A href="https://twitter.com/equiperee" target="_blank"> <img alt="icontwitter" src={twitter} height="40px"/></A>
-                        <A href="https://facebook.com/" target="_blank"> <img  alt="iconfacebook" src={facebook}height="40px"/></A>
-                        <A href="https://www.instagram.com/equiperee/" alt="iconinstagran" target="_blank"> <img src={instagram}height="40px" alt="icone intagram"/></A>
-                        <A href="https://github.com/" target="_blank"> <img alt="icongithub" src={github}height="40px"/></A>
-                        <A href="https://www.linkedin.com/" target="_blank"> <img alt="icontlinkedin" src={linkedin}height="40px"/></A>
+                        <Block>
+                            <A href="https://twitter.com/equiperee" target="_blank"> <img alt="icontwitter" src={twitter} height="40px"/></A>
+                            <A href="https://facebook.com/" target="_blank"> <img  alt="iconfacebook" src={facebook}height="40px"/></A>
+                            <A href="https://www.instagram.com/equiperee/" alt="iconinstagran" target="_blank"> <img src={instagram}height="40px" alt="icone intagram"/></A>
+                            <A href="https://github.com/" target="_blank"> <img alt="icongithub" src={github}height="40px"/></A>
+                            <A href="https://www.linkedin.com/" target="_blank"> <img alt="icontlinkedin" src={linkedin}height="40px"/></A>
+                        </Block>
                     </Flex>
 
                 </DivForm>
@@ -42,26 +44,53 @@ export default function Contato(){
     </Container>
     )
 }
+const Block = styled.div `
+@media (max-width:760px){
+    display:flex;
+}
+`
+
 const A = styled.a`
     margin:10px;
     height:45px;
     width:45px;
     padding:10px;
+
+    @media (max-width:760px){
+        margin: 0;
+        display: block;
+    }
 `
 const Flex = styled.div `
 display:flex;
 justify-content:center;
+
+@media (max-width: 760px){
+    flex-direction: column;
+}
+    
+    
 `
 const Banner = styled.div`
- background-image: linear-gradient(to bottom right, rgb(68, 226, 139), rgb(68, 233, 90) );
-    
-margin: 10px 150px 10px 150px;
-border-radius: 10px;
-min-height:80px;
-justify-content:space-evenly;
-align-items:center;
-z-index:1;
-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
+    background-image: linear-gradient(to bottom right, rgb(68, 226, 139), rgb(68, 233, 90) );
+        
+    margin: 10px 150px 10px 150px;
+    border-radius: 10px;
+    min-height:80px;
+    justify-content:space-evenly;
+    align-items:center;
+    z-index:1;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
+
+
+    @media (max-width: 760px) {
+
+        margin:0 auto;
+        min-height: 40px;
+        max-width:200px;
+        margin-top:20px;
+        border-radius: 5px;
+    }
 `;
 
 const Container = styled.section`
@@ -71,6 +100,8 @@ const Container = styled.section`
     background-repeat:no-repeat;
     background-size: 100%;
     background-attachment: fixed;
+
+
 `
 
 const H1 = styled.h1`
@@ -78,6 +109,13 @@ const H1 = styled.h1`
     margin:20px;
     font-size: 40px;
     color:white;
+
+
+    @media (max-width: 760px){
+        font-size: 20px;
+        margin:5px
+        
+    }
 `
 
 const DivForm = styled.div`
@@ -89,11 +127,18 @@ const DivForm = styled.div`
     max-width:400px;
     flex-flow: column wrap;
     background: white;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);   
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);  
+    
+    @media (max-width: 760px){
+        padding:10px;
+        width: 300px;
+        margin: -10px 0px 50px 0px;
+
+    }
 `
 
 const H1Form = styled.h1`
-    align-self:center;
+
     font-weight: bold;
     font-size: 20px;
     text-align: center;
@@ -101,6 +146,12 @@ const H1Form = styled.h1`
     background: -webkit-linear-gradient(rgb(68, 233, 90),rgb(39, 177, 58) );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    @media (max-width: 760px){
+        font-size:15px;
+        max-width: 150px;
+        margin-left:60px;
+}
 `
 
 const Inputs = styled.div`
@@ -124,6 +175,13 @@ const Input = styled.input`
         color: #BBBBBB;
         font-weight: bold;
     }
+
+    @media (max-width: 760px){
+
+        font-size:12px;
+        margin: 10px 0px 10px 10px auto;
+        max-width: 200px;
+    }
 `
 
 const TextareaContat = styled.textarea`
@@ -144,6 +202,13 @@ const TextareaContat = styled.textarea`
     ::-webkit-input-placeholder{
         color: #BBBBBB;
         font-weight: bold;
+    }
+
+    @media (max-width:760px){
+        margin: 0 auto;
+        max-width: 300px;
+        font-size: 12px;
+
     }
 `
 

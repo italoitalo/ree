@@ -2,7 +2,7 @@ import React from 'react'
 import styled from  'styled-components'
 
 
-import Porta from './../img/formCadastroImg/porta.jpg'
+/* import Porta from './../img/formCadastroImg/porta.jpg' */
 
 export default function newform() {
     

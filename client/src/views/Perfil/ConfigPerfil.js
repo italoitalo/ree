@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from  'styled-components';
 
-import NavPerfil from '../Rotas/NavPerfil';
+import NavPerfil from './../../componentes/NavPerfil';
 
 import Foto from '../../img/PerfilConfiguracao/foto.png';
 import Seta from '../../img/PerfilConfiguracao/Arrow.png';

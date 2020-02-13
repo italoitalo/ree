@@ -3,7 +3,7 @@
 
 
 import React from 'react';
-import AbasNav from './AbasNavegacão';
+import AbasNav from '../componentes/AbasNavegacão';
 import SecaoDeProdutosDoacoes from './SecaoDeProdutosDoacoes';
 import Styled from 'styled-components';
 

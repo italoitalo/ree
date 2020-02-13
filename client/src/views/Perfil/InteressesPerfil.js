@@ -1,9 +1,10 @@
 import React from 'react'
 import styled from  'styled-components';
 
-import Ilustracao01 from './../../img/PerfilInteresses/hands 3.png'
-import Ilustracao02 from './../../img/PerfilInteresses/gift1.png'
-import NavPerfil from '../Rotas/NavPerfil';
+import Ilustracao01 from '../../img/PerfilInteresses/hands 3.png'
+import Ilustracao02 from '../../img/PerfilInteresses/gift1.png'
+
+import NavPerfil from './../../componentes/NavPerfil';
 
 export default function Interesses(){
     return(

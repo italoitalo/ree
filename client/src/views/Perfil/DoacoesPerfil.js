@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from  'styled-components';
 
-import NavPerfil from '../Rotas/NavPerfil';
+
+import NavPerfil from './../../componentes/NavPerfil';
 
 import Star from '../../img/PerfilDoacoes/Star.png';
 

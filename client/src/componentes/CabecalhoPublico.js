@@ -1,10 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Link } from 'react-router-dom';
-import ree from './../../img/ree.svg'
-import useModal from './../useModal'
-import Modal from "./../Modal";
+import {Link} from 'react-router-dom'
+
+import ree from './../img/ree.svg'
+import useModal from '../views/useModal'
+import Modal from '../views/Modal';
 
 export default function Cabecalho(){
     const {isShowing, toggle} = useModal();
@@ -14,14 +15,12 @@ export default function Cabecalho(){
                 <Navigation to="/"><Logo src={ree} height='40' /></Navigation>
             
                 <Ul>     
-                    <Navigation to ="/doe"><Button>Faça uma Doação!</Button></Navigation>
+                    <Navigation to ="/cadastro"><Button>Faça uma Doação!</Button></Navigation>
                     <Navigation to="/"><Li>Home</Li></Navigation>
-                    <Navigation to="/contato"><Li>Contato</Li></Navigation>
-                    {/* 
+                    <Navigation to="/contatoPub"><Li>Contato</Li></Navigation>
                     <Navigation to="/cadastro"><Li>Cadastro</Li></Navigation>
+                    <Navigation to="/private"><Li>teste</Li></Navigation>
                     <Navigation to="#" ><Li onClick={toggle}>Login</Li></Navigation> 
-                    */}
-                    <Navigation to="/perfil"><Li>Perfil</Li></Navigation>
                     <Modal isShowing={isShowing} hide={toggle} /> 
                 </Ul>
             </Div>

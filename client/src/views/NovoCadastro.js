@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from  'styled-components'
 
+import HeaderPub from './../componentes/CabecalhoPublico'
 
 import Porta from './../img/formCadastroImg/porta.jpg'
 
@@ -9,38 +10,39 @@ export default function newform() {
     
     return (
         <>
+        <HeaderPub/>
         <Container>
             <Box>
-            <LadoA>
-                <form action="/cadastro" method="POST">
-                    <Ul>
-                        <Li>
-                        <Input1 type="text" name="nome" id="nome" placeholder="Nome" required/>                         
-                        <Input1 type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" required/>                         
-                        </Li>
-                    
-                        <Li>
-                        <Input type="password" name="senha" id="senha" placeholder="Senha" required/>                         
-                        </Li>
+                <LadoA>
+                    <form action="/cadastro" method="POST">
+                        <Ul>
+                            <Li>
+                            <Input1 type="text" name="nome" id="nome" placeholder="Nome" required/>                         
+                            <Input1 type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" required/>                         
+                            </Li>
+                        
+                            <Li>
+                            <Input type="password" name="senha" id="senha" placeholder="Senha" required/>                         
+                            </Li>
 
-                        <Li>
-                        <Input type="email" name="email" id="email" placeholder="E-mail" required/>                         
-                        </Li>
+                            <Li>
+                            <Input type="email" name="email" id="email" placeholder="E-mail" required/>                         
+                            </Li>
 
-                        <Li>
-                        <Input type="number" name="celular" id="celular" placeholder="Celular"/>                         
-                        </Li>
+                            <Li>
+                            <Input type="number" name="celular" id="celular" placeholder="Celular"/>                         
+                            </Li>
 
-                    </Ul>
-                    <Button type="submit">Cadastre-se</Button>
-                </form>
-            </LadoA>
-            
-            <LadoB>
-                <Img alt="imagemporta" src={Porta}/>
-                <H1>Faça Parte</H1>
-                <H2>A diferença está em suas mãos</H2>
-            </LadoB>
+                        </Ul>
+                        <Button type="submit">Cadastre-se</Button>
+                    </form>
+                </LadoA>
+                
+                <LadoB>
+                    <Img alt="imagemporta" src={Porta}/>
+                    <H1>Faça Parte</H1>
+                    <H2>A diferença está em suas mãos</H2>
+                </LadoB>
             </Box>
         </Container>
         </>

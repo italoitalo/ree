@@ -2,8 +2,9 @@ import React, { Fragment } from 'react';
 import ScrollAnimation from 'react-animate-on-scroll'
 
 import {Link} from 'react-router-dom'
-import useModal from '../components/useModal'
-import Modal from '../components/Modal';
+import useModal from '../../useModal'
+import Modal from '../../Modal';
+import HeaderPub from './../../../componentes/CabecalhoPublico'
 
 import "./styles.css"
 import "./animate.min.css"
@@ -12,8 +13,9 @@ export default function LandPage(){
     const {isShowing, toggle} = useModal();
 
     return(
-        <Fragment><section className="borda">
-
+        <Fragment>
+            <section className="borda">
+            <HeaderPub/>
                 <header className="header">
             <nav className="nav">
                 <ul className="ul">
@@ -44,7 +46,7 @@ export default function LandPage(){
             </div>
         </div>            
             <ScrollAnimation animateIn='fadeInLeft' animateOnce={true}>
-                <img  className="banner" src={require("./src/img/conexão.svg")} />
+                <img  className="banner" src={require("./src/img/conexão.svg")} alt="imagem de conecçaõ" />
                 <h1  className="textobanner"> A diferença está <br/> nas suas mãos. </h1>
             </ScrollAnimation>
             
@@ -56,7 +58,7 @@ export default function LandPage(){
                
                 <ScrollAnimation  animateIn='fadeInLeft' animateOnce={true}>
                     <div className="ScrollAnimation"> 
-                        <img  className="banner" src={require("./src/img/troca.svg")} />
+                        <img  className="banner" src={require("./src/img/troca.svg")} alt="troca"/>
                         <div className= "howtext">
                             <h1> Como funciona? </h1>
                             <h3> Reunir, Reutilizar, Reconectar  </h3>
@@ -78,12 +80,12 @@ export default function LandPage(){
                     </h2>
                 </div>
             </ScrollAnimation>
-                <img className="banner" src={require("./src/img/2-sentados.svg")} />
+                <img className="banner" src={require("./src/img/2-sentados.svg")} alt="pessoasSentadas" />
             </section>
 
             <section className="how-box">
 
-                <img className="banner" src={require("./src/img/progresso.svg")}/>
+                <img className="banner" src={require("./src/img/progresso.svg")} alt="progresso"/>
                 <ScrollAnimation  animateIn='fadeInRight' animateOnce={true}>
                 <div className="howtext black ">
                     <h1>    Reutilizar  </h1>
@@ -107,11 +109,11 @@ export default function LandPage(){
                     </h2>
                 </div>
             </ScrollAnimation>
-                <img className="banner" src={require("./src/img/troca 2.svg")}/>
+                <img className="banner" src={require("./src/img/troca 2.svg")} alt="troca"/>
             </section>
 
             <section  className="pense">
-            <img className="banner flex" src={require("./src/img/montanhas.svg")}/>
+            <img className="banner flex" src={require("./src/img/montanhas.svg")} alt="montanhas"/>
 
                 <h1 className="greenree">...pense nisso:</h1>
 
@@ -119,7 +121,7 @@ export default function LandPage(){
                 <div  className="cardspense">
                     <div className="cardp">
 
-                        <img className="bannerp"src={require("./src/img/heart-shape-silhouette.svg")}/>
+                        <img className="bannerp"src={require("./src/img/heart-shape-silhouette.svg")}alt="about"/>
 
                         <h2 className="hotpink">Pessoas</h2>
                         <h3> Pessoas que possuem baixa 
@@ -130,7 +132,7 @@ export default function LandPage(){
 
                     <div className="cardp">
 
-                        <img className="bannerp" src={require("./src/img/pencil.svg")}/>
+                        <img className="bannerp" src={require("./src/img/pencil.svg")} alt="pencil"/>
 
                         <h2 className="cornflowerblue">Instituições</h2>
                         <h3> Existem muitas unidades de ensino 
@@ -140,7 +142,7 @@ export default function LandPage(){
 
                     <div className="cardp">
 
-                        <img className="bannerp" src={require("./src/img/book.svg")}/>
+                        <img className="bannerp" src={require("./src/img/book.svg")} alt="book"/>
                         
                         <h2 className="gold">Ensino</h2>
 
@@ -162,7 +164,7 @@ export default function LandPage(){
             <section className="Consci">
             <h1 className="greenree">O problema do Lixo Eletrônico</h1>
             <div  className="flex">
-                <img className="banner" src={require("./src/img/world.svg")}/>
+                <img className="banner" src={require("./src/img/world.svg")} alt="world"/>
                 <div>
                     <h2 > Brasil é o líder de produção de lixo <br/> eletrônico na América Latina </h2>
                 <p>
@@ -195,13 +197,13 @@ export default function LandPage(){
                         <div className="margin">
 
                             <div className="column">
-                                <img className="bannerp" src={require("./src/img/telephone-symbol-button.svg")}/>
-                                <a className="contato">+55 (21) 91111-2222 </a>
+                                <img className="bannerp" src={require("./src/img/telephone-symbol-button.svg")} alt="simbolTelephone"/>
+                                <a className="contato" href="tel:5521911112222">+55 (21) 91111-2222 </a>
                             </div>
                             
                             <div className="column">
-                                <img className="bannerp"src={require("./src/img/envelope.svg")}/>
-                                <a className="contato">contato@ree.com </a>
+                                <img className="bannerp"src={require("./src/img/envelope.svg")} alt="envelope"/>
+                                <a className="contato" href="e-mail:contato@ree.com"> contato@ree.com </a>
                             </div>
                             
                         </div>
@@ -210,27 +212,27 @@ export default function LandPage(){
                 <div className="abouttext">
                     <div className="card">
                         <h1>Bruno</h1>
-                        <img className="aboutimg" src={require("./src/img/5.jpg")}/>
+                        <img className="aboutimg" src={require("./src/img/5.jpg")} alt="sobre"/>
                         <h3>A persistência é o caminho do êxito!</h3>
                     </div>
                     <div className="card">
                         <h1>Italo</h1>
-                        <img className="aboutimg"  src={require("./src/img/3.jpg")}/>
+                        <img className="aboutimg"  src={require("./src/img/3.jpg")} alt="about"/>
                         <h3>A tecnologia move o mundo!</h3>
                     </div>
                     <div className="card">
                         <h1>Matheus</h1>
-                        <img className="aboutimg" src={require("./src/img/4.jpg")}/>
+                        <img className="aboutimg" src={require("./src/img/4.jpg")} alt="about"/>
                         <h3>Seja a mudança que você quer ver no mundo.</h3>
                     </div>
                     <div className="card">
                         <h1>Rhuan</h1>
-                        <img className="aboutimg" src={require("./src/img/2.jpg")}/>
+                        <img className="aboutimg" src={require("./src/img/2.jpg")}alt="about"/>
                         <h3>Se você pode sonhar, você pode fazer!</h3>
                     </div>
                     <div className="card">
                         <h1>Tayanne</h1>
-                        <img className="aboutimg" src={require("./src/img/1.jpg")}/>
+                        <img className="aboutimg" src={require("./src/img/1.jpg")}alt="about"/>
                         <h3>O conhecimento fala, mas a sabedoria escuta.</h3>
                     </div>
                 </div>

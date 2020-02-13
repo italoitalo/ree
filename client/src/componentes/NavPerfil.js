@@ -3,7 +3,8 @@ import styled from 'styled-components';
 
 import { Link } from 'react-router-dom';
 
-import Avatar1 from '../../img/formCadastroImg/avatar1.png'
+
+import Avatar1 from '../img/formCadastroImg/avatar1.png'
 
 
 export default function NavPerfil() {

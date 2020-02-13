@@ -2,13 +2,16 @@ import React from 'react';
 import styled from 'styled-components';
 
 
-import chat from './../../../img/itensCard/chat.svg'
-import coment from './../../../img/itensCard/comment.svg'
-import share from './../../../img/itensCard/share.svg'
-import like from './../../../img/itensCard/like.svg'
+import chat from './../../img/itensCard/chat.svg'
+import coment from './../../img/itensCard/comment.svg'
+import share from './../../img/itensCard/share.svg'
+import like from './../../img/itensCard/like.svg'
 
-import UserFoto from './../../../img/itensCard/UserFoto.png'
-import cooler from './../../../img/itensCard/cooler.jpg'
+
+
+
+import UserFoto from './../../img/itensCard/UserFoto.png'
+import cooler from './../../img/itensCard/cooler.jpg'
 
 export default function Card() {
   return (

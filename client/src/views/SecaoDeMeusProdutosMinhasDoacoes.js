@@ -1,29 +1,37 @@
 import React from 'react';
 import styled from 'styled-components';
-import Card3 from './Cards/Card3'
+import Card3 from '../componentes/Cards/Card3'
 
 
 
 
 
 export default function SecaoDeMeusProdutosMinhasDoacoes() {
-    return ( 
-      <>
-        <Container>
-            <Produtos>
-              <Grid>  
-                <Card3/>
-                <Card3/>
-                <Card3/>
-                <Card3/>
-              </Grid>
-            </Produtos>
-        </Container>    
-      </>
+    return ( <
+        >
+        <
+        Container >
+        <
+        Produtos >
+        <
+        Grid >
+        <
+        Card3 / >
+        <
+        Card3 / >
+        <
+        Card3 / >
+        <
+        Card3 / >
+        <
+        /Grid> <
+        /Produtos> <
+        /Container>     <
+        />
     );
 }
 
-const Container = styled.section`
+const Container = styled.section `
 background:whitesmoke;
 max-width:1050px;
 box-shadow: 0px 4px 80px rgba(0, 0, 0, 0.25);
@@ -34,7 +42,7 @@ flex-wrap:wrap;
 justify-content:center;
 padding-bottom:30px;
 `;
-const Produtos = styled.section`
+const Produtos = styled.section `
 display:inline-flex;
 flex-wrap:wrap;
 padding-top:50px;
@@ -44,7 +52,7 @@ height:100%;
 `;
 
 
-const Grid = styled.section`
+const Grid = styled.section `
     display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-auto-rows: auto;

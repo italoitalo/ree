@@ -16,13 +16,14 @@ export default function Cabecalho(){
             
                 <Ul>     
                     <Navigation to ="/doe"><Button>Faça uma Doação!</Button></Navigation>
-                    <Navigation to="/private"><Li>Home</Li></Navigation>
-                    <Navigation to="/contato"><Li>Contato</Li></Navigation>
+                    <Navigation to="/private"><Li>Minha Home</Li></Navigation>
+                    
                     {/* 
                     <Navigation to="/cadastro"><Li>Cadastro</Li></Navigation>
                     <Navigation to="#" ><Li onClick={toggle}>Login</Li></Navigation> 
                     */}
-                    <Navigation to="/perfil"><Li>Perfil</Li></Navigation>
+                    <Navigation to="/perfil"><Li>Meu Perfil</Li></Navigation>
+                    <Navigation to="/contato"><Li>Contato</Li></Navigation>
                     <Modal isShowing={isShowing} hide={toggle} /> 
                 </Ul>
             </Div>

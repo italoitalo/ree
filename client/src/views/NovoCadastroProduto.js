@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from  'styled-components'
 
-
+import HeaderPrivt from './../componentes/CabecalhoPrivado'
 /* import Porta from './../img/formCadastroImg/porta.jpg' */
 
 export default function newform() {
@@ -9,7 +9,9 @@ export default function newform() {
     
     return (
         <>
+        <HeaderPrivt/>
         <Container>
+            
             <Banner>
                 <H1>Para começar,<br/>nos diga algumas coisas</H1>
             </Banner>

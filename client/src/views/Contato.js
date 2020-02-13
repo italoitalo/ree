@@ -6,12 +6,14 @@ import facebook from './../img/SocialMedia/facebook-logo.svg'
 import github from './../img/SocialMedia/github-character.svg'
 import instagram from './../img/SocialMedia/instagram-symbol.svg'
 import linkedin from './../img/SocialMedia/linkedin-letters.svg'
+import Hederprivat from './../componentes/CabecalhoPrivado'
 
 /* import Cabecalho from '../Rotas/Cabecalho' */
 
 export default function Contato() {
     return ( 
         <Container >
+            <Hederprivat/>
         <Banner >
         <H1 > Tem alguma dúvida ? Entre em contato! </H1> 
         </Banner> 

@@ -30,33 +30,23 @@ const PivateRoute =({component: Component, ...rest})=>(
     />
         )
         
-
-    
-        
-    
-
 export default function Rotas(){
     return(
         <>
                 <Switch>
-                    
+                    {/* Rotas privadas */}
                     <PivateRoute exact path="/private" component={HomePrivate}/>
                     <PivateRoute exact path="/perfil" component={BioPerfil}/>     
-                             
                     <PivateRoute  path="/contato" component={Contato}/>
-                    
                     <PivateRoute  path="/doe" component={NovoCadastroProduto}/>
-                    
-                    
                     <PivateRoute path='/doacaoenviada' component={DoacaoEnviada}/>
                     <PivateRoute path='/CadastroRealizado' component={CadastroRealizado}/>
-                  
                     <PivateRoute exact path="/perfil/doacoes" component={DoacoesPerfil}/>   
                     <PivateRoute exact path="/perfil/interesses" component={InteressesPerfil}/>   
                     <PivateRoute exact path="/perfil/config" component={ConfigPerfil}/> 
                     <PivateRoute exact path="/home/suasdoacoes" component={SuasDoacoes}/> 
 
-
+                    {/* Rotas públicas */}
                     
                     <Route exact path="/" component={Home}/>
                     <Route  path="/cadastro" component={NovoCadastro}/>

@@ -30,7 +30,7 @@ module.exports = app
 // rota de conecção do backend com frontend, não apagar rota;
 app.get('/api/mensagem', (req, res) => {
     res.send({ express: 'Hello From Express' });
-  });
+});
 
 
 
@@ -58,12 +58,46 @@ app.post('/card', (req, res) => {
     user INNER JOIN card ON id_user = id_user_from `,
         (error, result) => {
             res.send(result)
-            console.log(result)
+
         })
 
-        
+
 })
 
 //porta servidor
 const port = process.env.PORT || 5000;
 app.listen(port, () => console.log(`Listening on port ${port}`));
+
+//!     ROTA DE VALIDAÇÃO DE USUÁRIOS
+/* 
+app.post('/authh', function(request, response) {
+	var username = request.body.username;
+	var password = request.body.password;
+	if (username && password) {
+		connection.query('SELECT * FROM user WHERE username = ? AND password = ?', [username, password], function(error, results, fields) {
+			if (results.length > 0) {
+				request.session.user = true;
+				request.session.username = username;
+				response.redirect('/');
+			} else {
+				response.send('Incorrect Username and/or Password!');
+			}			
+			response.end();
+		});
+	} else {
+		response.send('Please enter Username and Password!');
+		response.end();
+	}
+});
+
+app.get('/', function(request, response) {
+	if (request.session.username) {
+        response.redirect('/cadastro');      
+        response.send('Welcome back, ' + request.session.username + '!');
+	} else {
+		response.send('Please login to view this page!');
+	}
+	response.end();
+});
+
+ */

@@ -2,12 +2,13 @@
 // as rodas dinamicas usando consign, bem como estabelece a porta que ambos os "servidores irão usar;"
 // */
 
-
+const jwt = require('jsonwebtoken');
 const express = require('express');
 const consign = require('consign');
-
 const bodyParser = require('body-parser')
 const cors = require('cors')
+require("dotenv-safe").config();
+
 
 const app = express();
 app.use(cors())

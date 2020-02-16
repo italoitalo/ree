@@ -10,13 +10,13 @@ export default function TelaLogin() {
         <Figure>
             <ImgUSer alt="fotoUserPerfil" src={UserPerfil}/>
         </Figure>
-        <Form action="">
+        <Form action="/login" method="POST">
             <DivUserPass>
-                <InputLogin type="text" placeholder="Login" name="" id=""/>
+                <InputLogin type="email" placeholder="Login" name="emaillogin" id="emaillogin"/>
             </DivUserPass>
 
             <DivUserPass>
-                <InputLogin type="password" placeholder="Senha"name="" id=""/>
+                <InputLogin type="password" placeholder="Senha"name="password" id="password"/>
             </DivUserPass>
             <Buttons>
                 <ButtonLogin type="submit">Login</ButtonLogin>

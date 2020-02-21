@@ -14,36 +14,12 @@ export default function LandPage(){
 
     return(
         <Fragment>
-            <section className="borda">
             <HeaderPub/>
-                <header className="header">
-            <nav className="nav">
-                <ul className="ul">
-                    
-                    <Link className="navigation" to="/cadastro"><li className="a">Cadastro</li></Link>
-                    <Link className="navigation" to="#" ><li className="a" onClick={toggle}>Login</li></Link> 
-                    
-                    <Modal isShowing={isShowing} hide={toggle} /> 
-
-                </ul>
-            </nav>
-        </header>
+                
     <section  className="container">
 
         <div className="slide">
             <h1 className="greenree">ree</h1>
-
-            <div  id="slideshow"> 
-               {/*  <div className="slick">
-                    <h1 className="greenree" style={{fontWeight:"900px"}}>Conectar</h1>
-                    <h1 className="cornflowerblue" style={{fontWeight:"900px"}}>Utilizar</h1>
-                    <h1 className="crimson" style={{fontWeight:"900px"}}>Unir</h1>
-                    <h1 className="gold" style={{fontWeight:"900px"}}>Ciclar</h1>
-                    <h1 className="hotpink" style={{fontWeight:"900px"}}>Unir</h1>
-                    <h1 className="greenyellow" style={{fontWeight:"900px"}}>Estruturar</h1>
-                    <h1 className="purple" style={{fontWeight:"900px"}}>Distribuir</h1>
-                </div> */}
-            </div>
         </div>            
             <ScrollAnimation animateIn='fadeInLeft' animateOnce={true}>
                 <img  className="banner" src={require("./src/img/conexão.svg")} alt="imagem de conecçaõ" />
@@ -57,7 +33,7 @@ export default function LandPage(){
             <section id="how"  className="how">
                
                 <ScrollAnimation  animateIn='fadeInLeft' animateOnce={true}>
-                    <div className="ScrollAnimation"> 
+                    <div className="howbox"> 
                         <img  className="banner" src={require("./src/img/troca.svg")} alt="troca"/>
                         <div className= "howtext">
                             <h1> Como funciona? </h1>
@@ -238,6 +214,6 @@ export default function LandPage(){
                 </div>
         </section>
         
-    </section></ Fragment>
+    </ Fragment>
     )
 }

@@ -73,17 +73,8 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    overflow-x: hidden;
-}
 .navigation{
 text-decoration:none;
-}
-
-.ul {
-    display: flex;
-    margin-top: 15px;
-    height: 100%;
 }
 
 .a {
@@ -108,54 +99,13 @@ h4 {
 .flex {
     display: flex;
 }
-.margin{
-    
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
+
 
 .column {
     display: flex;
     flex-direction: column;
 }
 
-
-/* -------------------------------------------------------------------- */
-
-
-/* -------------------------- HEADER ---------------------------------- */
-
-.header {
-    height: 55px;
-}
-
-
-/* -------------------------------------------------------------------------------
----------------------------------CAROUSEL---------------------------------------- */
-
-#slideshow {
-    height: 20px;
-    max-width: 300px;
-}
-
-.slide {
-    display: flex;
-    margin-left: 40%;
-    font-size: 30pt;
-}
-
-.slide>h1 {
-    text-align: center;
-}
-
-.slick {
-    font-size: 30pt;
-}
-
-.botaobanner:hover {
-    font-size: 50pt;
-}
 
 
 /* -----------------------------------------------------------------------------------
@@ -164,7 +114,6 @@ h4 {
 -------------------------------------BANNER INICIAL-----------------------------------*/
 
 .container {
-    overflow-x: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -346,7 +295,10 @@ h4 {
 
 
 /* -----------------------------------------SOBRE----------------------------------------- */
-
+.margin{
+    display: flex;
+    justify-content: center;
+}
 .contato {
     font-size: 18pt;
     color: rgb(0, 0, 0, 0.8);
@@ -429,7 +381,12 @@ h4 {
     color: royalblue;
 }
 
-@media screen and (max-width: 455px) {
+@media (max-width: 700px) {
+
+    *{
+    max-width: 100%;
+
+    }
     .banner {
         width: 290px;
     }

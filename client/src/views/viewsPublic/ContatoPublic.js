@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import papeldeParede from './../../img/TelaContatos/fundoContatos.png'
+import papeldeParederesp from './../../img/TelaContatos/Wallpaper-Resp.jpg'
 import twitter from './../../img/SocialMedia/twitter-black-shape.svg'
 import facebook from './../../img/SocialMedia/facebook-logo.svg'
 import github from './../../img/SocialMedia/github-character.svg'
@@ -13,73 +14,86 @@ import HeaderPub from './../../componentes/CabecalhoPublico'
 export default function Contato() {
     return ( 
         <Container >
-        <HeaderPub/>   
-        <Banner >
-        <H1 > Tem alguma dúvida ? Entre em contato! </H1> 
-        </Banner> 
-        <Flex >
-        
-        <DivForm >
-        
-        <H1Form > Envie um e - mail para nossa equipe! </H1Form> 
-        <Inputs >
-        
-        <Input type = "text"
-        name = "nome"
-        id = "nome"
-        placeholder = "Nome" / >
-        
-        <Input type = "text"
-        name = "Sobrenome"
-        id = "snome"
-        placeholder = "Sobrenome" / >
-        
-        <Input type = "email"
-        name = "E-mail"
-        id = "email"
-        placeholder = "email" / >
-        
-        <TextareaContat name = "Suas dúvidas"
-        id = "textarea"
-        cols = "30"
-        rows = "4"
-        placeholder = "Suas dúvidas" > </TextareaContat> 
-        </Inputs> 
-        <Button > Enviar </Button> 
-        </DivForm>
 
-        
-        <DivForm >
-        
-        <H1Form > Nos encontre nas Redes Sociais! </H1Form> 
-        <Flex >
-        
-        <A href = "https://twitter.com/equiperee"
-        target = "_blank" > < img alt = "icontwitter"
-        src = { twitter }
-        height = "40px" / > </A> 
-        <A href = "https://facebook.com/"
-        target = "_blank" > < img alt = "iconfacebook"
-        src = { facebook }
-        height = "40px" / > </A> 
-        <A href = "https://www.instagram.com/equiperee/"
-        alt = "iconinstagran"
-        target = "_blank" > < img src = { instagram }
-        height = "40px"
-        alt = "icone intagram" / > </A> 
-        <A href = "https://github.com/"
-        target = "_blank" > < img alt = "icongithub"
-        src = { github }
-        height = "40px" / > </A> 
-        <A href = "https://www.linkedin.com/"
-        target = "_blank" > < img alt = "icontlinkedin"
-        src = { linkedin }
-        height = "40px" / > </A> 
-        </Flex>
+            <HeaderPub/>   
+            
+            <Banner >
+                <H1 > Tem alguma dúvida ? Entre em contato! </H1> 
+            </Banner> 
+            
+            <Flex >
+            
+                <DivForm >
+                
+                    <H1Form > Envie um e - mail para nossa equipe! </H1Form> 
+                    
+                    <Inputs >
+                    
+                        <Input type = "text"
+                        name = "nome"
+                        id = "nome"
+                        placeholder = "Nome" / >
+                        
+                        <Input type = "text"
+                        name = "Sobrenome"
+                        id = "snome"
+                        placeholder = "Sobrenome" / >
+                        
+                        <Input type = "email"
+                        name = "E-mail"
+                        id = "email"
+                        placeholder = "email" / >
+                        
+                        <TextareaContat name = "Suas dúvidas"
+                        id = "textarea"
+                        cols = "30"
+                        rows = "4"
+                        placeholder = "Suas dúvidas" / >
 
-        
-        </DivForm> 
-        </Flex> 
+                    </Inputs> 
+
+                    <Button > Enviar </Button> 
+
+                </DivForm>
+
+                
+                <DivForm>
+                
+                    <H1Form > Nos encontre nas Redes Sociais! </H1Form> 
+                    <Flex >
+                    
+                        <A href = "https://twitter.com/equiperee"
+                        target = "_blank" > < img alt = "icontwitter"
+                        src = { twitter }
+                        height = "40px" / > </A>
+
+                        <A href = "https://facebook.com/"
+                        target = "_blank" > < img alt = "iconfacebook"
+                        src = { facebook }
+                        height = "40px" / > </A>
+
+                        <A href = "https://www.instagram.com/equiperee/"
+                        alt = "iconinstagran"
+                        target = "_blank" > < img src = { instagram }
+                        height = "40px"
+                        alt = "icone intagram" / > </A>
+
+                        <A href = "https://github.com/"
+                        target = "_blank" > < img alt = "icongithub"
+                        src = { github }
+                        height = "40px" / > </A>
+
+                        <A href = "https://www.linkedin.com/"
+                        target = "_blank" > < img alt = "icontlinkedin"
+                        src = { linkedin }
+                        height = "40px" / > </A>
+
+                    </Flex>
+
+                </DivForm> 
+
+            </Flex> 
+
         </Container>
     )
 }
@@ -88,21 +102,39 @@ const A = styled.a `
     height:45px;
     width:45px;
     padding:10px;
+
+    @media (max-width: 768px) {
+        height:20px;
+        width: 20px;
+        margin:10px;
+        padding:0;
+
+    }
+
 `
 const Flex = styled.div `
 display:flex;
 justify-content:center;
+
+@media (max-width: 768px) {
+    display:block;
+}
+
 `
 const Banner = styled.div `
- background-image: linear-gradient(to bottom right, rgb(68, 226, 139), rgb(68, 233, 90) );
-    
-margin: 10px 150px 10px 150px;
-border-radius: 10px;
-min-height:80px;
-justify-content:space-evenly;
-align-items:center;
-z-index:1;
-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
+    background-image: linear-gradient(to bottom right, rgb(68, 226, 139), rgb(68, 233, 90) );
+    margin: 10px 150px 10px 150px;
+    border-radius: 10px;
+    min-height:80px;
+    justify-content:space-evenly;
+    align-items:center;
+    z-index:1;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
+
+    @media (max-width: 768px) {
+        margin: 20px;
+        height: 150px;
+    }
 `;
 
 const Container = styled.section `
@@ -112,6 +144,11 @@ const Container = styled.section `
     background-repeat:no-repeat;
     background-size: 100%;
     background-attachment: fixed;
+
+    
+    @media (max-width: 768px) {
+        background-image:url(${papeldeParederesp})
+}
 `
 
 const H1 = styled.h1 `
@@ -119,6 +156,10 @@ const H1 = styled.h1 `
     margin:20px;
     font-size: 40px;
     color:white;
+
+    @media (max-width: 768px) {
+        font-size: 30px;
+    }
 `
 
 const DivForm = styled.div `
@@ -131,6 +172,12 @@ const DivForm = styled.div `
     flex-flow: column wrap;
     background: white;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);   
+
+
+    @media (max-width: 768px) {
+        margin: 20px;
+
+    }
 `
 
 const H1Form = styled.h1 `
@@ -142,6 +189,10 @@ const H1Form = styled.h1 `
     background: -webkit-linear-gradient(rgb(68, 233, 90),rgb(39, 177, 58) );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    @media (max-width: 768px) {
+        font-size:18px;
+    }
 `
 
 const Inputs = styled.div `

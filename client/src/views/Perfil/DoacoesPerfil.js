@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from  'styled-components';
 
+import HeaderPrivt from './../../componentes/CabecalhoPrivado'
+
 
 import NavPerfil from './../../componentes/NavPerfil';
 
@@ -10,6 +12,8 @@ import Star from '../../img/PerfilDoacoes/Star.png';
 export default function Doacoes(){
     return(
         <>
+        
+        <HeaderPrivt/>
             <Main>  
                 <NavPerfil/>
                     <Container>
@@ -203,5 +207,7 @@ const Container = styled.section `
 
 const Main = styled.section`
 display:flex;
-
+@media (max-width:765px){
+    display:block;
+}
 `;

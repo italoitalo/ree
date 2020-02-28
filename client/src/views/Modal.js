@@ -46,6 +46,10 @@ const ModalWrapperDiv = styled.div`
   overflow-x: hidden;
   overflow-y: auto;
   outline: 0;
+  
+  @media (max-width: 768px) {
+    left: 10px;
+  }
 `;
 
 const ModalDiv = styled.div`

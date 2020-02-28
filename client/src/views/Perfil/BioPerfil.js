@@ -1,10 +1,8 @@
 import React from 'react'
 import styled from 'styled-components';
 
-
-
-
 import NavPerfil from './../../componentes/NavPerfil';
+
 import HeaderPrivt from './../../componentes/CabecalhoPrivado'
 import Config from '../../img/PerfilBiografia/Config.svg';
 import User from '../../img/PerfilBiografia/User.png';
@@ -266,5 +264,7 @@ const Main = styled.section `
 display:flex;
 background-color:  #F8F9FA;
 
-
+@media (max-width:765px){
+    display:block;
+}
 `

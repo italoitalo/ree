@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from  'styled-components';
 
+import HeaderPrivt from './../../componentes/CabecalhoPrivado'
+
 import Ilustracao01 from '../../img/PerfilInteresses/hands 3.png'
 import Ilustracao02 from '../../img/PerfilInteresses/gift1.png'
 
@@ -9,6 +11,7 @@ import NavPerfil from './../../componentes/NavPerfil';
 export default function Interesses(){
     return(
         <>
+        <HeaderPrivt/>
             <Main>
                 <NavPerfil/> 
                 <Container>
@@ -114,6 +117,10 @@ const Input = styled.input`
 
 const Main = styled.section`
     display:flex;
+    
+    @media (max-width:765px){
+    display:block;
+}
 `
 const Img = styled.img`
     margin-left:50px;

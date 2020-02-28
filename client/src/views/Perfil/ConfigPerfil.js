@@ -1,7 +1,10 @@
 import React from 'react'
 import styled from  'styled-components';
 
+import HeaderPrivt from './../../componentes/CabecalhoPrivado'
+
 import NavPerfil from './../../componentes/NavPerfil';
+
 
 import Foto from '../../img/PerfilConfiguracao/foto.png';
 import Seta from '../../img/PerfilConfiguracao/Arrow.png';
@@ -11,6 +14,7 @@ import Img from '../../img/PerfilConfiguracao/img.png';
 export default function ConfigPerfil(){
     return(
         <>
+    <HeaderPrivt/>
             <Main>
                 <NavPerfil/> 
                 <Container>
@@ -132,6 +136,10 @@ display:flex;
 `
 const Main = styled.section`
     display:flex;
+    
+    @media (max-width:765px){
+    display:block;
+}
 `
 
 const Container = styled.section `

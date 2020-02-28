@@ -63,6 +63,11 @@ font-size:40px;
 color:white;
 z-index:1;
 margin:40% -240px;
+
+ @media (max-width: 768px) {
+     font-size: 27pt;
+     margin: 10% -300px;
+ }
 `
 
 const H2 = styled.h1`
@@ -70,6 +75,10 @@ font-size:18px;
 color:white;
 z-index:1;
 margin:60% 20px;
+
+@media (max-width: 768px) {
+    display: none;
+}
 `
 
 const Button = styled.button`
@@ -84,24 +93,40 @@ const Button = styled.button`
         background-image: linear-gradient(to bottom right, rgb(68, 226, 139), rgb(68, 233, 90) );
         color:white;
     }
+    
+    @media (max-width: 768px) {
+        margin-left: 30%;
+        padding: 10px 20px;
+    }
 `
 
 const Input = styled.input`
 padding:10px;
 margin: 0 10px;
-width: 94%;
+width: 90%;
+@media (max-width: 768px) {
+    margin: 5px 10px;
+}
 `
 
 const Input1 = styled.input`
 padding:10px;
 margin: 0 10px;
-width:45%;
+width:40%;
+@media (max-width: 768px) {
+    width: 90%;   
+    margin: 5px 10px;
+}
 `
 
 const Ul = styled.ul`
     margin: 50px;
     display: flex;
     flex-direction:column;
+
+    @media (max-width: 768px) {
+        margin:10px;
+    }
 `
 
 const Li = styled.li`
@@ -115,6 +140,13 @@ const LadoA = styled.div `
     width:80%;
     border-top-left-radius:10px;
     border-bottom-left-radius:10px;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        border-bottom-left-radius:0px;
+        border-top-left-radius:10px;
+        border-top-right-radius:10px;
+}
 `
 
 const LadoB = styled.div `
@@ -125,6 +157,15 @@ const LadoB = styled.div `
     width:40%;
     border-top-right-radius:10px;
     border-bottom-right-radius:10px;
+
+    @media (max-width: 768px) {
+        height: 120px;
+        width:100%;
+        border-top-right-radius:0px;
+        border-bottom-right-radius:10px;
+        border-bottom-left-radius:10px;
+
+}
 `
 
 const Container = styled.section`
@@ -137,7 +178,13 @@ padding:50px;
 &:hover{
     background: rgb(68, 226, 139);
 }
-
+@media (max-width: 768px) {
+    height: 700px;
+    padding:20px;
+    &:hover{
+        background: rgba(255, 255, 255, 0);
+    }   
+}
 `
 
 const Box = styled.div`
@@ -146,4 +193,9 @@ display:flex;
 height:450px;
 width:80%;
 box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+
+@media (max-width: 768px) {
+        display: block;
+        width:100%
+    }
 `

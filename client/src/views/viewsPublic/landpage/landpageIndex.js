@@ -185,34 +185,42 @@ export default function LandPage(){
                         </div>
                     </div>
                 </div>
+
+        </section>
+        
                 <div className="abouttext">
+
                     <div className="card">
                         <h1>Bruno</h1>
                         <img className="aboutimg" src={require("./src/img/5.jpg")} alt="sobre"/>
                         <h3>A persistência é o caminho do êxito!</h3>
                     </div>
+
                     <div className="card">
                         <h1>Italo</h1>
                         <img className="aboutimg"  src={require("./src/img/3.jpg")} alt="about"/>
                         <h3>A tecnologia move o mundo!</h3>
                     </div>
+
                     <div className="card">
                         <h1>Matheus</h1>
                         <img className="aboutimg" src={require("./src/img/4.jpg")} alt="about"/>
                         <h3>Seja a mudança que você quer ver no mundo.</h3>
                     </div>
+                    
                     <div className="card">
                         <h1>Rhuan</h1>
                         <img className="aboutimg" src={require("./src/img/2.jpg")}alt="about"/>
                         <h3>Se você pode sonhar, você pode fazer!</h3>
                     </div>
+
                     <div className="card">
                         <h1>Tayanne</h1>
                         <img className="aboutimg" src={require("./src/img/1.jpg")}alt="about"/>
                         <h3>O conhecimento fala, mas a sabedoria escuta.</h3>
                     </div>
+
                 </div>
-        </section>
         
     </ Fragment>
     )

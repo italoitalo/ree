@@ -167,7 +167,7 @@ export default function LandPage(){
                     <div className="howtext">
                         <h1> Nosso contato direto</h1>
 
-                        <h3 style={{fontSize:"20pt"}}>Pronto para ajudar pessoas? Ligue para nós ou envie um e-mail<br/> e entraremos em 
+                        <h3 style={{fontSize:"17pt", padding:"5px"}}>Pronto para ajudar pessoas? Ligue para nós ou envie um e-mail<br/> e entraremos em 
                         contato com você o mais breve possível!</h3>
 
                         <div className="margin">

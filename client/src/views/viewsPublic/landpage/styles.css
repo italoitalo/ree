@@ -400,10 +400,19 @@ h4 {
         margin-top: -20px;
     }
     .howtext>h1 {
-        font-size: 38pt;
+        margin: 20px;
+        font-size: 32pt;
+    }
+    .howtext>h3 {
+        font-size: 15pt;
     }
     .howtext>h2 {
         font-size: 15pt;
+    }
+    .bannerp, .contato{
+        height: 40px;
+        font-size: 12pt;
+        margin: 10px;
     }
     .cardspense {
         flex-wrap: wrap;

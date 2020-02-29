@@ -67,14 +67,16 @@ export default function newform() {
                         <Title>insira sua Descrição!</Title>
                         <div>
                             <input type="text" name="nome" id="nome" placeholder="Titulo da doação" required/> 
-                            <input type="text" name="caracteristicas" id="caracteristicas" placeholder="caracteristicas" required/> 
+                            <input type="text" name="caracteristicas" id="caracteristicas" placeholder="caracteristicas" required/>
+                            <input type="hidden" name="id" value="15" id="id"  required/>
+                            <input type="hidden" name="foto" value="https://quadroecia.com/img/foto.jpeg" id="foto"  required/>  
                         </div> 
                         
                         <ButtonProx>Próximo</ButtonProx>
                     </Box> 
 
-                    <input type="text" name="id" id="id"  placeholder="id"/>id
-                    <button type="submit"> submit </button>
+{/*                     <input type="text" name="id" id="id"  placeholder="id"/>id
+                    <button type="submit"> submit </button> */}
                 </form>
         </Container>
         </>

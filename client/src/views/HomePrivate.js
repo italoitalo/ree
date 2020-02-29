@@ -15,7 +15,7 @@ export default function Home() {
         <HeaderPrivt/>
         <Container >
 
-        <DoacoesPublicas />
+            <DoacoesPublicas />
 
         </Container> 
         </>

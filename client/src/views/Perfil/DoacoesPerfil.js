@@ -17,6 +17,7 @@ export default function Doacoes(){
             <Main>  
                 <NavPerfil/>
                     <Container>
+
                         <DivFlex>                        
                             <H1>O que você ja recebeu</H1>
                             <SectionLine>
@@ -25,23 +26,26 @@ export default function Doacoes(){
                             <DivRetangulo> item 3</DivRetangulo>
                             </SectionLine>
                         </DivFlex>
+
                         <DivFlex>
                             <H1>O que você já doou</H1>
                             <DivRetangulo> item.1</DivRetangulo>
                             <DivRetangulo> item.2</DivRetangulo>
                         </DivFlex>
+
+
                         <SectionCol>
                             <DivFlexCenter>
                                 <H1>Títulos e conquistas </H1>
                                 </DivFlexCenter>
                             <SectionDiplayGrande>
                               
-                                <DivEmPe>
-                                    <Lista>
-                                        <H2>
+                            <DivEmPe>
+                                <Lista>
+                                    <H2>
                                         Doando
-                                        </H2>
-                                        <SectionDiplay>
+                                    </H2>
+                                    <SectionDiplay>
                                         <Ulist>
                                             <li>Gente Boa   </li>
                                             <li>Amigável </li>
@@ -58,16 +62,16 @@ export default function Doacoes(){
                                             <li><img alt="star" src={Star}></img></li>
                                             <li><img alt="star" src={Star}></img></li>
                                         </Ulist>
-                                        </SectionDiplay>
-                                    </Lista>
-                                </DivEmPe>
+                                    </SectionDiplay>
+                                </Lista>
+                            </DivEmPe>
                                
-                                <DivEmPe>
+                            <DivEmPe>
                                 <Lista>
-                                        <H2>
+                                    <H2>
                                         Recebendo
-                                        </H2>
-                                        <SectionDiplay>
+                                    </H2>
+                                    <SectionDiplay>
                                         <UlistRed>
                                             <li>Sortudo  </li>
                                             <li>Pé-Quente </li>
@@ -82,13 +86,10 @@ export default function Doacoes(){
                                             <li><img alt="star" src={Star}></img></li>                                            
                                             <li><img alt="star" src={Star}></img></li>
                                         </Ulist>
-                                        </SectionDiplay>
-                                    </Lista> </DivEmPe>
-                            </SectionDiplayGrande>
-                            
-                            
-                            
-                        
+                                    </SectionDiplay>
+                                    </Lista> 
+                            </DivEmPe>
+                        </SectionDiplayGrande>
                         </SectionCol>
                     </Container>               
             </Main>
@@ -97,17 +98,26 @@ export default function Doacoes(){
 }
 
 const SectionDiplayGrande = styled.section`
-justify-content: space-between;
-display: flex;
-padding: 50px 0px 0px 0px;`
+    justify-content: space-between;
+    display: flex;
+    padding: 50px 0px 0px 0px;
+    
+    @media(max-width:765px){
+    flex-direction: column;
+    padding:0px;
+    margin: 40px 0px;
+  }
+  `
 
 const UlistRed = styled.ul`
-padding: 0px 15px 0px 0px;
-background: -webkit-linear-gradient(#F14242, #FFE600);
--webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: bold;
-  font-size:1.5em`
+    padding: 0px 15px 0px 0px;
+    background: -webkit-linear-gradient(#F14242, #FFE600);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size:1.5em;
+  
+  `
 
 
 const Ulist = styled.ul`
@@ -116,7 +126,9 @@ background: -webkit-linear-gradient(#1AFBC5, #E02FEF);
 -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
-  font-size:1.5em`
+  font-size:1.5em;
+  
+`
 
 const H2 = styled.h2`
 font-size:2em;
@@ -140,7 +152,10 @@ width: 266px;
 height: 349px;
 margin: 0px 90px 0px 90px;
 border-radius: 20px;
-background-color:rgba(0, 0, 0, 0.1);`
+background-color:white;
+
+box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1)
+`
 
 const SectionCol = styled.section`
 display:flex;
@@ -170,7 +185,7 @@ margin: 20px 5px 0px 0px;
 width: 180px;
 height: 120px;
 /* fonte */
-background-color:rgba(0, 0, 0, 0.1);
+background-color:white;
 border-radius: 20px;
 display: flex;
 color:rgba(0, 0, 0, 0.2);
@@ -178,6 +193,8 @@ justify-content: center;
 align-items: center;
 font-family: Catamaran;
 font-size: 2em;
+
+box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1)
 
 `
 

@@ -11,6 +11,8 @@ import Phone from './../img/cadprod/mobile-phone.svg'
 import Notebook from './../img/cadprod/open-laptop-computer.svg'
 import Plug from './../img/cadprod/socket.svg'
 
+
+
 export default function newform() {
     
     
@@ -49,16 +51,27 @@ export default function newform() {
                     <Box>
                         <Title>Qual o estado do seu item?</Title>
                         
-                        <div><RangeSlide type="range" min="1" max="5" name="estado" id="estado" required/></div>
+                        <div>
+
+                            <EstadoH1>
+                                <H2>Péssimo</H2>
+                                <H2>Ruim</H2>
+                                <H2>Usado</H2>
+                                <H2>Bom</H2>
+                                <H2>Perfeito</H2>
+                            </EstadoH1>
+
+                            <RangeSlide type="range" min="1" max="5" defaultValue="3" name="estado" id="estado" required/>
+                            
+                        </div>
                         
                         <ButtonProx>Próximo</ButtonProx>
-                    
                     </Box> 
 
                     <Box>
                         <Title>Mande uma foto do seu item</Title>
                         
-                        <div><input type="file" name="fotoProduto" id="fotoProduto" required/></div>
+                        <div><InputImg type="file" name="fotoProduto" id="fotoProduto" required/></div>
                         
                         <ButtonProx>Próximo</ButtonProx>
                     </Box> 
@@ -66,20 +79,59 @@ export default function newform() {
                     <Box>
                         <Title>insira sua Descrição!</Title>
                         <div>
-                            <input type="text" name="nome" id="nome" placeholder="Titulo da doação" required/> 
-                            <input type="text" name="caracteristicas" id="caracteristicas" placeholder="caracteristicas" required/> 
-                        </div> 
-                        
+                            <Titulo name="nome" id="nome" placeholder="Titulo da doação" required/> 
+                        </div>  
+                        <div>
+                            <Descrição rows="5" name="caracteristicas" id="caracteristicas" placeholder="Caracteristicas" required/> 
+                        </div>
+                       
+                
                         <ButtonProx>Próximo</ButtonProx>
                     </Box> 
 
-                    <input type="text" name="id" id="id"  placeholder="id"/>id
-                    <button type="submit"> submit </button>
+                    <Box>
+                        <Title>Id do seu item (para testes)</Title>
+                        <input type="text" name="id" id="id"  placeholder="id"/>
+                    </Box>
+                    
+                    <ButtonProx type="submit"> submit </ButtonProx>
                 </form>
         </Container>
         </>
     )
 }
+const Titulo = styled.input`
+
+height: 35px;
+padding: 5px;
+
+`
+
+const Descrição = styled.textarea` 
+
+font-weight: bolder;
+width: 50%;
+margin: 20px 0px;
+padding: 5px;
+
+`
+
+const InputImg = styled.input `
+
+    height: 50px;
+    padding: 5px;
+    margin: 5px;
+
+`
+
+const EstadoH1 = styled.section`
+    display: flex;
+    justify-content: center;
+`
+const H2 = styled.h1 `
+    margin: 0 7%;
+
+`
 
 const ButtonProx = styled.button`
 
@@ -94,12 +146,11 @@ const ButtonProx = styled.button`
 const ImgTipo = styled.img`
     height:100px;
     margin: 0px 40px;
-`
 
-const RangeSlide = styled.input`
-
-    width:80%;
-
+    @media (max-width:765px){
+        height: 35px;
+        margin: 0 10px;
+    }
 `
 
 const RadioInput = styled.input`
@@ -108,8 +159,37 @@ const RadioInput = styled.input`
     width:15px;
     margin:  10px 85px 90px 85px;
     cursor:pointer;
+    
+    @media (max-width:765px){
+        height: 35px;
+        margin: 0 10px;
+    }
 
 `
+
+const RangeSlide = styled.input`
+
+    -webkit-appearance: none;
+    width:80%;
+    height: 25px;
+    background: whitesmoke;
+    outline: none;
+    border-radius: 25px;
+
+    &:hover{
+
+    }
+    &::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius:100%;
+  background-image: linear-gradient(to bottom right, rgb(68, 226, 139), rgb(68, 233, 90) );
+  cursor: pointer;
+  }
+`
+
 
 const Title = styled.h1`
     font-size:35pt;
@@ -123,7 +203,7 @@ const Box = styled.section`
     margin-top: -50px;
     margin-bottom:400px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.1);
 
     text-align: center;
 `

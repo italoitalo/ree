@@ -8,7 +8,7 @@ export default function AbasNavegacao() {
     <>
       
           <Container>
-            <A to='/'>Doações Públicas</A>
+            <A to='/private'>Doações Públicas</A>
             <Traco />
             <A to='/home/suasdoacoes'>Suas Doações</A>
           </Container>

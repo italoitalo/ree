@@ -134,18 +134,31 @@ const Container = styled.section `
     justify-content:space-evenly;
     
     margin:30px;
+    
+    @media (max-width:765){
+        margin: 0;
+        max-width: 300px;
+
+    }
 `
 
 const SectionInt = styled.section`
     display:flex;
     flex-direction:column;
-    background-color:whitesmoke;
+    background-color:white;
 
     min-width:400px;
     padding:10px;
     border-radius:20px;
 
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+
+    @media (max-width: 765px){
+        margin: 10px 0;
+        min-width:200px;
+        width: 300px;
+        padding:10px;
+    }
 `
 
 const Form = styled.form`
@@ -153,6 +166,7 @@ display:flex;
 justify-content:space-between;
 
 background-color:white;
+border: 1px solid rgba(0, 0, 0, 0.1);
 
 border-radius:50px;
 padding:5px;

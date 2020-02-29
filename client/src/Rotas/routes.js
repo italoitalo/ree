@@ -36,18 +36,32 @@ const PrivateRoute = ({component: Component, ... rest}) =>(
 const Routes = () => (
     <BrowserRouter>
         <Switch>
-        <PivateRoute exact path="/private" component={HomePrivate}/>
-                    <PivateRoute exact path="/perfil" component={BioPerfil}/>     
-                    <PivateRoute  path="/contato" component={Contato}/>
-                    <PivateRoute  path="/doe" component={NovoCadastroProduto}/>
-                    <PivateRoute path='/doacaoenviada' component={DoacaoEnviada}/>
-                    <PivateRoute path='/CadastroRealizado' component={CadastroRealizado}/>
-                    <PivateRoute exact path="/perfil/doacoes" component={DoacoesPerfil}/>   
-                    <PivateRoute exact path="/perfil/interesses" component={InteressesPerfil}/>   
-                    <PivateRoute exact path="/perfil/config" component={ConfigPerfil}/> 
-                    <PivateRoute exact path="/home/suasdoacoes" component={SuasDoacoes}/> 
-            <Route exact path="/" component={() => <h1>Hello world!</h1>} />
-        <PrivateRoute exact path="/asd" component={() => <h1>Oce logo</h1> }/>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/home" component={Home} /> 
+
+        <PrivateRoute exact path="/private" component={HomePrivate}/>
+        <PrivateRoute exact path="/perfil" component={BioPerfil}/>     
+        <PrivateRoute  path="/contato" component={Contato}/>
+        <PrivateRoute  path="/doe" component={NovoCadastroProduto}/>
+        <PrivateRoute path='/doacaoenviada' component={DoacaoEnviada}/>
+        <PrivateRoute path='/CadastroRealizado' component={CadastroRealizado}/>
+        <PrivateRoute exact path="/perfil/doacoes" component={DoacoesPerfil}/>   
+        <PrivateRoute exact path="/perfil/interesses" component={InteressesPerfil}/>   
+        <PrivateRoute exact path="/perfil/config" component={ConfigPerfil}/> 
+        <PrivateRoute exact path="/home/suasdoacoes" component={SuasDoacoes}/> 
+        
+
+        <PrivateRoute exact path="/asd" component={() => <h1>Você está logado</h1> }/>
+        <PrivateRoute exact path="/privado" component={() => <h1>Você está logado</h1> }/>
+
+
+
+     
+                    <Route  path="/cadastro" component={NovoCadastro}/>
+                    <Route  path="/login" component={Login}/>
+                    <Route path='/cadastroext' component={CadastroExt}/>
+                    <Route  path="/contatoPub" component={ContatoPub}/>
+                    <Route exact path="/" component={() => <h1>Hello world!</h1>} />
         </Switch>
     </BrowserRouter>
 );

@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
 
 import {isAuthenticated} from './auth'
 
@@ -32,7 +32,7 @@ const PivateRoute =({component: Component, ...rest})=>(
         
 export default function Rotas(){
     return(
-        <BrowserRouter>
+        <>
                 <Switch>
                     {/* Rotas privadas */}
                     <PivateRoute exact path="/private" component={HomePrivate}/>
@@ -53,9 +53,8 @@ export default function Rotas(){
                     <Route  path="/login" component={Login}/>
                     <Route path='/cadastroext' component={CadastroExt}/>
                     <Route  path="/contatoPub" component={ContatoPub}/>
-                    <Route exact path="/" component={() => <h1>Hello world!</h1>} />
 
                 </Switch>        
-        </BrowserRouter>
+        </>
     )
 }

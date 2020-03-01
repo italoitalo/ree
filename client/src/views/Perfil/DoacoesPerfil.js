@@ -30,10 +30,12 @@ export default function Doacoes(){
                             <DivRetangulo> item.1</DivRetangulo>
                             <DivRetangulo> item.2</DivRetangulo>
                         </DivFlex>
+
                         <SectionCol>
                             <DivFlexCenter>
                                 <H1>Títulos e conquistas </H1>
-                                </DivFlexCenter>
+                            </DivFlexCenter>
+
                             <SectionDiplayGrande>
                               
                                 <DivEmPe>
@@ -99,7 +101,15 @@ export default function Doacoes(){
 const SectionDiplayGrande = styled.section`
 justify-content: space-between;
 display: flex;
-padding: 50px 0px 0px 0px;`
+padding: 50px 0px 0px 0px;
+
+@media (max-width:765px){
+    
+    display: block;
+    padding: 0;
+    margin:30px 0;
+}
+`
 
 const UlistRed = styled.ul`
 padding: 0px 15px 0px 0px;
@@ -140,7 +150,14 @@ width: 266px;
 height: 349px;
 margin: 0px 90px 0px 90px;
 border-radius: 20px;
-background-color:rgba(0, 0, 0, 0.1);`
+background-color:white;
+box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.1);
+
+@media (max-width:765px){
+    height:100%;
+    margin: 50px 0;
+}
+`
 
 const SectionCol = styled.section`
 display:flex;
@@ -170,7 +187,8 @@ margin: 20px 5px 0px 0px;
 width: 180px;
 height: 120px;
 /* fonte */
-background-color:rgba(0, 0, 0, 0.1);
+background-color:white;
+box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.1);
 border-radius: 20px;
 display: flex;
 color:rgba(0, 0, 0, 0.2);

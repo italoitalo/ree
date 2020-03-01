@@ -109,6 +109,12 @@ const Button = styled.button`
     background:#FFB23E;
     cursor: pointer
     }
+
+    @media (max-width:765px){
+
+        margin:10px 100px;
+    }
+
   `
 const Input = styled.input`
     margin-right:20px;
@@ -134,6 +140,10 @@ const Container = styled.section `
     justify-content:space-evenly;
     
     margin:30px;
+    @media (max-width:765px){
+        margin:0;
+    }
+
 `
 
 const SectionInt = styled.section`
@@ -146,6 +156,14 @@ const SectionInt = styled.section`
     border-radius:20px;
 
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+
+    @media (max-width:765px){
+        min-width:300px;
+        width:300px;
+        padding:0;
+        margin:40px;
+
+    }
 `
 
 const Form = styled.form`

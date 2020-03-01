@@ -104,6 +104,10 @@ const SectionInt = styled.section`
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
     padding:30px;
     border-radius:20px;
+    @media (max-width:765px){
+        margin:20px 0;
+    }
+
 `
 
 const InputRee = styled.input`
@@ -127,7 +131,12 @@ align-items: flex-stretch;
 const ImgConf = styled.img`
 padding: 5px;
 
-flex: 0;
+flex: 0;    
+@media (max-width:765px){
+    height: 80px;
+    width: 80px
+}
+
 `
 const SectionFlex = styled.section`
 justify-content: center;

@@ -7,10 +7,13 @@ import AbasNav from '../componentes/AbasNavegacão';
 import SecaoDeMeusProdutosMinhasDoacoes from './SecaoDeMeusProdutosMinhasDoacoes';
 import Styled from 'styled-components';
 
+import HeaderPrivt from './../componentes/CabecalhoPrivado'
+
 
 export default function DoacoesPublicas() {
     return ( 
       <>
+  <HeaderPrivt/>
       <Container>
           <AbasNav />
           <SecaoDeMeusProdutosMinhasDoacoes /> 

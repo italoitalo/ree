@@ -10,16 +10,17 @@ export default function TelaLogin() {
         <Figure>
             <ImgUSer alt="fotoUserPerfil" src={UserPerfil}/>
         </Figure>
-        <Form action="/login" method="POST">
+        <Form action="/login" method="post">
             <DivUserPass>
-                <InputLogin type="email" placeholder="Logidddn" name="emaillogin" id="emaillogin"/>
+                <InputLogin type="email" placeholder="Login" name="emaillogin" id="emaillogin"/>
             </DivUserPass>
 
             <DivUserPass>
                 <InputLogin type="password" placeholder="Senha"name="password" id="password"/>
             </DivUserPass>
             <Buttons>
-                <ButtonLogin type="submit">Login</ButtonLogin>
+                <ButtonLogin type="submit">{/* <ALogin href="/private"> */}Login{/* </ALogin> */}</ButtonLogin>
+                
                 <Paragrafo>Não possui conta?</Paragrafo>
                 <ButtonCadastro><AA href="/cadastro">Cadastre-se</AA></ButtonCadastro>
             </Buttons>
@@ -77,6 +78,31 @@ const InputLogin = styled.input`
     background:white;
     color: #51B981;
 `;
+
+
+const ALogin = styled.a`
+    margin:40px;
+    min-width: 150px;
+    min-height: 50px;
+
+    cursor: pointer;
+
+    font-size: 13px;
+    font-weight:bolder;
+
+    color: #F2C94C;
+
+        &:hover{
+    transition: 1s;
+    border: none;
+
+    color:white;
+}
+`;
+
+
+
+
 const ButtonLogin = styled.button`
     margin:40px;
     min-width: 150px;

@@ -1,20 +1,22 @@
 const connection = require('../../config/dbConnection')
 
-module.exports = (app) => {
+/* import api2 from './../../client/src/services/api2' */
 
+module.exports = (app) => {
+    
     app.post('/login', (req, res, next) => {
-        if (req.body.email === req.body.emaillogin && req.body.password === req.body.password) {
-            console.log('verificado com sucesso')
+
+        if (req.body.emaillogin) {
+            console.log('verificado com sucesso ')
+            res.redirect('/private')
                 /* const id = 1; //esse id viria do banco de dados
                 var token = jwt.sign({ id }, process.env.SECRET, {
                   expiresIn: 300 // expires in 5min
                 });
                 res.status(200).send({ auth: true, token: token }); */
         }
-
-        res.status(500).send('Login inválido!');
+        else{
+        res.status(500).send('Login inválido! ');
+        }
     })
-
-
-
 }

@@ -20,18 +20,15 @@ export default function ConfigPerfil(){
                 <Container>
                     <SectionColumn>
                         <SectionInt>
-
                         <SectionFlex>
                             <Title>Configurações  Pessoais</Title>
                         </SectionFlex>
-
                         <SectionFlex>
                             <button>Alterar foto </button>
                             <ImgConf alt="imagem de foto" src={Foto} width='175'></ImgConf>
                             <ImgConf alt="imagemSeta" src={Seta} width='64'   height='50'></ImgConf>
                             <ImgConf alt="imagem55" src={Img} width='183'></ImgConf>
                         </SectionFlex>
-
                         <SectionCol>
                                 <Main>
                                 <PT>Alterar Nome:</PT>
@@ -49,8 +46,7 @@ export default function ConfigPerfil(){
                         </SectionInt>
 
                         <SectionInt>
-                            <SectionFlex>
-                                <Title>Configurações de conta</Title></SectionFlex>
+                            <SectionFlex><Title>Configurações de conta</Title></SectionFlex>
                             <SectionCol>
                                 <Main>
                                 <PT>Alterar Nome:</PT> 
@@ -130,12 +126,8 @@ align-items: flex-stretch;
 
 const ImgConf = styled.img`
 padding: 5px;
-flex: 0;
 
-@media (max-width:765px){
-    height: 70px;
-    width: 70px;
-}
+flex: 0;
 `
 const SectionFlex = styled.section`
 justify-content: center;

@@ -126,6 +126,9 @@ const EstadoH1 = styled.section`
 const H2 = styled.h1 `
     margin: 0 7%;
 
+    @media (max-width:765px){
+        margin: 0 3%;
+    }
 `
 
 const ButtonProx = styled.button`
@@ -201,6 +204,11 @@ const Box = styled.section`
     box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.1);
 
     text-align: center;
+
+    @media(max-width:765px){
+        width:90%;
+        margin-left:5%
+    }
 `
 
 const Container = styled.section`
@@ -208,6 +216,7 @@ const Container = styled.section`
     flex-direction: column;
     align-items: center;
     width: 100%;
+
 `
 
 const Banner = styled.section`
@@ -215,6 +224,7 @@ const Banner = styled.section`
     width:100%;
     background-image: linear-gradient(to bottom right, rgb(68, 226, 139), rgb(68, 233, 90) );
     justify-content:center;
+
 `
 
 const H1 = styled.h1`
@@ -224,4 +234,10 @@ const H1 = styled.h1`
     margin-left:160px;
     font-weight:900;
     line-height: 0.9;
+
+    @media (max-width:765px){
+
+        font-size: 50px;
+        margin:10px 15px;
+    }
 `

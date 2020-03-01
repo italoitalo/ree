@@ -121,24 +121,24 @@ const UlistRed = styled.ul`
 
 
 const Ulist = styled.ul`
-padding: 0px 15px 0px 0px;
-background: -webkit-linear-gradient(#1AFBC5, #E02FEF);
--webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: bold;
-  font-size:1.5em;
+    padding: 0px 15px 0px 0px;
+    background: -webkit-linear-gradient(#1AFBC5, #E02FEF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size:1.5em;
   
 `
 
 const H2 = styled.h2`
-font-size:2em;
-margin: -40px 0px 0px 0px;
+    font-size:2em;
+    margin: -40px 0px 0px 0px;
 `
 
 const Lista = styled.ul`
-display:flex;
-flex-direction: column;
-align-items: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 
 `
 

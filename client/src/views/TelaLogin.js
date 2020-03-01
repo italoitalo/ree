@@ -12,7 +12,7 @@ export default function TelaLogin() {
         </Figure>
         <Form action="/login" method="POST">
             <DivUserPass>
-                <InputLogin type="email" placeholder="Login" name="emaillogin" id="emaillogin"/>
+                <InputLogin type="email" placeholder="Logidddn" name="emaillogin" id="emaillogin"/>
             </DivUserPass>
 
             <DivUserPass>
@@ -21,7 +21,7 @@ export default function TelaLogin() {
             <Buttons>
                 <ButtonLogin type="submit">Login</ButtonLogin>
                 <Paragrafo>Não possui conta?</Paragrafo>
-                <ButtonCadastro type="password">Cadastre-se</ButtonCadastro>
+                <ButtonCadastro><AA href="/cadastro">Cadastre-se</AA></ButtonCadastro>
             </Buttons>
         </Form>
     </Container> 
@@ -29,7 +29,10 @@ export default function TelaLogin() {
 }
 
 
-
+const AA = styled.a`
+text-decoration:none;
+color: #FFFFFF;
+`
 
 const Container = styled.section`
     display: flex;
@@ -98,6 +101,8 @@ const ButtonCadastro = styled.button`
     min-height: 25px;
     background: #8E8E8E;    
     cursor: pointer;
+    text-decoration:none;
+
 
     font-family:'Catamaran', sans-serif;
     font-style: normal;

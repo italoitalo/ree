@@ -136,7 +136,8 @@ export default function BioPerfil() {
                             src = { Config } /> 
                         </Card>
                     </MainCol> 
-                    <Card>
+
+                    <CardM>
                         <ImgP  alt = "imagemlocal" src = { Local } /> 
                         <H2 >
                             Rio de janeiro - RJ Meier 
@@ -157,7 +158,8 @@ export default function BioPerfil() {
                         src = { Mapa } /> 
                         <ImgP  alt = "imagemconfig"
                         src = { Config } /> 
-                    </Card> 
+                    </CardM> 
+
                 </Main2> 
                 </Main1> 
             </Main> 
@@ -174,6 +176,11 @@ const Main1 = styled.section `
     display:flex;
     flex-direction:column;
     margin: 20px;
+
+    @media (max-width:765px){
+        margin:0;
+    }
+
 `;
 const ImgP = styled.img`
 
@@ -194,6 +201,12 @@ border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 margin: 0 0 10px 0;
 display: flex;
 justify-content: space-between;
+
+@media (max-width:765px){
+
+    width:250px;
+}
+
 
 `
 const PLi2 = styled.p `
@@ -219,6 +232,10 @@ border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 margin: 0 0 10px 0;
 display: flex;
 justify-content: space-between;
+@media (max-width:765px){
+    width:300px;
+}
+
 `
 
 const Card = styled.div `
@@ -232,6 +249,29 @@ padding:20px;
 display:flex;
 flex-direction: column;
 align-items: center;
+
+@media (max-width:765px){
+    min-width: 300px;
+    width:300px;
+}
+
+`
+const CardM = styled.div `
+min-width:450px;
+background-color:#FFFFFF;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+border-radius: 17px;
+margin: 15px;
+padding:20px;
+/* flex */
+display:flex;
+flex-direction: column;
+align-items: center;
+
+@media (max-width:765px){
+
+    display:none;
+}
 `
 const H1 = styled.h1 `
 font-family: Catamaran;

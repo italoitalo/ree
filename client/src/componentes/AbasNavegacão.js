@@ -8,7 +8,7 @@ export default function AbasNavegacao() {
     <>
       
           <Container>
-            <A to='/'>Doações Públicas</A>
+            <A to='/private'>Doações Públicas</A>
             <Traco />
             <A to='/home/suasdoacoes'>Suas Doações</A>
           </Container>
@@ -32,16 +32,22 @@ const Container=styled.section`
 
 /* &:hover{
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  transition: 0.4s; */
-}
-`;
+  transition: 0.4s; }*/
+  @media (max-width:765px){
+    margin: 10px 20px;
+    flex-wrap:nowrap;
+
+  }
+
+`
 
 const Traco=styled.div`
     width:3px;
     height:50px;
     border-radius:30px;
     background:white;
-`;
+`
+
 const A=styled(Link)`
     padding:10px;
     cursor:pointer;
@@ -54,10 +60,18 @@ const A=styled(Link)`
    
 
     &:hover{
-      font-size:34px
+      font-size:34px;
       transition: 0.2s;
     }
-`;
+    @media (max-width:765px){
+      font-size:22px;
+
+      &:hover{
+        font-size:25px;
+      }
+    }
+
+`
 
 
 

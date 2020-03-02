@@ -140,7 +140,12 @@ margin-left: 10px;
 max-width:265px;
 background: whitesmoke;
 border-radius: 45px;
+
+@media (max-width:765px){
+  
+}
 `;
+
 const ImgUser = styled.img `
 width: 80px;
 height: 80px;

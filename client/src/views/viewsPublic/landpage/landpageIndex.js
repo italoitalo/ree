@@ -18,8 +18,8 @@ export default function LandPage(){
                 
     <section  className="container">
 
-        <div className="slide">
-            <h1 className="greenree">ree</h1>
+        <div>
+            <h1 className="slide greenree">reeConecte-se</h1>
         </div>            
             <ScrollAnimation animateIn='fadeInLeft' animateOnce={true}>
                 <img  className="banner" src={require("./src/img/conexão.svg")} alt="imagem de conecçaõ" />

@@ -1,7 +1,7 @@
 import { createGlobalStyle } from 'styled-components'
 
 export default createGlobalStyle `
-    @import url('https://fonts.googleapis.com/css?family=Catamaran&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900&display=swap');
     @import url('https://fonts.googleapis.com/css?family=Merriweather+Sans&display=swap');
 
 @keyframes fadeIn {

@@ -48,8 +48,14 @@ export default function newform() {
                     
                     <Box>
                         <Title>Qual o estado do seu item?</Title>
-                        
-                        <div><RangeSlide type="range" min="1" max="5" name="estado" id="estado" required/></div>
+                        <Estado>
+                            <H2>Pessimo</H2>
+                            <H2>Ruim</H2>
+                            <H2>Usado</H2>
+                            <H2>Bom</H2>
+                            <H2>Perfeito</H2>
+                        </Estado>
+                        <div><RangeSlide type="range" min="1" max="5" defaultValue="3" name="estado" id="estado" required/></div>
                         
                         <ButtonProx>Próximo</ButtonProx>
                     
@@ -83,6 +89,18 @@ export default function newform() {
     )
 }
 
+
+const H2 = styled.h1`
+    margin: 0 7%;
+
+`
+
+const Estado = styled.div`
+display:flex;
+justify-content:center;
+
+`
+
 const ButtonProx = styled.button`
 
     padding:10px 50px;
@@ -99,9 +117,24 @@ const ImgTipo = styled.img`
 `
 
 const RangeSlide = styled.input`
-
     width:80%;
+    height: 5px;
+    margin: 30px 0;
+    -webkit-appearance: none;
+    background: whitesmoke;
+    box-shadow: none;
+    outline: none;
+    border: none;
 
+    &::-webkit-slider-thumb{
+        -webkit-appearance: none;
+        appearance: none;
+        width: 20px;
+        height: 20px;
+        border-radius:100%;
+        background: #4CAF50;
+        cursor: pointer;
+    }
 `
 
 const RadioInput = styled.input`

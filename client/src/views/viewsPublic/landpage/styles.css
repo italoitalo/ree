@@ -112,7 +112,11 @@ h4 {
 -------------------------------------CONTAINER----------------------------------------- 
 
 -------------------------------------BANNER INICIAL-----------------------------------*/
-
+.slide{
+    font-family: 'catamaran' sans-serif;
+    font-size: 60pt;
+    font-weight: 900;
+}
 .container {
     display: flex;
     flex-direction: column;

@@ -46,7 +46,7 @@ export default function Card() {
                 
                 <InfoText >
                 
-                <H1Prod > { Card.nome_card } </H1Prod> 
+                <H1Prod > <a href="/chat"> { Card.nome_card } </a> </H1Prod> 
                 <PinfoText > { Card.caracteristicas } </PinfoText> 
                 </InfoText> 
                 <AcoesCard >

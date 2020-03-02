@@ -18,6 +18,7 @@ import CadastroRealizado from'./../views/Confirm/CadastroRealizado'
 import DoacoesPerfil from './../views/Perfil/DoacoesPerfil'
 import InteressesPerfil from './../views/Perfil/InteressesPerfil'
 import ConfigPerfil from './../views/Perfil/ConfigPerfil'
+import Chat from './../views/chat'
 
 
 const PrivateRoute = ({component: Component, ... rest}) =>(
@@ -49,6 +50,7 @@ const Routes = () => (
         <PrivateRoute exact path="/perfil/interesses" component={InteressesPerfil}/>   
         <PrivateRoute exact path="/perfil/config" component={ConfigPerfil}/> 
         <PrivateRoute exact path="/home/suasdoacoes" component={SuasDoacoes}/> 
+        <PrivateRoute exact path="/chat" component={Chat}/> 
         
 
         <PrivateRoute exact path="/asd" component={() => <h1>Você está logado</h1> }/>

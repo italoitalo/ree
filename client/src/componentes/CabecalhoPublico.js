@@ -20,7 +20,7 @@ export default function Cabecalho(){
                     <Navigation to="/"><Li>Home</Li></Navigation>
                     <Navigation to="/contatoPub"><Li>Contato</Li></Navigation>
                     <Navigation to="/cadastro"><Li>Cadastro</Li></Navigation>
-                    <Navigation to="/private"><Li>teste</Li></Navigation>
+                    {/* <Navigation to="/private"><Li>teste</Li></Navigation> */}
                     <Navigation to="#" ><Li onClick={toggle}>Login</Li></Navigation> 
                     <Modal isShowing={isShowing} hide={toggle} /> 
                 </Ul>

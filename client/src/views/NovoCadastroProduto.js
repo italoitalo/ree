@@ -10,6 +10,7 @@ import Headphone from './../img/cadprod/music-headphones.svg'
 import Phone from './../img/cadprod/mobile-phone.svg'
 import Notebook from './../img/cadprod/open-laptop-computer.svg'
 import Plug from './../img/cadprod/socket.svg'
+import Outros from './../img/cadprod/archive-black-box.svg'
 
 export default function newform() {
     
@@ -26,13 +27,45 @@ export default function newform() {
                     
                     <Box>
                         <Title>Oque quer doar?</Title>
-                        <div>
-                            <ImgTipo src={Phone}/>
-                            <ImgTipo src={Notebook}/>
-                            <ImgTipo src={Headphone}/>
-                            <ImgTipo src={Plug}/>
-                            <ImgTipo src={Keyboard}/>
-                        </div>
+
+                        <List>
+                            <div>   
+                                <Tooltip><Tip>Aparelhos, Telas, Peças internas, Capas, <br/>Etc.</Tip></Tooltip>   
+                                <h1>Celulares</h1>
+                                <ImgTipo src={Phone}/>      
+                            </div>
+
+                            <div>   
+                                <Tooltip><Tip>Aparelhos, Telas, Peças internas, Peças externas,<br/>Etc.</Tip></Tooltip>
+                                <h1>Notebooks</h1>
+                                <ImgTipo src={Notebook}/>   
+                            </div>
+
+                            <div>   
+                                <Tooltip><Tip>Fones, Headsets, Headphones, <br/>Etc.</Tip></Tooltip>
+                                <h1>Headphones</h1>
+                                <ImgTipo src={Headphone}/>  
+                            </div> 
+
+                            <div>   
+                                <Tooltip><Tip>Carregadores, Hdmi, Usb, Entrada de som, <br/>Etc.</Tip></Tooltip>
+                                <h1>Cabos</h1>
+                                <ImgTipo src={Plug}/>       
+                            </div> 
+
+                            <div>   
+                                <Tooltip><Tip>Mouse, Teclado, Caixas de Som, <br/>Etc.</Tip></Tooltip>
+                                <h1>Periféficos</h1>
+                                <ImgTipo src={Keyboard}/>   
+                            </div>   
+
+                            <div>   
+                                <Tooltip><Tip>Itens não encontrados na lista</Tip></Tooltip>
+                                <h1>Outros</h1>
+                                <ImgTipo src={Outros}/>     
+                            </div>   
+
+                        </List>
 
                         <div>
                             <RadioInput type="radio" name="tipo" id="tipo" value="Celular" required/>
@@ -40,6 +73,7 @@ export default function newform() {
                             <RadioInput type="radio" name="tipo" id="tipo" value="Fones" required/>
                             <RadioInput type="radio" name="tipo" id="tipo" value="Cabos" required/>
                             <RadioInput type="radio" name="tipo" id="tipo" value="Gadgets" required/>
+                            <RadioInput type="radio" name="tipo" id="tipo" value="Outros" required/>
                         </div>
 
                         <ButtonProx>Próximo</ButtonProx>
@@ -64,7 +98,7 @@ export default function newform() {
                     <Box>
                         <Title>Mande uma foto do seu item</Title>
                         
-                        <div><input type="file" name="fotoProduto" id="fotoProduto" required/></div>
+                        <div><InputImg type="file" name="fotoProduto" id="fotoProduto" required/></div>
                         
                         <ButtonProx>Próximo</ButtonProx>
                     </Box> 
@@ -72,11 +106,13 @@ export default function newform() {
                     <Box>
                         <Title>insira sua Descrição!</Title>
                         <div>
-                            <input type="text" name="nome" id="nome" placeholder="Titulo da doação" required/> 
-                            <input type="text" name="caracteristicas" id="caracteristicas" placeholder="caracteristicas" required/>
+                            <Titulo type="text" name="nome" id="nome" placeholder="Titulo da doação" required/> 
+                        </div> 
+                        <div>
+                            <TextArea name="caracteristicas" id="caracteristicas" placeholder="Caracteristicas" required/>
+                        </div>
                             <input type="hidden" name="id" value="15" id="id"  required/>
                             <input type="hidden" name="foto" value="https://quadroecia.com/img/foto.jpeg" id="foto"  required/>  
-                        </div> 
                         
                         <ButtonProx>Próximo</ButtonProx>
                     </Box> 
@@ -88,32 +124,116 @@ export default function newform() {
         </>
     )
 }
+const Titulo = styled.input`
+    padding:20px;
+    font-size:14pt;
+    margin: 20px 0px;
+`
 
+const TextArea = styled.textarea`
+    height: 150px;
+    width: 300px;
+    font-size: 14pt;
+    font-weight:500;
+    padding:10px 28px;
+
+    &::placeholder{
+        font-size:14pt;
+        font-weight:800;
+    }
+`
+
+
+const InputImg = styled.input`
+
+    &::-webkit-file-upload-button{
+        padding:20px 40px;
+        border-radius: 3px;
+        border:none;
+        outline:none;
+        font-size:12pt;
+        font-family: 'catamaran' sans-serif;
+        font-weight:600;
+        background-image: linear-gradient(to bottom right, rgb(68, 226, 139), rgb(68, 233, 90) );
+        color: rgba(0,0,0,0.7);
+        cursor:pointer;
+        color:white;
+        transition: 0.2s;
+
+        &:hover{
+            box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1)
+        }
+    }
+
+    &:hover{
+      
+    border-radius: 0px;
+    background:none;
+    transition:0.3s;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  }
+`
+
+const Tip = styled.h1`
+    display:flex;
+    flex-direction: column;
+    text-align:center;
+    justify-content:center;
+    background-color:whitesmoke;
+    box-shadow: 0px 2px 5px 0px rgba( 0,0,0,0.1);
+    color: grey;
+    font-weight:400;
+    font-size: 12pt;
+    border-radius:3px;
+    margin: -20px 0px;
+    height:100px;
+`
+
+const Tooltip = styled.div`
+    z-index:0;
+    margin:-100px 10px;
+    height:250px;
+    width: 140px;
+    /* background-color:green; */
+    position: absolute;
+    text-align:center;
+    opacity:0;
+    transition:0.2s;
+    
+    &:hover{
+        cursor:pointer;
+        transition:0.1s;
+        opacity:1;
+    }
+`
+
+const List = styled.div`
+    display:flex;
+`
 
 const H2 = styled.h1`
     margin: 0 7%;
-
 `
 
 const Estado = styled.div`
 display:flex;
 justify-content:center;
+cursor:default;
 
 `
 
 const ButtonProx = styled.button`
-
     padding:10px 50px;
-    margin-bottom: 50px;
-    background-image: linear-gradient(to bottom right, rgb(68, 226, 139), rgb(68, 233, 90) );
+    margin: 25px 50px;
+    background-image: linear-gradient(to bottom right, rgb(48, 206, 119), rgb(48, 213, 70) );    
     color:white;
     font-size:14pt;
     font-weight: bold;
-
 `
 const ImgTipo = styled.img`
-    height:100px;
-    margin: 0px 40px;
+    height:80px;
+    margin: 0 40px;
+    z-index:100;
 `
 
 const RangeSlide = styled.input`
@@ -138,15 +258,18 @@ const RangeSlide = styled.input`
 `
 
 const RadioInput = styled.input`
-
-    height:15px;
-    width:15px;
-    margin:  10px 85px 90px 85px;
+    z-index:130;
+    position: relative;
+    height:25px;
+    width:25px;
+    margin: 0 7%; 
     cursor:pointer;
-
+    
 `
 
 const Title = styled.h1`
+    cursor:default;
+    margin-bottom:50px;
     font-size:35pt;
     color: rgba(0,0,0,0.8);
 `
@@ -178,6 +301,7 @@ const Banner = styled.section`
 `
 
 const H1 = styled.h1`
+    cursor:default;
     font-size:70px;
     color: whitesmoke;
     margin-top:25px;

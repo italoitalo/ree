@@ -7,27 +7,18 @@ import Card3 from '../componentes/Cards/Card3'
 
 
 export default function SecaoDeMeusProdutosMinhasDoacoes() {
-    return ( <
-        >
-        <
-        Container >
-        <
-        Produtos >
-        <
-        Grid >
-        <
-        Card3 / >
-        <
-        Card3 / >
-        <
-        Card3 / >
-        <
-        Card3 / >
-        <
-        /Grid> <
-        /Produtos> <
-        /Container>     <
-        />
+    return ( <>
+        <Container >
+            <Produtos >
+                <Grid >
+                    <Card3 / >
+                    <Card3 / >
+                    <Card3 / >
+                    <Card3 / >
+                </Grid> 
+            </Produtos> 
+        </Container>     
+        </>
     );
 }
 

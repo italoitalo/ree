@@ -7,7 +7,7 @@ export default createGlobalStyle `
 @keyframes fadeIn {
     from {
         opacity: 0.6;
-        transform: translateY(-10px)
+        transform: translateY(-8px)
     }
     to{
         opacity: 1;
@@ -17,12 +17,12 @@ export default createGlobalStyle `
 
 *{  
     transition:0.5s;
-    animation: fadeIn 0.5s;
     margin:0;
     padding:0;
     outline:0;
     box-sizing:border-box;
     font-family:'Catamaran', sans-serif;
+    animation: fadeIn 0.5s;
 }
 
 html, border-style, #root{

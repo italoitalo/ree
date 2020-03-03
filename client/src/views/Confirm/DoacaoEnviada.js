@@ -14,7 +14,7 @@ export default function DoacaoEnviada(){
             <Column>
                 <H1>Sua Doação foi enviada com sucesso!</H1>
                 <Navigation to="/doe"> Continuar Doando!</Navigation>
-                <Navigation to="/"> Voltar para página inicial.</Navigation>
+                <Navigation to="/private"> Voltar para página inicial.</Navigation>
                 
             </Column>
 

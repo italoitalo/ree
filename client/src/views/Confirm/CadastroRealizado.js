@@ -14,7 +14,7 @@ export default function DoacaoEnviada(){
             <Column>
                 <H1>Sua conta foi cadastrada com sucesso!</H1>
                 <Navigation to="/doe"> Comece a Doar!</Navigation>
-                <Navigation to="/"> Ir para página inicial.</Navigation>
+                <Navigation to="/private"> Ir para página inicial.</Navigation>
             </Column>
 
         </Container>

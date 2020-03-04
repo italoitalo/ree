@@ -71,6 +71,9 @@ const Header= styled.div`
     }
 `
 const Logo = styled.img`
+    height: 50px;
+    width: 100px;
+    
     padding-left:20px;
     padding-top:10px;
 `

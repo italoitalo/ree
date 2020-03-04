@@ -90,7 +90,7 @@ export default function LandPage(){
             </section>
 
             <section  className="pense">
-            <img className="banner flex" src={require("./src/img/montanhas.svg")} alt="montanhas"/>
+            <img className="banner flex" src={require("../../../img/ree.svg")} alt="montanhas"/>
 
                 <h1 className="greenree">...pense nisso:</h1>
 

@@ -40,12 +40,13 @@ width:100%;
 
 const Navigation = styled(Link)`
 text-decoration:none;
+margin:0;
 `
 
 const Button = styled.button`
     display:flex;
     padding:10px;
-    margin: 5px;
+    margin: 5px 0 0 0;
     color: rgb(68, 226, 139);
     font-weight:bolder;
     border: 2px solid rgb(68, 226, 139);
@@ -66,14 +67,13 @@ const Header= styled.div`
     position:relative;
 
     @media (max-width: 760px) {
-        
     flex-direction: column;
     }
 `
 
 const Logo = styled.img`
-    padding-left:20px;
-    padding-top:10px;
+    height: 45px;
+    margin: 5px 30px 0 30px;
 `
 
 const Li = styled.li`
@@ -86,10 +86,10 @@ const Li = styled.li`
     
     
     @media (max-width: 760px){
-        
-        padding:0;
-        margin: 10px;
-        font-size:12px;
+
+        padding:5px;
+        margin: 0px;
+        font-size:12pt;
     
     };
 

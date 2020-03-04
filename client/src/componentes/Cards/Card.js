@@ -155,7 +155,6 @@ const DivUserProd = styled.section `
 
 const User = styled.div `
 display:flex;
-background-color:red;
 `;
 
 const ImgUser = styled.img `

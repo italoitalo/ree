@@ -21,10 +21,10 @@ export default function SecaoDeProdutosDoacoes() {
     }, [])
     return ( 
       <>
-
         <Container >
           <Produtos >
             <Grid >
+              
               {card.map(card => ( 
                   <CardItem key = {card.id_card} card={card }/>
               ))}  

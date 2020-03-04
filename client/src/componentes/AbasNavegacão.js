@@ -2,16 +2,20 @@ import React from 'react';
 import styled from 'styled-components';
 import {Link} from "react-router-dom";
 
+import Busca from './BarraDeBusca';
 
 export default function AbasNavegacao() {
   return (
     <>
-      
+      <Busca/>
           <Container>
             <A to='/private'>Doações Públicas</A>
             <Traco />
             <A to='/home/suasdoacoes'>Suas Doações</A>
+            
           </Container>
+
+          
       
     </>
   );

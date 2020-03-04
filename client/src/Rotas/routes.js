@@ -19,7 +19,7 @@ import DoacoesPerfil from './../views/Perfil/DoacoesPerfil'
 import InteressesPerfil from './../views/Perfil/InteressesPerfil'
 import ConfigPerfil from './../views/Perfil/ConfigPerfil'
 import Chat from './../views/chat'
-
+import BarraDeBusca from './../componentes/BarraDeBusca'
 
 const PrivateRoute = ({component: Component,...rest}) =>(
     <Route 
@@ -56,7 +56,7 @@ const Routes = () => (
         <PrivateRoute exact path="/asd" component={() => <h1>Você está logado</h1> }/>
         <PrivateRoute exact path="/privado" component={() => <h1>Você está logado</h1> }/>
 
-
+        <Route exact path="/barradebusca" component={BarraDeBusca}/>
 
      
                     <Route  path="/cadastro" component={NovoCadastro}/>

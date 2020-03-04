@@ -4,8 +4,12 @@ import styled from  'styled-components'
 import Mapa from './../img/formCadastroImg/mapa.jpg'
 import { Redirect } from 'react-router-dom'
 
+import Cabecalho from './../componentes/CabecalhoPrivado'
+
 export default function chat() {
     return (
+        <>
+        <Cabecalho />
         <Container>
           
         <Texta id="w3mission" rows="4" cols="50" >
@@ -22,6 +26,7 @@ export default function chat() {
     </form>
 
         </Container>
+        </>
     )
 }
 

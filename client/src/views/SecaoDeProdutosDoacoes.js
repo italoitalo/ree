@@ -23,12 +23,14 @@ export default function SecaoDeProdutosDoacoes() {
       <>
 
         <Container >
-        <Produtos >
-        <Grid >
-        {card.map(card => ( 
-            <CardItem key = {card.id_card} card={card }/>
-        ))}  
-        </Grid> </Produtos> </Container>     
+          <Produtos >
+            <Grid >
+              {card.map(card => ( 
+                  <CardItem key = {card.id_card} card={card }/>
+              ))}  
+            </Grid> 
+          </Produtos> 
+        </Container>     
 
       </>
     );
@@ -43,6 +45,10 @@ z-index:0;
 flex-wrap:wrap;
 justify-content:center;
 padding: 30px;
+
+@media(max-width:765px){ 
+  padding:10px 0;
+}
 `;
 
 const Produtos = styled.section `
@@ -57,4 +63,8 @@ height:100%;
 const Grid = styled.section `
   display: grid;
   grid-template-columns: repeat(2, 12fr);
+  @media (max-width:765px){
+  display:flex;
+  flex-direction: column;
+}
 `;

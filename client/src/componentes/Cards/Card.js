@@ -18,30 +18,26 @@ export default function Card({card}) {
     return ( 
       <> 
              
-             <CardSection  className="card-item" >
+             <CardSection>
                 
                 <DivUserProd >
                 
-                <User >
-                
-                <ImgUser src = { card.img_url_user }
-                alt = "imagem do usuário" / >
-                
-                <H1User > { card.username } </H1User> 
-                </User> 
-                <ImgProd alt = "PRODCEL"
-                src = { card.img_url_card }
-                /> 
+                  <User >
+                    <ImgUser src = { card.img_url_user } alt = "imagem do usuário" / >
+                    
+                    <H1User > { card.username } </H1User> 
+                  </User> 
+
+                  <ImgProd alt = "PRODCEL" src = { card.img_url_card }/> 
                 </DivUserProd> 
                 <InfoCard >
                 
                 <InfoText >
-                
-                <H1Prod > { card.nome_card } </H1Prod> 
-                <PinfoText > { card.caracteristicas } </PinfoText> 
+                  <H1Prod > { card.nome_card } </H1Prod> 
+                  <PinfoText > { card.caracteristicas } </PinfoText> 
                 </InfoText> 
+
                 <AcoesCard >
-                
                 <SocialButton href = "#" > < img src = { chat }
                 alt = "chat"
                 height = "20" / > </SocialButton> 
@@ -59,9 +55,8 @@ export default function Card({card}) {
                 </InfoCard> 
                 </CardSection>
           </>
-    );
+    )
 }
-
 
 const SocialButton = styled.button `
   height:20px;
@@ -74,7 +69,11 @@ const SocialButton = styled.button `
     opacity:1;
   }
 
-
+  @media(max-width:765px){
+    height:20px;
+    width:20px;
+    margin:8px;
+  }
 `
 
 const SocialButtonLike = styled.button `
@@ -90,7 +89,12 @@ const SocialButtonLike = styled.button `
 
   &:focus{
     opacity:1;
+  }
 
+  @media(max-width:765px){
+    height:20px;
+    width:20px;
+    margin:8px;
   }
 `
 
@@ -120,22 +124,24 @@ const CardSection = styled.section `
 `;
 
 const ImgProd = styled.img `
-margin:15px;
-border-radius:10px;
-
-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  margin:15px;
+  border-radius:10px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2); 
   max-width: 100%;
 	-moz-transition: all 0.3s;
 	-webkit-transition: all 0.3s;
-	
+  transition:all 0.4s;
 
-transition:all 0.4s;
 &:hover{
-  /* max-height:220px;
-  transition: 0.5s; */
   -moz-transform: scale(1.1);
 	-webkit-transform: scale(1.1);
 	transform: scale(1.1);
+}
+
+@media(max-width:765px){
+  margin:3px 0px;
+  max-width:100px;
+  
 }
 `;
 
@@ -149,14 +155,7 @@ const DivUserProd = styled.section `
 
 const User = styled.div `
 display:flex;
-margin-left: 10px;
-max-width:265px;
-background: whitesmoke;
-border-radius: 45px;
-
-@media (max-width:765px){
-  
-}
+background-color:red;
 `;
 
 const ImgUser = styled.img `
@@ -164,18 +163,34 @@ width: 80px;
 height: 80px;
 margin-left:2px;
 border-radius: 50%;
+
+@media (max-width:765px){
+  width:40px;
+  height: 40px;
+}
 `;
+
+
 const H1User = styled.h1 `
   align-self:center;
   font-weight: bold;
   font-size: 20px;
   margin-left:8px;
+  
+  @media (max-width:765px){
+  font-size: 13pt;
+}
 `;
 const H1Prod = styled.h1 `
   align-self:center;
   font-weight: bold;
   font-size: 20px;
-  
+
+  @media (max-width:765px){
+    font-size: 12pt;
+    width:100%;
+
+  }
 `;
 
 
@@ -187,17 +202,20 @@ justify-content:center;
 margin-left:25px;
 `;
 const InfoText = styled.div `
-  border-radius: 4.55207px;
   max-width:190px;
   padding:10px;
   height:auto;
+  
+  @media(max-width:765px){
+    padding:0;
+  }
 `;
 const PinfoText = styled.p `
     word-wrap:break-word;
     min-height:20px;
     font-family: Catamaran;
     min-width: 160px;
-    font-size: 15px;
+    font-size: 10pt;
     color: #000000;
     
 `;

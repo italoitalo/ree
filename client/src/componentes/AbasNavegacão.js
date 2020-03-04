@@ -57,14 +57,13 @@ const A=styled(Link)`
     text-align: center;
     color: white;
     text-decoration:none;
-   
 
     &:hover{
       font-size:34px;
       transition: 0.2s;
     }
     @media (max-width:765px){
-      font-size:22px;
+      font-size:15pt;
 
       &:hover{
         font-size:25px;

@@ -6,7 +6,6 @@ import NavPerfil from './../../componentes/NavPerfil';
 import HeaderPrivt from './../../componentes/CabecalhoPrivado'
 import Config from '../../img/PerfilBiografia/Config.svg';
 import User from '../../img/PerfilBiografia/User.png';
-import Mapa from '../../img/PerfilBiografia/Mapa.jpg';
 import Local from '../../img/PerfilBiografia/Local.png';
 
 export default function BioPerfil() {

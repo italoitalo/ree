@@ -24,4 +24,6 @@ const Container=Styled.section`
   flex-wrap:wrap;
   flex-direction:column;
   align-content: space-around;
+  @media (max-width:765px){
+}
 `;

@@ -27,7 +27,7 @@ const Container = styled.section`
     
     display:flex;
     justify-content: center;
-    height: 400px;
+    height: 800px;
     margin: 50px;
     align-items: center;
     text-align:center;
@@ -39,6 +39,10 @@ const Navigation = styled(Link)`
     color: #51B981;
     font-weight:600;
     font-size: 16pt;
+
+    &:hover{
+        color: #56f5a0;
+    }
 `
 
 const Column = styled.div`

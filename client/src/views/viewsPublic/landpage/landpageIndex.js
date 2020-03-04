@@ -133,7 +133,7 @@ export default function LandPage(){
 
             <section className="howcad">
 
-                <button className="button Cadastro"> faça parte </button>
+                <a href="/cadastro" className="button Cadastro"> faça parte </a>
 
             </section>
 

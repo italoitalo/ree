@@ -20,6 +20,7 @@ export default function SecaoDeProdutosDoacoes() {
     }, [])
     return ( 
       <>
+
         <Container >
         <Produtos >
         <Grid >
@@ -27,6 +28,7 @@ export default function SecaoDeProdutosDoacoes() {
             <CardItem key = {card.id_card} card={card }/>
         ))}  
         </Grid> </Produtos> </Container>     
+
       </>
     );
 }

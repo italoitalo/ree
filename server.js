@@ -36,5 +36,5 @@ app.get('/api/mensagem', (req, res) => {
 
 
 //porta servidor
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 8093;
 app.listen(port, () => console.log(`Listening on port ${port}`));

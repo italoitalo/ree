@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
-import api from '../../services/api'
+
 
 
 import chat from './../../img/itensCard/chat.svg'
@@ -12,42 +12,33 @@ import like from './../../img/itensCard/like.svg'
 /* import prodCelu from './../../img/itensCard/prodCelu.jpg' */
 
 
-export default function Card() {
+export default function Card({card}) {
 
-    const [Card, setCard] = useState([])
-
-    useEffect(() => {
-        async function loadCards() {
-            const response = await api.post('/card')
-
-            setCard(response.data)
-        }
-        loadCards()
-    }, [])
+  
     return ( 
-      <> {
-            Card.map(Card => ( 
-              <CardSection key = { Card.id_card } >
+      <> 
+             
+             <CardSection  className="card-item" >
                 
                 <DivUserProd >
                 
                 <User >
                 
-                <ImgUser src = { Card.img_url_user }
+                <ImgUser src = { card.img_url_user }
                 alt = "imagem do usuário" / >
                 
-                <H1User > { Card.username } </H1User> 
+                <H1User > { card.username } </H1User> 
                 </User> 
                 <ImgProd alt = "PRODCEL"
-                src = { Card.img_url_card }
+                src = { card.img_url_card }
                 /> 
                 </DivUserProd> 
                 <InfoCard >
                 
                 <InfoText >
                 
-                <H1Prod > <a href="/chat"> { Card.nome_card } </a> </H1Prod> 
-                <PinfoText > { Card.caracteristicas } </PinfoText> 
+                <H1Prod > <a href="/chat"> { card.nome_card } </a> </H1Prod> 
+                <PinfoText > { card.caracteristicas } </PinfoText> 
                 </InfoText> 
                 <AcoesCard >
                 
@@ -66,8 +57,7 @@ export default function Card() {
                 </AcoesCard> 
                 </InfoCard> 
                 </CardSection>
-            ))
-        } </>
+          </>
     );
 }
 

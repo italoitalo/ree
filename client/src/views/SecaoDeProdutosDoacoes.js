@@ -1,18 +1,31 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
-import Card from '../componentes/Cards/Card'
+import CardItem from './../componentes/Cards/Card'
+import api from '../../src/services/api'
 
 
 
 
 
 export default function SecaoDeProdutosDoacoes() {
+  const [card, setCard] = useState([{}])
+
+    useEffect(() => {
+        async function loadCards() {
+            const response = await api.post('/card')
+
+            setCard(response.data)
+        }
+        loadCards()
+    }, [])
     return ( 
       <>
-          <Container >
-          <Produtos >
-          <Grid >
-          <Card />
+        <Container >
+        <Produtos >
+        <Grid >
+        {card.map(card => ( 
+            <CardItem key = {card.id_card} card={card }/>
+        ))}  
         </Grid> </Produtos> </Container>     
       </>
     );

@@ -28,7 +28,7 @@ export default function newform() {
                 <form action="/cadastroproduto" method="POST">
                     
                     <Box>
-                        <Title>Oque quer doar?</Title>
+                        <Title>O deseja doar?</Title>
 
                         <List>
                             <div>   
@@ -106,7 +106,7 @@ export default function newform() {
                     <Ponto id="fotoproduto-box"></Ponto>
 
                     <Box>
-                        <Title>Mande uma foto do seu item</Title>
+                        <Title>Envie uma foto do seu item:</Title>
                         
                         <div><InputImg type="file" name="fotoProduto" id="fotoProduto" required/></div>
                         
@@ -118,7 +118,7 @@ export default function newform() {
                     <Ponto id="nome-box"></Ponto>
                     
                     <Box>
-                        <Title>insira sua Descrição!</Title>
+                        <Title>Insira sua descrição:</Title>
                         <div>
                             <Titulo type="text" name="nome" id="nome" placeholder="Titulo da doação" required/> 
                         </div> 

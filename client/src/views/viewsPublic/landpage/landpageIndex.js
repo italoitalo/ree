@@ -67,9 +67,9 @@ export default function LandPage(){
                 <div className="howtext black ">
                     <h1>    Reutilizar  </h1>
                     <h2>    Não importa o estado do seu item,<br/>
-                            Doe o que não usa mais para pessoas que precisam e<br/>
+                            doe o que não usa mais para pessoas que precisam e<br/>
                             ajude na redução de lixo eletrônico.<br/>
-                            Pode ser útil para alguem!
+                            Pode ser útil para alguém!
                     </h2>
                 </div>
                 </ScrollAnimation>
@@ -81,7 +81,7 @@ export default function LandPage(){
                 <div className="howtext black ">
                     <h1>    Reconectar </h1>
                     <h2>    Transforme a realidade a sua volta!<br/>
-                            Melhore a qualidade de vida da sua Sociedade.<br/>
+                            Melhore a qualidade de vida da sua sociedade.<br/>
                             Se reconecte com o mundo! 
                     </h2>
                 </div>

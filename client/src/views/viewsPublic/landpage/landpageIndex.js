@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom'
 import useModal from '../../useModal'
 import Modal from '../../Modal';
 import HeaderPub from './../../../componentes/CabecalhoPublico'
+import ScrollIntoView from 'react-scroll-into-view'
 
 import "./styles.css"
 import "./animate.min.css"
@@ -25,9 +26,9 @@ export default function LandPage(){
                 <img  className="banner" src={require("./src/img/conexão.svg")} alt="imagem de conecçaõ" />
                 <h1  className="textobanner"> A diferença está <br/> nas suas mãos. </h1>
             </ScrollAnimation>
-            
-
-            <button onclick="scrollToHow()" className="button botaobanner"> Entenda! </button>
+            <ScrollIntoView selector="#how">
+                <button className="button botaobanner"> Entenda! </button>
+            </ScrollIntoView>
     </section>
 
             <section id="how"  className="how">

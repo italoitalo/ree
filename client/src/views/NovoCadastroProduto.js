@@ -12,6 +12,8 @@ import Notebook from './../img/cadprod/open-laptop-computer.svg'
 import Plug from './../img/cadprod/socket.svg'
 import Outros from './../img/cadprod/archive-black-box.svg'
 
+import ScrollIntoView from 'react-scroll-into-view'
+
 export default function newform() {
     
     
@@ -26,7 +28,7 @@ export default function newform() {
                 <form action="/cadastroproduto" method="POST">
                     
                     <Box>
-                        <Title>Oque quer doar?</Title>
+                        <Title>O deseja doar?</Title>
 
                         <List>
                             <div>   
@@ -75,11 +77,15 @@ export default function newform() {
                             <RadioInput type="radio" name="tipo" id="tipo" value="Gadgets" required/>
                             <RadioInput type="radio" name="tipo" id="tipo" value="Outros" required/>
                         </div>
-
-                        <ButtonProx>Próximo</ButtonProx>
+                        
+                        <Scroll selector="#estado-box" alignToTop={false}>
+                            <ButtonProx>Próximo</ButtonProx>
+                        </Scroll>
 
                     </Box> 
-                    
+
+                    <Ponto id="estado-box"></Ponto>
+
                     <Box>
                         <Title>Qual o estado do seu item?</Title>
                         <Estado>
@@ -91,20 +97,28 @@ export default function newform() {
                         </Estado>
                         <div><RangeSlide type="range" min="1" max="5" defaultValue="3" name="estado" id="estado" required/></div>
                         
+                        <Scroll selector="#fotoproduto-box">
                         <ButtonProx>Próximo</ButtonProx>
+                        </Scroll>
                     
                     </Box> 
 
+                    <Ponto id="fotoproduto-box"></Ponto>
+
                     <Box>
-                        <Title>Mande uma foto do seu item</Title>
+                        <Title>Envie uma foto do seu item:</Title>
                         
                         <div><InputImg type="file" name="fotoProduto" id="fotoProduto" required/></div>
                         
+                        <Scroll selector="#nome-box">
                         <ButtonProx>Próximo</ButtonProx>
+                        </Scroll>
                     </Box> 
 
+                    <Ponto id="nome-box"></Ponto>
+                    
                     <Box>
-                        <Title>insira sua Descrição!</Title>
+                        <Title>Insira sua descrição:</Title>
                         <div>
                             <Titulo type="text" name="nome" id="nome" placeholder="Titulo da doação" required/> 
                         </div> 
@@ -114,7 +128,7 @@ export default function newform() {
                             <input type="hidden" name="id" value="15" id="id"  required/>
                             <input type="hidden" name="foto" value="https://quadroecia.com/img/foto.jpeg" id="foto"  required/>  
                         
-                        <ButtonProx>Próximo</ButtonProx>
+                        <ButtonFinal>Finalizar</ButtonFinal>
                     </Box> 
 
 {/*                     <input type="text" name="id" id="id"  placeholder="id"/>id
@@ -124,10 +138,20 @@ export default function newform() {
         </>
     )
 }
+const Scroll = styled(ScrollIntoView)`
+margin:50px;
+
+`
+const Ponto = styled.div`
+position:absolute;
+justify-self:center;
+margin: -200px;
+height: 2px;
+`
+
 const Titulo = styled.input`
     padding:20px;
     font-size:14pt;
-    margin: 20px 0px;
 `
 
 const TextArea = styled.textarea`
@@ -221,8 +245,15 @@ justify-content:center;
 cursor:default;
 
 `
-
-const ButtonProx = styled.button`
+const ButtonProx = styled.a`
+    padding:10px 50px;
+    border-radius:5px;
+    background-image: linear-gradient(to bottom right, rgb(48, 206, 119), rgb(48, 213, 70) );    
+    color:white;
+    font-size:14pt;
+    font-weight: bold;
+`
+const ButtonFinal = styled.button`
     padding:10px 50px;
     margin: 25px 50px;
     background-image: linear-gradient(to bottom right, rgb(48, 206, 119), rgb(48, 213, 70) );    

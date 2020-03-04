@@ -13,9 +13,9 @@ app.post('/cadastro', (req, res) => {
         email: req.body.email,
         celular: req.body.celular,
     }).then(() => {
-        res.send("ususário cadastrado com sucesso")
+        res.send("Usuário cadastrado com sucesso!")
     }).catch((erro) => {
-        res.send("ususário não cadastrado, houve um erro" + erro)
+        res.send("Usuário não cadastrado, houve um erro." + erro)
     })
 }) 
 

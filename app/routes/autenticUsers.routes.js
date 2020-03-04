@@ -7,7 +7,7 @@ module.exports = (app) => {
     app.post('/login', (req, res, next) => {
 
         if (req.body.emaillogin) {
-            console.log('verificado com sucesso ')
+            console.log('Verificado com Sucesso!')
             res.redirect('/private')
                 /* const id = 1; //esse id viria do banco de dados
                 var token = jwt.sign({ id }, process.env.SECRET, {

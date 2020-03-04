@@ -14,7 +14,7 @@ export default function App() {
   return (
     <body>
       <Router>
-        <Routes></Routes>
+        <Routes/>
 
         <Rodape/> 
         <GlobalStyles />

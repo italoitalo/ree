@@ -10,10 +10,12 @@ export default function SecaoDeProdutosDoacoes() {
     return ( 
       <>
           <Container >
-          <Produtos >
-          <Grid >
-          <Card />
-        </Grid> </Produtos> </Container>     
+            <Produtos >
+              <Grid >
+                <Card />
+              </Grid> 
+            </Produtos> 
+          </Container>     
       </>
     );
 }

@@ -41,6 +41,10 @@ const Navigation = styled(Link)`
     color: #51B981;
     font-weight:600;
     font-size: 16pt;
+    
+    &:hover{
+        color: #56f5a0;
+    }
 `
 
 const Column = styled.div`

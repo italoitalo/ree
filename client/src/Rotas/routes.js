@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { isAutenticated } from './auth';
 
 import { BrowserRouter, Route, Switch, Redirect} from 'react-router-dom';
@@ -21,7 +21,7 @@ import ConfigPerfil from './../views/Perfil/ConfigPerfil'
 import Chat from './../views/chat'
 
 
-const PrivateRoute = ({component: Component, ... rest}) =>(
+const PrivateRoute = ({component: Component,...rest}) =>(
     <Route 
         {... rest} 
         render={props => 

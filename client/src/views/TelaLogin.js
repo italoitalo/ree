@@ -80,25 +80,25 @@ const InputLogin = styled.input`
 `;
 
 
-const ALogin = styled.a`
-    margin:40px;
-    min-width: 150px;
-    min-height: 50px;
+// const ALogin = styled.a`
+//     margin:40px;
+//     min-width: 150px;
+//     min-height: 50px;
 
-    cursor: pointer;
+//     cursor: pointer;
 
-    font-size: 13px;
-    font-weight:bolder;
+//     font-size: 13px;
+//     font-weight:bolder;
 
-    color: #F2C94C;
+//     color: #F2C94C;
 
-        &:hover{
-    transition: 1s;
-    border: none;
+//         &:hover{
+//     transition: 1s;
+//     border: none;
 
-    color:white;
-}
-`;
+//     color:white;
+// }
+// `;
 
 
 

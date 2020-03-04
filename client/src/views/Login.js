@@ -8,10 +8,8 @@ const Login = () => {
     return (
 
 
-        <
-        Modal isShowing = { isShowing }
-        hide = { toggle }
-        />
+        <Modal isShowing = { isShowing }
+        hide = { toggle }/>
 
     );
 };

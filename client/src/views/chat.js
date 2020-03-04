@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from  'styled-components'
 
-import Mapa from './../img/formCadastroImg/mapa.jpg'
-import { Redirect } from 'react-router-dom'
+// import Mapa from './../img/formCadastroImg/mapa.jpg'
+// import { Redirect } from 'react-router-dom'
 
 import Cabecalho from './../componentes/CabecalhoPrivado'
 

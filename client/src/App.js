@@ -5,9 +5,6 @@ import GlobalStyles from './EstiloGlobal';
 import Routes from './Rotas/routes';
 import Rodape from './componentes/Rodape'
 
-import Publico from './Rotas/publico'
-
-
 export default function App() {
 
 

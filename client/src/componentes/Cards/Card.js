@@ -37,7 +37,7 @@ export default function Card({card}) {
                 
                 <InfoText >
                 
-                <H1Prod > <a href="/chat"> { card.nome_card } </a> </H1Prod> 
+                <H1Prod > { card.nome_card } </H1Prod> 
                 <PinfoText > { card.caracteristicas } </PinfoText> 
                 </InfoText> 
                 <AcoesCard >
@@ -48,12 +48,13 @@ export default function Card({card}) {
                 <SocialButton href = "#" > < img src = { share }
                 alt = "chat"
                 height = "20" / > </SocialButton> 
-                <SocialButton href = "#" > < img src = { like }
+                <SocialButtonLike href = "#" > < img src = { like }
                 alt = "chat"
-                height = "20" / > </SocialButton> 
+                height = "20" / > </SocialButtonLike> 
+                <a href="/chat"> 
                 <SocialButton href = "#" > < img src = { coment }
                 alt = "chat"
-                height = "20" / > </SocialButton> 
+                height = "20" / >  </SocialButton>  </a>
                 </AcoesCard> 
                 </InfoCard> 
                 </CardSection>
@@ -72,7 +73,29 @@ const SocialButton = styled.button `
   &:hover{
     opacity:1;
   }
+
+
 `
+
+const SocialButtonLike = styled.button `
+  height:20px;
+  width:20px;
+  margin:10px;
+  background:white;
+  opacity: 0.4;
+
+  &:hover{
+    opacity:1;
+  }
+
+  &:focus{
+    opacity:1;
+
+  }
+`
+
+
+
 const AcoesCard = styled.section `
 display:flex;
 `;

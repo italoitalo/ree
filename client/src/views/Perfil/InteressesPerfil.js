@@ -17,74 +17,47 @@ export default function Interesses(){
                 <Container>
                     <SectionInt>
                         <Title>No que você pode ajudar?</Title>
+                        <Form>
+                        
                         <Img alt="ilutracao2" src={Ilustracao02} height='100' width='100'/>
-                        <Form>
-                            <H1>Celulares</H1> 
-                            <Input name='' id='' type='checkbox' value="teste"/>
-                        </Form>
-                        <Form>
-                            <H1>Notebooks</H1> 
-                            <Input name='' id='' type='checkbox' value="teste"/>
-                        </Form>
-                        <Form>
-                            <H1>Computadores</H1> 
-                            <Input name='' id='' type='checkbox' value="teste"/>
-                        </Form>
-                        <Form>
-                            <H1>Periféricos</H1> 
-                            <Input name='' id='' type='checkbox' value="teste"/>
-                        </Form>
-                        <Form>
-                            <H1>Peças de Computador</H1> 
-                            <Input name='' id='' type='checkbox' value="teste"/>
-                        </Form>
-                        <Form>
-                            <H1>Cabos</H1> 
-                            <Input name='' id='' type='checkbox' value="teste"/>
-                        </Form>
-                        <Form>
-                            <H1>Eletronicos descartáveis</H1> 
-                            <Input name='' id='' type='checkbox' value="teste"/>
+                            <H1>Celulares <input name='' id='' type='checkbox' value="teste"/></H1> 
+                           
+                            <H1>Notebooks <input name='' id='' type='checkbox' value="teste"/></H1> 
+                            
+                            <H1>Computadores <input name='' id='' type='checkbox' value="teste"/></H1> 
+                            
+                            <H1>Periféricos <input name='' id='' type='checkbox' value="teste"/></H1> 
+                           
+                            <H1>Peças de Computador <input name='' id='' type='checkbox' value="teste"/></H1> 
+                           
+                            <H1>Cabos <input name='' id='' type='checkbox' value="teste"/></H1> 
+                           
+                            <H1>Eletronicos descartáveis <input name='' id='' type='checkbox' value="teste"/></H1> 
                         </Form>
 
                         <Button type="submit">Confirmar</Button>
                     </SectionInt>
 
                     <SectionInt>
-                        <Title>Do que você precisa?</Title>
-                        <Img alt="ilustracao1" src={Ilustracao01} height='100' width='120'/>
+                        <Title>No que você pode ajudar?</Title>
+                        <Form>
                         
-                        <Form>
-                            <H1>Celulares</H1> 
-                            <Input name='' id='' type='checkbox' value="teste"/>
+                        <Img alt="ilutracao2" src={Ilustracao01} height='100' width='100'/>
+                            <H1>Celulares <input name='' id='' type='checkbox' value="teste"/></H1> 
+                           
+                            <H1>Notebooks <input name='' id='' type='checkbox' value="teste"/></H1> 
+                            
+                            <H1>Computadores <input name='' id='' type='checkbox' value="teste"/></H1> 
+                            
+                            <H1>Periféricos <input name='' id='' type='checkbox' value="teste"/></H1> 
+                           
+                            <H1>Peças de Computador <input name='' id='' type='checkbox' value="teste"/></H1> 
+                           
+                            <H1>Cabos <input name='' id='' type='checkbox' value="teste"/></H1> 
+                           
+                            <H1>Eletronicos descartáveis <input name='' id='' type='checkbox' value="teste"/></H1> 
                         </Form>
 
-                        <Form>
-                            <H1>Notebooks</H1> 
-                            <Input name='' id='' type='checkbox' value="teste"/>
-                        </Form>
-                        <Form>
-                            <H1>Computadores</H1> 
-                            <Input name='' id='' type='checkbox' value="teste"/>
-                        </Form>
-
-                        <Form>
-                            <H1>Periféricos</H1> 
-                            <Input name='' id='' type='checkbox' value="teste"/>
-                        </Form>
-                        <Form>
-                            <H1>Peças de Computador</H1> 
-                            <Input name='' id='' type='checkbox' value="teste"/>
-                        </Form>
-
-                        <Form>
-                            <H1>Cabos</H1> 
-                            <Input name='' id='' type='checkbox' value="teste"/>
-                        </Form>
-                        <Form>
-                            <H1>Eletronicos descartáveis</H1> 
-                            <Input name='' id='' type='checkbox' value="teste"/>
-                        </Form>
                         <Button type="submit">Confirmar</Button>
                     </SectionInt>
                 </Container>
@@ -94,19 +67,19 @@ export default function Interesses(){
 }
 
 const Button = styled.button`
-    width:40%;
-    background:#F2C94C;
+    height:60px;
+    width:50%; 
+    background-image: linear-gradient(to bottom right, rgb(68, 226, 139), rgb(68, 233, 90) );
     display:block;
 
-    font-weight:normal;
+    font-weight:bold;
     font-size:17px;
-    color: black;
+    color: white;
     margin-top:40px;
     margin-left:100px;
 
     &:hover {
-    transition-duration:1s;
-    background:#FFB23E;
+    background-image: linear-gradient(to bottom right, rgb(68, 255, 139), rgb(68, 255, 90) );
     cursor: pointer
     }
 
@@ -116,10 +89,6 @@ const Button = styled.button`
     }
 
   `
-const Input = styled.input`
-    margin-right:20px;
-    margin-top:7px;
-`
 
 const Main = styled.section`
     display:flex;
@@ -129,7 +98,15 @@ const Main = styled.section`
 }
 `
 const Img = styled.img`
-    margin-left:50px;
+    display:block;
+    position:absolute;
+    height:180px;
+    width: 160px;
+
+    @media (max-width:765px){
+        height: 120px;
+        width: 100px;
+    }
 `
 const Container = styled.section `
     width:100%;
@@ -149,13 +126,13 @@ const Container = styled.section `
 const SectionInt = styled.section`
     display:flex;
     flex-direction:column;
-    background-color:whitesmoke;
-
+    background-color:white;
+    height:100%;
     min-width:400px;
     padding:10px;
     border-radius:20px;
 
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
 
     @media (max-width:765px){
         min-width:300px;
@@ -168,23 +145,20 @@ const SectionInt = styled.section`
 
 const Form = styled.form`
 display:flex;
+flex-direction:column;
 justify-content:space-between;
-
-background-color:white;
-
-border-radius:50px;
 padding:5px;
 margin:5px;
 `
 
 const Title = styled.h1`
-text-align: center;
-color: #F2C94C;
+text-align: center; 
+color: rgba(0,0,0,0.8);
 font-weight: bold;
-font-size:30px;
+font-size:20pt;
 `
 
 const H1 = styled.h1`
-text-align:center;
+text-align:end;
 margin-left: 20px;
 `

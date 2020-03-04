@@ -13,7 +13,7 @@ export default function Cabecalho(){
         <>
             <Header>
                 <Div>
-                    <Navigation to="/"><Logo src={ree} height='40' /></Navigation>
+                    <Navigation to="/private"><Logo src={ree} height='40' /></Navigation>
                     <Navigation to ="/doe"><Button>Faça uma Doação!</Button></Navigation>
                 </Div>
 
@@ -25,6 +25,7 @@ export default function Cabecalho(){
                     */}
                     <Navigation to="/perfil"><Li>Meu Perfil</Li></Navigation>
                     <Navigation to="/contato"><Li>Contato</Li></Navigation>
+                    <Navigation to="/"><Li>Sair</Li></Navigation>
                     <Modal isShowing={isShowing} hide={toggle} /> 
                 </Ul>
             </Header>

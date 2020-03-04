@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react';
 import ScrollAnimation from 'react-animate-on-scroll'
 
-import {Link} from 'react-router-dom'
-import useModal from '../../useModal'
-import Modal from '../../Modal';
+// import {Link} from 'react-router-dom'
+// import Modal from '../../Modal';
+// import useModal from '../../useModal'
 import HeaderPub from './../../../componentes/CabecalhoPublico'
 import ScrollIntoView from 'react-scroll-into-view'
 
@@ -11,7 +11,7 @@ import "./styles.css"
 import "./animate.min.css"
 
 export default function LandPage(){
-    const {isShowing, toggle} = useModal();
+    // const {isShowing, toggle} = useModal();
 
     return(
         <Fragment>

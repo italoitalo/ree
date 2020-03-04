@@ -13,8 +13,9 @@ export default function SecaoDeProdutosDoacoes() {
     useEffect(() => {
         async function loadCards() {
             const response = await api.post('/card')
-
-            setCard(response.data)
+          
+            return setCard(response.data)
+           
         }
         loadCards()
     }, [])

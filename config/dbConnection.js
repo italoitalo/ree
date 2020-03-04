@@ -6,7 +6,14 @@
      password: '123456',
      database: 'quadro64_ree'
  });
-
+ connection.connect((err)=>{
+     if(err){
+         console.log('Erro ao conectar', err)
+     }else{
+         console.log('Conectado no MYSQL')
+         
+     }
+ });
  module.exports = connection;
 
  /* 

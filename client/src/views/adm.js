@@ -2,15 +2,19 @@ import React from 'react'
 import styled from  'styled-components'
 import Cabecalho from './../componentes/CabecalhoPrivado'
 
+import Busca from './../componentes/BarraDeBusca'
 
-
-var user = prompt('Usuário')
-var senha = prompt('Senha')
+// var user = prompt('Usuário')
+// var senha = prompt('Senha')
 export default function adm() {
     return (
         <>
             <Cabecalho />
-            <h1>Lista de usários</h1>
+          <Container>
+
+		  <Busca/>
+		  
+		    <h1>Lista de usários</h1>
             <Envelop>
                 <Tr>
                     <th>Inscrição</th>
@@ -24,7 +28,7 @@ export default function adm() {
                 <tbody>
 						<Tr>
 							<Td1>1</Td1>
-							<Td1>Cesar Szpak</Td1>
+							<Td1>Cesar Lipak</Td1>
 							<Td1>Ativo</Td1>
 							<Td1>usário</Td1>
 							<Td1>10/10/2020 14:40:20</Td1>
@@ -52,7 +56,7 @@ export default function adm() {
                 <tbody>
 						<Tr>
 							<Td1>3</Td1>
-							<Td1>Kiara Arlet</Td1>
+							<Td1>Kiara Arlem</Td1>
 							<Td1>Ativo</Td1>
 							<Td1>usário</Td1>
 							<Td1>10/10/2020 12:41:20</Td1>
@@ -66,7 +70,7 @@ export default function adm() {
                 <tbody>
 						<Tr>
 							<Td1>4</Td1>
-							<Td1>Ronal Szpak</Td1>
+							<Td1>Ronal Lipak</Td1>
 							<Td1>Ativo</Td1>
 							<Td1>usário</Td1>
 							<Td1>10/10/2020 14:17:20</Td1>
@@ -80,7 +84,7 @@ export default function adm() {
                 <tbody>
 						<Tr>
 							<Td1>5</Td1>
-							<Td1>Rhuan Gon</Td1>
+							<Td1>Rhuan Manur</Td1>
 							<Td1>Ativo</Td1>
 							<Td1>Administrador</Td1>
 							<Td1>10/10/2020 10:22:20</Td1>
@@ -227,29 +231,36 @@ export default function adm() {
 						</Tr>              
 				</tbody>
                 
+		  </Container>
 		</>		         
         
     )
 }
+const Container = styled.section`
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+`
 
 const Tr = styled.tr`
-
-    width:1100px;
+    width:1000px;
     display:flex;
     flex-direction:row;
     justify-content: space-between;
 `
 
 const Td = styled.td`
-    display:flex;
+    display:flex;	
     flex-direction:column;
 `
 
 const Td1 = styled.td`
-    padding: 20px;
+	text-align:center;
+    padding: 15px;
 `
 const Envelop = styled.div`
-padding:5px;
+padding:8px;
+border-radius:3px;
 background-color:#3ae874
 ;
 `

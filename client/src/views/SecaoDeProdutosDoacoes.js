@@ -3,10 +3,6 @@ import styled from 'styled-components';
 import CardItem from './../componentes/Cards/Card'
 import api from '../../src/services/api'
 
-
-
-
-
 export default function SecaoDeProdutosDoacoes() {
   const [card, setCard] = useState([])
 
@@ -15,7 +11,7 @@ export default function SecaoDeProdutosDoacoes() {
           try {
             const response = await api.post('/card');
             console.log(response);
-            setCard(response.data)
+           return setCard(response.data)
           } catch (error) {
             console.error(error);
           }

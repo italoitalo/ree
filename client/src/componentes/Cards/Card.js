@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-
-
 import chat from './../../img/itensCard/chat.svg'
 import coment from './../../img/itensCard/comment.svg'
 import share from './../../img/itensCard/share.svg'
@@ -13,15 +11,10 @@ import like from './../../img/itensCard/like.svg'
 
 
 export default function Card({card}) {
-
-  
     return ( 
       <> 
-             
              <CardSection>
-                
                 <DivUserProd >
-                
                   <User >
                     <ImgUser src = { card.img_url_user } alt = "imagem do usuário" / >
                     

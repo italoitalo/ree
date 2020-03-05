@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Card3 from '../componentes/Cards/Card3'
+import Card from '../componentes/Cards/Card3'
 
 
 
@@ -11,10 +11,7 @@ export default function SecaoDeMeusProdutosMinhasDoacoes() {
         <Container >
             <Produtos >
                 <Grid >
-                    <Card3 / >
-                    <Card3 / >
-                    <Card3 / >
-                    <Card3 / >
+                    <Card/>
                 </Grid> 
             </Produtos> 
         </Container>     

@@ -2,48 +2,74 @@ import React from 'react';
 import styled from 'styled-components';
 
 
-import chat from './../../img/itensCard/chat.svg'
-import coment from './../../img/itensCard/comment.svg'
-import share from './../../img/itensCard/share.svg'
-import like from './../../img/itensCard/like.svg'
 
+import check from './../../img/itensCard/check.svg'
+import cross from './../../img/itensCard/cross.svg'
+import pencil from './../../img/itensCard/pencil.svg'
+import restore from './../../img/itensCard/left-arrow-1.svg'
 
+import icon from './../../img/TelaLogin/UserPerfil.png'
+import cooler1 from './../../img/itensCard/cooler.jpg'
+import cooler2 from './../../img/itensCard/cooler.png'
+import phone from './../../img/itensCard/prodCelu.jpg'
 
+/* import UserFoto from './../../img/itensCard/UserFoto.png' */
+/* import prodCelu from './../../img/itensCard/prodCelu.jpg' */
 
-import UserFoto from './../../img/itensCard/UserFoto.png'
-import cooler from './../../img/itensCard/cooler.jpg'
-
-export default function Card() {
-  return (
-    <>
-      
-      <CardSection>
-          <DivUserProd>
-            <User>
-              <ImgUser src={UserFoto} alt="usuário foto"/>
-              <H1User>Usuário</H1User>
-            </User>
-            <ImgProd src={cooler} alt="imagem do produto"/>
-          </DivUserProd>
-          <InfoCard>
-            <InfoText>
-              <PinfoText>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam turpis libero, tincidunt in euismod a, finibus a metus.</PinfoText>
-            </InfoText>
-            <AcoesCard>
-              <SocialButton href="#"><img src={chat} alt="chat" height="20"/></SocialButton>
-              <SocialButton href="#"><img src={share} alt="chat" height="20"/></SocialButton>
-              <SocialButton href="#"><img src={like} alt="chat" height="20"/></SocialButton>
-              <SocialButton href="#"><img src={coment} alt="chat" height="20"/></SocialButton>
-            </AcoesCard>
-          </InfoCard>
-
-      </CardSection>
-
-    </>
-  );
+function Delete(){
+    var del = document.getElementById("card");
+      del.style.opacity = 0.3;
+    var aviso = document.getElementById("aviso").style="display:inherit";
 }
 
-const SocialButton = styled.button`
+
+function Restore(){
+    var del = document.getElementById("card");
+      del.style.opacity = 1;
+    var aviso = document.getElementById("aviso").style="display:none";
+  }
+
+export default function Card({card}) {
+  
+    return ( 
+      <> 
+             
+             <CardSection id="card">
+
+                <InfoText style={{display:'none'}} id="aviso">
+                  <H1User>Produto Removido</H1User>
+                </InfoText>
+
+                <DivUserProd >
+                  <User >
+                    <ImgUser src = {icon} alt = "imagem do usuário" / >
+                    
+                    <H1User > João  </H1User> 
+                  </User> 
+
+                  <ImgProd alt = "PRODCEL" src ={cooler1}/> 
+                </DivUserProd> 
+                <InfoCard >
+                
+                <InfoText >
+                  <H1Prod > Coller pouco usado. </H1Prod> 
+                  <PinfoText > Cooler FAN C3Tech Storm 8cm 3 Pinos F7 MB10BK, doando pq comprei um melhor.</PinfoText> 
+                </InfoText> 
+
+                <AcoesCard >
+                  <SocialButton href = "#" > < img src = { check } alt = "check" height = "20" title="Item Doado"/></SocialButton> 
+                  <SocialButton href = "#" > < img src = { pencil } alt = "edit" height = "20" title="Editar Publicação"/ > </SocialButton> 
+                  <SocialButton href = "#" > <button onClick={Delete}>< img src = { cross }alt = "delete" height = "20" title="Deletar Publicação"/ > </button> </SocialButton>
+                  <SocialButton href = "#" > <button onClick={Restore}>< img src = { restore }alt = "restore" height = "20" title="Restaurar Publicação"/ > </button> </SocialButton>
+
+                </AcoesCard> 
+                </InfoCard> 
+                </CardSection>
+          </>
+    )
+}
+
+const SocialButton = styled.button `
   height:20px;
   width:20px;
   margin:10px;
@@ -53,20 +79,52 @@ const SocialButton = styled.button`
   &:hover{
     opacity:1;
   }
+
+  @media(max-width:765px){
+    height:20px;
+    width:20px;
+    margin:8px;
+  }
 `
-const AcoesCard = styled.section`
+
+const SocialButtonLike = styled.button `
+  height:20px;
+  width:20px;
+  margin:10px;
+  background:white;
+  opacity: 0.4;
+
+  &:hover{
+    opacity:1;
+  }
+
+  &:focus{
+    opacity:1;
+  }
+
+  @media(max-width:765px){
+    height:20px;
+    width:20px;
+    margin:8px;
+  }
+`
+
+
+
+const AcoesCard = styled.section `
 display:flex;
 `;
 
-const CardSection = styled.section`
+const CardSection = styled.section `
    display:flex;
-    max-width:700px;
-    min-height:260px;
+    /* max-width:600px;
+    max-height:300px; */
+    flex: 0 1 10%;
     padding:10px;
     background: white;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-    margin : 50px 40px;
+    margin : 20px 20px;
 
     transition:0.4s;
 
@@ -76,62 +134,98 @@ const CardSection = styled.section`
     }
 `;
 
-const ImgProd = styled.img`
-margin:10px;
-border-radius:10px;
-max-height:200px;
-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+const ImgProd = styled.img `
+  margin:15px;
+  border-radius:10px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2); 
+  max-width: 100%;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+  transition:all 0.4s;
 
-transition:0.4s;
 &:hover{
-  max-height:220px;
-  transition: 0.5s;
+  -moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+@media(max-width:765px){
+  margin:3px 0px;
+  max-width:100px;
+  
 }
 `;
 
-const DivUserProd = styled.section`
+const DivUserProd = styled.section `
+  overflow:-moz-hidden-unscrollable; 
   display:flex;
   flex-direction:column;
   align-content: center;
   justify-content: flex-start;
 `;
 
-const User = styled.div`
+const User = styled.div `
 display:flex;
-margin-left: 10px;
-max-width:265px;
-background: whitesmoke;
-border-radius: 45px;
 `;
-const ImgUser = styled.img`
+
+const ImgUser = styled.img `
+width: 80px;
+height: 80px;
 margin-left:2px;
+border-radius: 50%;
+
+@media (max-width:765px){
+  width:40px;
+  height: 40px;
+}
 `;
-const H1User = styled.h1`
+
+
+const H1User = styled.h1 `
   align-self:center;
   font-weight: bold;
   font-size: 20px;
   margin-left:8px;
+  
+  @media (max-width:765px){
+  font-size: 13pt;
+}
 `;
-const InfoCard = styled.section`
+const H1Prod = styled.h1 `
+  align-self:center;
+  font-weight: bold;
+  font-size: 20px;
+
+  @media (max-width:765px){
+    font-size: 12pt;
+    width:100%;
+
+  }
+`;
+
+
+const InfoCard = styled.section `
 display:flex;
 flex-direction:column;
 align-items:center;
 justify-content:center;
 margin-left:25px;
 `;
-const InfoText = styled.div`
-  border-radius: 4.55207px;
+const InfoText = styled.div `
   max-width:190px;
   padding:10px;
   height:auto;
+  
+  @media(max-width:765px){
+    padding:0;
+  }
 `;
-const PinfoText = styled.p`
+const PinfoText = styled.p `
+    word-wrap:break-word;
     min-height:20px;
     font-family: Catamaran;
     min-width: 160px;
-    font-size: 15px;
+    font-size: 10pt;
     color: #000000;
-`
-
-
-
+    
+`;

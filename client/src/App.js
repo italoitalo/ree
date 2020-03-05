@@ -9,13 +9,15 @@ export default function App() {
 
 
   return (
-    <body>
+    <>
+   
       <Router>
         <Routes/>
 
         <Rodape/> 
         <GlobalStyles />
       </Router>
-    </body>
+ 
+    </>
   );
 }

@@ -8,7 +8,7 @@ module.exports = (app) => {
             user INNER JOIN card ON id_user = id_user_from `,(error, result) => {
                      res.send(result) 
                     
-                    if (error) throw error;
+                    // if (error) throw error;
                    
                 })
              

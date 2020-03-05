@@ -8,15 +8,19 @@ import api from '../../src/services/api'
 
 
 export default function SecaoDeProdutosDoacoes() {
-  const [card, setCard] = useState([{}])
+  const [card, setCard] = useState([])
 
     useEffect(() => {
-        async function loadCards() {
-            const response = await api.post('/card')
-          
-            return setCard(response.data)
-           
+         async function loadCards() {
+          try {
+            const response = await api.post('/card');
+            console.log(response);
+            setCard(response.data)
+          } catch (error) {
+            console.error(error);
+          }
         }
+
         loadCards()
     }, [])
     return ( 
@@ -24,6 +28,14 @@ export default function SecaoDeProdutosDoacoes() {
         <Container >
           <Produtos >
             <Grid >
+
+
+          {/* const numbers = [1, 2, 3, 4, 5];
+          const listItems = numbers.map((number) =>
+          <li key={number.toString()}>
+          {number}
+          </li> */}
+
               
               {card.map(card => ( 
                   <CardItem key = {card.id_card} card={card }/>

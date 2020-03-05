@@ -104,7 +104,7 @@ export default function LandPage(){
                         <h3> Pessoas que possuem baixa 
                             renda podem se cadastrar na 
                             nossa plataforma para receber 
-                            um aparelho tecnologico de doação</h3>
+                            um aparelho tecnologico de doação.</h3>
                     </div>
 
                     <div className="cardp">
@@ -114,7 +114,7 @@ export default function LandPage(){
                         <h2 className="cornflowerblue">Instituições</h2>
                         <h3> Existem muitas unidades de ensino 
                             precisando de aparelhos eletronicos,
-                            para ensinar a consertar</h3>
+                            para ensinar a reparar e construir.</h3>
                     </div>
 
                     <div className="cardp">
@@ -123,8 +123,8 @@ export default function LandPage(){
                         
                         <h2 className="gold">Ensino</h2>
 
-                        <h3> ajude no ensino tecnológico,
-                            envie hardware que pode ser utilizado
+                        <h3> Ajude no ensino tecnológico,
+                            envie um hardware que pode ser utilizado
                             em aulas.
                         </h3>
                     </div>

@@ -10,8 +10,8 @@ import restore from './../../img/itensCard/left-arrow-1.svg'
 
 import icon from './../../img/TelaLogin/UserPerfil.png'
 import cooler1 from './../../img/itensCard/cooler.jpg'
-import cooler2 from './../../img/itensCard/cooler.png'
-import phone from './../../img/itensCard/prodCelu.jpg'
+// import cooler2 from './../../img/itensCard/cooler.png'
+// import phone from './../../img/itensCard/prodCelu.jpg'
 
 /* import UserFoto from './../../img/itensCard/UserFoto.png' */
 /* import prodCelu from './../../img/itensCard/prodCelu.jpg' */
@@ -19,14 +19,14 @@ import phone from './../../img/itensCard/prodCelu.jpg'
 function Delete(){
     var del = document.getElementById("card");
       del.style.opacity = 0.3;
-    var aviso = document.getElementById("aviso").style="display:inherit";
+      document.getElementById("aviso").style="display:inherit";
 }
 
 
 function Restore(){
     var del = document.getElementById("card");
       del.style.opacity = 1;
-    var aviso = document.getElementById("aviso").style="display:none";
+      document.getElementById("aviso").style="display:none";
   }
 
 export default function Card({card}) {
@@ -59,8 +59,8 @@ export default function Card({card}) {
                 <AcoesCard >
                   <SocialButton href = "#" > < img src = { check } alt = "check" height = "20" title="Item Doado"/></SocialButton> 
                   <SocialButton href = "#" > < img src = { pencil } alt = "edit" height = "20" title="Editar Publicação"/ > </SocialButton> 
-                  <SocialButton href = "#" > <button onClick={Delete}>< img src = { cross }alt = "delete" height = "20" title="Deletar Publicação"/ > </button> </SocialButton>
-                  <SocialButton href = "#" > <button onClick={Restore}>< img src = { restore }alt = "restore" height = "20" title="Restaurar Publicação"/ > </button> </SocialButton>
+                  <SocialButton onClick={Delete} href = "#" > < img src = { cross }alt = "delete" height = "20" title="Deletar Publicação"/ ></SocialButton>
+                  <SocialButton onClick={Restore} href = "#" > < img src = { restore }alt = "restore" height = "20" title="Restaurar Publicação"/ > </SocialButton>
 
                 </AcoesCard> 
                 </InfoCard> 
@@ -86,30 +86,6 @@ const SocialButton = styled.button `
     margin:8px;
   }
 `
-
-const SocialButtonLike = styled.button `
-  height:20px;
-  width:20px;
-  margin:10px;
-  background:white;
-  opacity: 0.4;
-
-  &:hover{
-    opacity:1;
-  }
-
-  &:focus{
-    opacity:1;
-  }
-
-  @media(max-width:765px){
-    height:20px;
-    width:20px;
-    margin:8px;
-  }
-`
-
-
 
 const AcoesCard = styled.section `
 display:flex;

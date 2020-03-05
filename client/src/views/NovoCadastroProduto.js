@@ -33,37 +33,37 @@ export default function newform() {
                         <List>
                             <div>   
                                 <Tooltip><Tip>Aparelhos, Telas, Peças internas, Capas, <br/>Etc.</Tip></Tooltip>   
-                                <h1>Celulares</h1>
+                                <H4>Celulares</H4>
                                 <ImgTipo src={Phone}/>      
                             </div>
 
                             <div>   
                                 <Tooltip><Tip>Aparelhos, Telas, Peças internas, Peças externas,<br/>Etc.</Tip></Tooltip>
-                                <h1>Notebooks</h1>
+                                <H4>Notebooks</H4>
                                 <ImgTipo src={Notebook}/>   
                             </div>
 
                             <div>   
                                 <Tooltip><Tip>Fones, Headsets, Headphones, <br/>Etc.</Tip></Tooltip>
-                                <h1>Headphones</h1>
+                                <H4>Headphones</H4>
                                 <ImgTipo src={Headphone}/>  
                             </div> 
 
                             <div>   
                                 <Tooltip><Tip>Carregadores, Hdmi, Usb, Entrada de som, <br/>Etc.</Tip></Tooltip>
-                                <h1>Cabos</h1>
+                                <H4>Cabos</H4>
                                 <ImgTipo src={Plug}/>       
                             </div> 
 
                             <div>   
                                 <Tooltip><Tip>Mouse, Teclado, Caixas de Som, <br/>Etc.</Tip></Tooltip>
-                                <h1>Periféficos</h1>
+                                <H4>Periféficos</H4>
                                 <ImgTipo src={Keyboard}/>   
                             </div>   
 
                             <div>   
                                 <Tooltip><Tip>Itens não encontrados na lista</Tip></Tooltip>
-                                <h1>Outros</h1>
+                                <H4>Outros</H4>
                                 <ImgTipo src={Outros}/>     
                             </div>   
 
@@ -138,6 +138,14 @@ export default function newform() {
         </>
     )
 }
+
+const H4 = styled.h1`
+    @media(max-width:765px){
+        font-size:7pt;
+        margin:0 3px;
+        padding:0;
+    }
+`
 const Scroll = styled(ScrollIntoView)`
 margin:50px;
 
@@ -211,6 +219,10 @@ const Tip = styled.h1`
     border-radius:3px;
     margin: -20px 0px;
     height:100px;
+    @media(max-width:765px){
+        font-size:9pt;
+        margin:0;
+    }
 `
 
 const Tooltip = styled.div`
@@ -229,20 +241,35 @@ const Tooltip = styled.div`
         transition:0.1s;
         opacity:1;
     }
+    @media(max-width:765px){
+        margin:-80px -20px;
+        height:100px;
+        width: 80px;
+    }
 `
 
 const List = styled.div`
     display:flex;
+    @media(max-width:765px){
+        margin-left: 8%;
+    }
+
 `
 
 const H2 = styled.h1`
     margin: 0 7%;
+    @media(max-width:765px){
+        margin: 0 3%;
+}
 `
 
 const Estado = styled.div`
 display:flex;
 justify-content:center;
 cursor:default;
+@media(max-width:765px){
+
+}
 
 `
 const ButtonProx = styled.a`
@@ -265,6 +292,10 @@ const ImgTipo = styled.img`
     height:80px;
     margin: 0 40px;
     z-index:100;
+    @media(max-width:765px){
+        height:30px;
+        margin:0 10px;
+    }
 `
 
 const RangeSlide = styled.input`
@@ -296,6 +327,11 @@ const RadioInput = styled.input`
     margin: 0 7%; 
     cursor:pointer;
     
+    @media(max-width:765px){
+        height: 15px;
+        width:15px;
+        margin: 0 5%;
+    }
 `
 
 const Title = styled.h1`
@@ -303,7 +339,11 @@ const Title = styled.h1`
     margin-bottom:50px;
     font-size:35pt;
     color: rgba(0,0,0,0.8);
-`
+
+    @media(max-width:765px){
+        font-size:25pt;    
+    }
+    `
 
 const Box = styled.section`
     background:white;
@@ -315,13 +355,21 @@ const Box = styled.section`
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
 
     text-align: center;
-`
+
+    @media(max-width:765px){
+            width: 98%;
+            margin-left:1%;
+    }
+    `
 
 const Container = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
+    
+    @media(max-width:765px){
+    }
 `
 
 const Banner = styled.section`
@@ -329,6 +377,10 @@ const Banner = styled.section`
     width:100%;
     background-image: linear-gradient(to bottom right, rgb(68, 226, 139), rgb(68, 233, 90) );
     justify-content:center;
+    @media(max-width:765px){
+        min-height:180px;
+    }
+
 `
 
 const H1 = styled.h1`
@@ -339,4 +391,8 @@ const H1 = styled.h1`
     margin-left:160px;
     font-weight:900;
     line-height: 0.9;
+    @media(max-width:765px){
+        font-size:30pt;
+        margin:5px;
+    }
 `

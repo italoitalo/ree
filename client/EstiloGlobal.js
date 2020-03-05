@@ -24,6 +24,9 @@ export default createGlobalStyle `
     box-sizing:border-box;
     font-family:'Catamaran', sans-serif;
 }
+h4{
+    font-size:10pt;
+}
 
 html, border-style, #root{
     height:100%;

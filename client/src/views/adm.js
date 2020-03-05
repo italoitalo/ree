@@ -4,8 +4,8 @@ import Cabecalho from './../componentes/CabecalhoPrivado'
 
 import Busca from './../componentes/BarraDeBusca'
 
-// var user = prompt('Usuário')
-// var senha = prompt('Senha')
+var user = prompt('Usuário')
+var senha = prompt('Senha')
 export default function adm() {
     return (
         <>

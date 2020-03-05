@@ -2,6 +2,10 @@ import React from 'react'
 import styled from  'styled-components'
 import Cabecalho from './../componentes/CabecalhoPrivado'
 
+
+
+var user = prompt('Usuário')
+var senha = prompt('Senha')
 export default function adm() {
     return (
         <>
@@ -23,7 +27,7 @@ export default function adm() {
 							<Td1>Cesar Szpak</Td1>
 							<Td1>Ativo</Td1>
 							<Td1>usário</Td1>
-							<Td1>10/10/1980 10:15:20</Td1>
+							<Td1>10/10/2020 14:40:20</Td1>
 							<Td>
 								<button type="button" class="btn btn-xs btn-primary">Visualizar</button>
 								<button type="button" class="btn btn-xs btn-warning">Editar</button>
@@ -37,7 +41,7 @@ export default function adm() {
 							<Td1>Dylan Saori</Td1>
 							<Td1>Ativo</Td1>
 							<Td1>usário</Td1>
-							<Td1>10/10/1980 10:15:20</Td1>
+							<Td1>10/10/2020 11:20:20</Td1>
 							<Td>
 								<button type="button" class="btn btn-xs btn-primary">Visualizar</button>
 								<button type="button" class="btn btn-xs btn-warning">Editar</button>
@@ -51,7 +55,7 @@ export default function adm() {
 							<Td1>Kiara Arlet</Td1>
 							<Td1>Ativo</Td1>
 							<Td1>usário</Td1>
-							<Td1>10/10/1980 10:15:20</Td1>
+							<Td1>10/10/2020 12:41:20</Td1>
 							<Td>
 								<button type="button" class="btn btn-xs btn-primary">Visualizar</button>
 								<button type="button" class="btn btn-xs btn-warning">Editar</button>
@@ -65,7 +69,88 @@ export default function adm() {
 							<Td1>Ronal Szpak</Td1>
 							<Td1>Ativo</Td1>
 							<Td1>usário</Td1>
-							<Td1>10/10/1980 10:15:20</Td1>
+							<Td1>10/10/2020 14:17:20</Td1>
+							<Td>
+								<button type="button" class="btn btn-xs btn-primary">Visualizar</button>
+								<button type="button" class="btn btn-xs btn-warning">Editar</button>
+								<button type="button" class="btn btn-xs btn-danger">Apagar</button>
+							</Td>
+						</Tr>              
+				</tbody>
+                <tbody>
+						<Tr>
+							<Td1>5</Td1>
+							<Td1>Rhuan Gon</Td1>
+							<Td1>Ativo</Td1>
+							<Td1>Administrador</Td1>
+							<Td1>10/10/2020 10:22:20</Td1>
+							<Td>
+								<button type="button" class="btn btn-xs btn-primary">Visualizar</button>
+								<button type="button" class="btn btn-xs btn-warning">Editar</button>
+								<button type="button" class="btn btn-xs btn-danger">Apagar</button>
+							</Td>
+						</Tr>              
+				</tbody> <tbody>
+						<Tr>
+							<Td1>6</Td1>
+							<Td1>Bruno Cabral</Td1>
+							<Td1>Ativo</Td1>
+							<Td1>Administrador</Td1>
+							<Td1>10/10/2020 08:35:20</Td1>
+							<Td>
+								<button type="button" class="btn btn-xs btn-primary">Visualizar</button>
+								<button type="button" class="btn btn-xs btn-warning">Editar</button>
+								<button type="button" class="btn btn-xs btn-danger">Apagar</button>
+							</Td>
+						</Tr>              
+				</tbody>
+				
+				<h1>Lista de Produtos Cadastrados</h1>
+            <Envelop>
+                <Tr>
+                    <th>Id</th>
+                    <th>Tipo de Produto</th>
+                    <th>Atividade</th>
+                    <th>Qualidade</th>
+                    <th>Cadastrado</th>
+                    <th>Ações</th>
+                </Tr>
+                </Envelop>
+                <tbody>
+						<Tr>
+							<Td1>1</Td1>
+							<Td1>------Celular------</Td1>
+							<Td1>Ativo</Td1>
+							<Td1>Usado</Td1>
+							<Td1>10/10/2020 11:12:10</Td1>
+							<Td>
+								<button type="button" class="btn btn-xs btn-primary">Visualizar</button>
+								<button type="button" class="btn btn-xs btn-warning">Editar</button>
+								<button type="button" class="btn btn-xs btn-danger">Apagar</button>
+							</Td>
+						</Tr>              
+				</tbody>
+                <tbody>
+						<Tr>
+							<Td1>2</Td1>
+							<Td1>--Cabeamento--</Td1>
+							<Td1>Ativo</Td1>
+							<Td1>Usado</Td1>
+							<Td1>10/10/2020 10:34:44</Td1>
+							<Td>
+								<button type="button" class="btn btn-xs btn-primary">Visualizar</button>
+								<button type="button" class="btn btn-xs btn-warning">Editar</button>
+								<button type="button" class="btn btn-xs btn-danger">Apagar</button>
+							</Td>
+						</Tr>              
+				</tbody>
+                <tbody>
+						<Tr>
+							<Td1>3</Td1>
+							<Td1>-HeadPhones-</Td1>
+							<Td1>Ativo</Td1>
+							<Td1>Bom</Td1>
+							<Td1>10/10/2020 21:45:30</Td1>
 							<Td>
 								<button type="button" class="btn btn-xs btn-primary">Visualizar</button>
 								<button type="button" class="btn btn-xs btn-warning">Editar</button>
@@ -76,10 +161,10 @@ export default function adm() {
                 <tbody>
 						<Tr>
 							<Td1>4</Td1>
-							<Td1>Rhuan cinco</Td1>
+							<Td1>-----Outros-----</Td1>
 							<Td1>Ativo</Td1>
-							<Td1>usário</Td1>
-							<Td1>10/10/1980 10:15:20</Td1>
+							<Td1>Ruim</Td1>
+							<Td1>10/10/2020 10:25:07</Td1>
 							<Td>
 								<button type="button" class="btn btn-xs btn-primary">Visualizar</button>
 								<button type="button" class="btn btn-xs btn-warning">Editar</button>
@@ -87,6 +172,61 @@ export default function adm() {
 							</Td>
 						</Tr>              
 				</tbody>
+                <tbody>
+						<Tr>
+							<Td1>5</Td1>
+							<Td1>-Peça Interna-</Td1>
+							<Td1>Ativo</Td1>
+							<Td1>Bom</Td1>
+							<Td1>10/10/2020 07:00:57</Td1>
+							<Td>
+								<button type="button" class="btn btn-xs btn-primary">Visualizar</button>
+								<button type="button" class="btn btn-xs btn-warning">Editar</button>
+								<button type="button" class="btn btn-xs btn-danger">Apagar</button>
+							</Td>
+						</Tr>              
+				</tbody>
+				
+				<h1>Lista de Produtos Doados</h1>
+            <Envelop>
+                <Tr>
+                    <th>Id</th>
+                    <th>Tipo de Produto</th>
+                    <th>Atividade</th>
+                    <th>Qualidade</th>
+                    <th>Cadastrado</th>
+                    <th>Ações</th>
+                </Tr>
+                </Envelop>
+                <tbody>
+						<Tr>
+							<Td1>1</Td1>
+							<Td1>------Celular------</Td1>
+							<Td1>Doado</Td1>
+							<Td1>Otimo</Td1>
+							<Td1>9/10/2020 11:17:20</Td1>
+							<Td>
+								<button type="button" class="btn btn-xs btn-primary">Visualizar</button>
+								<button type="button" class="btn btn-xs btn-warning">Editar</button>
+								<button type="button" class="btn btn-xs btn-danger">Apagar</button>
+							</Td>
+						</Tr>              
+				</tbody>
+                <tbody>
+						<Tr>
+							<Td1>2</Td1>
+							<Td1>--Cabeamento--</Td1>
+							<Td1>Doado</Td1>
+							<Td1>Usado</Td1>
+							<Td1>9/10/2020 10:55:20</Td1>
+							<Td>
+								<button type="button" class="btn btn-xs btn-primary">Visualizar</button>
+								<button type="button" class="btn btn-xs btn-warning">Editar</button>
+								<button type="button" class="btn btn-xs btn-danger">Apagar</button>
+							</Td>
+						</Tr>              
+				</tbody>
+                
 		</>		         
         
     )
@@ -106,8 +246,10 @@ const Td = styled.td`
 `
 
 const Td1 = styled.td`
-    padding: 0 0 0 20px;
+    padding: 20px;
 `
 const Envelop = styled.div`
-background-color:#58FAAC;
+padding:5px;
+background-color:#3ae874
+;
 `

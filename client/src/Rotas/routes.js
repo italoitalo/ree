@@ -18,7 +18,7 @@ import CadastroRealizado from'./../views/Confirm/CadastroRealizado'
 import DoacoesPerfil from './../views/Perfil/DoacoesPerfil'
 import InteressesPerfil from './../views/Perfil/InteressesPerfil'
 import ConfigPerfil from './../views/Perfil/ConfigPerfil'
-import Chat from './../views/chat'
+import Chat from './../views/NewChat'
 import Adm from './../views/adm'
 import BarraDeBusca from './../componentes/BarraDeBusca'
 

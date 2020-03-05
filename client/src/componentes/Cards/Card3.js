@@ -21,13 +21,26 @@ function Delete(){
       del.style.opacity = 0.3;
       document.getElementById("aviso").style="display:inherit";
 }
-
+function Doado(){
+    var check = document.getElementById("card");
+      check.style.opacity = 0.3;
+      document.getElementById("doado").style="display:inherit";
+}
 
 function Restore(){
     var del = document.getElementById("card");
       del.style.opacity = 1;
       document.getElementById("aviso").style="display:none";
+      document.getElementById("doado").style="display:none";
   }
+
+function Edit(){
+  var editarnome = prompt("Alterar nome do Anúncio")
+  var editardescrição = prompt("Alterar a descrição do Anúncio")
+  document.getElementById("nome").innerHTML = editarnome;
+  document.getElementById("descrição").innerHTML = editardescrição;
+}
+
 
 export default function Card({card}) {
   
@@ -37,7 +50,10 @@ export default function Card({card}) {
              <CardSection id="card">
 
                 <InfoText style={{display:'none'}} id="aviso">
-                  <H1User>Produto Removido</H1User>
+                  <H1User >Produto Removido</H1User>
+                </InfoText>
+                <InfoText style={{display:'none'}} id="doado">
+                  <H1User >Produto Doado!</H1User>
                 </InfoText>
 
                 <DivUserProd >
@@ -52,13 +68,13 @@ export default function Card({card}) {
                 <InfoCard >
                 
                 <InfoText >
-                  <H1Prod > Coller pouco usado. </H1Prod> 
-                  <PinfoText > Cooler FAN C3Tech Storm 8cm 3 Pinos F7 MB10BK, doando pq comprei um melhor.</PinfoText> 
+                  <H1Prod id='nome' > Coller pouco usado. </H1Prod> 
+                  <PinfoText id='descrição'> Cooler FAN C3Tech Storm 8cm 3 Pinos F7 MB10BK, doando pq comprei um melhor.</PinfoText> 
                 </InfoText> 
 
                 <AcoesCard >
-                  <SocialButton href = "#" > < img src = { check } alt = "check" height = "20" title="Item Doado"/></SocialButton> 
-                  <SocialButton href = "#" > < img src = { pencil } alt = "edit" height = "20" title="Editar Publicação"/ > </SocialButton> 
+                  <SocialButton onClick={Doado} href = "#" > < img src = { check } alt = "check" height = "20" title="Item Doado"/></SocialButton> 
+                  <SocialButton onClick={Edit} href = "#" > < img src = { pencil } alt = "edit" height = "20" title="Editar Publicação"/ > </SocialButton> 
                   <SocialButton onClick={Delete} href = "#" > < img src = { cross }alt = "delete" height = "20" title="Deletar Publicação"/ ></SocialButton>
                   <SocialButton onClick={Restore} href = "#" > < img src = { restore }alt = "restore" height = "20" title="Restaurar Publicação"/ > </SocialButton>
 

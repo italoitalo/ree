@@ -43,7 +43,10 @@ const Texta = styled.h1`
     padding:5px;
     background:whitesmoke;
     width:50%;
-    
+    @media(max-width:765px){
+        margin: 0 0 0 150px;
+        width:150px;
+    }
     `
 
 const Textb = styled.input`
@@ -57,7 +60,11 @@ const Textb = styled.input`
     &:hover{
         border:none;
         border-radius:5px;
-    
+    }
+     @media(max-width:765px){
+         max-width:260px
+align-self:center;
+margin-left:200px;    }
 `
 const Textc = styled.h1`
     align-self:flex-end;
@@ -67,9 +74,9 @@ const Textc = styled.h1`
     border-bottom-left-radius:3px;
     margin:5px;
     padding:5px;
-    background:whitesmoke;
+    background:#d8f2bf;
     width:50%;
-    
+
 `
 const Buttona = styled.button`
     padding:5px 25px;
@@ -79,7 +86,11 @@ const Buttona = styled.button`
     color:white;
     font-size:14pt;
     font-weight: bold;
-    
+    @media(max-width:765px){
+        margin:10px 0 0 370px;
+        font-size:10pt;;
+        width:80px;
+    }
 `
 const Box = styled.section`
     display:flex;
@@ -91,10 +102,19 @@ const Box = styled.section`
     min-width: 500px;
     box-shadow: 0 0 30px 0 rgba(0,0,0,0.1)
 
+    @media(max-width:765px){
+        margin:0;
+        background-color:blue;
+    }
+
     `
 const Container = styled.section`
     display:flex;
     flex-direction: column;
     align-items: center;
-    
+
+    @media(max-width:765px){
+        max-width:250px;
+        width:250px;
+    }
 `

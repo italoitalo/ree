@@ -89,6 +89,12 @@ const Box = styled.section`
     height:100%;
     min-width: 500px;
     box-shadow: 0 0 30px 0 rgba(0,0,0,0.1)
+
+    @media (max-width:765px){
+        margin:0;
+        width:200px;
+        padding:3px;
+    }
 `
 const Container = styled.section`
     display:flex;
